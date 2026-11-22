@@ -6,5 +6,5 @@
 - User-facing text is Ukrainian; Danish examples always come with a Ukrainian translation.
 - Learning content is data, not code: `app/src/main/assets/content/*.json`. Verified verb/noun/adjective forms are in `forms.json`.
 - The app never holds AI keys. It talks to the Danskly server (`/api/ai`, `/api/health`), which owns the keys and the fallback between keys and models.
-- Tests and the 100% coverage rule: see `.claude/skills/android-testing/SKILL.md`. Run `./gradlew recordRoborazziDebug koverVerifyDebug` before pushing.
+- Tests and the 100% coverage rule: see `.claude/skills/android-testing/SKILL.md`. Run `./gradlew koverVerifyDebug` before pushing (it runs all tests and records screenshots).
 - Keep it simple: no new libraries without a clear reason; prefer fakes over mocks; no reflection-based serialization.

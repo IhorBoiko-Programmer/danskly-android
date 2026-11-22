@@ -46,8 +46,7 @@ app/src/main/assets/content/   ← слова, граматика, тексти 
 Потрібен JDK 21 і Android SDK (Android Studio встановлює все сам).
 
 ```bash
-./gradlew testDebugUnitTest          # усі тести (без емулятора)
-./gradlew recordRoborazziDebug       # тести + скріншоти всіх екранів → app/screenshots/
+./gradlew testDebugUnitTest          # тести + скріншоти всіх екранів → app/screenshots/
 ./gradlew koverVerifyDebug           # перевірка 100% покриття рядків
 ./gradlew assembleDebug              # APK для встановлення на телефон
 ./gradlew bundleRelease              # App Bundle (.aab) для Google Play

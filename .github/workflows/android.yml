@@ -26,7 +26,7 @@ jobs:
           java-version: 21
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit + UI tests (Robolectric), screenshots, coverage
-        run: ./gradlew --continue --stacktrace recordRoborazziDebug koverXmlReportDebug koverHtmlReportDebug
+        run: ./gradlew --continue --stacktrace testDebugUnitTest koverXmlReportDebug koverHtmlReportDebug
       - name: Enforce 100% line coverage
         run: ./gradlew koverVerifyDebug
       - name: Upload test reports

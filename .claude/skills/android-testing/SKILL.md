@@ -12,7 +12,7 @@ Every change ships with tests. CI fails if line coverage of the debug unit tests
 | Task | Command |
 |---|---|
 | All tests (JVM, Robolectric) | `./gradlew testDebugUnitTest` |
-| Tests + screenshots of every screen | `./gradlew recordRoborazziDebug` (PNGs in `app/screenshots/`) |
+| Tests + screenshots of every screen | `./gradlew testDebugUnitTest` (screenshots are always recorded, PNGs in `app/screenshots/`) |
 | Coverage report (HTML) | `./gradlew koverHtmlReportDebug` → `app/build/reports/kover/htmlDebug/index.html` |
 | Coverage gate (100%) | `./gradlew koverVerifyDebug` |
 | One test class | `./gradlew testDebugUnitTest --tests "app.danskly.ui.SettingsScreenTest"` |
@@ -88,6 +88,8 @@ When a screen's next state depends on randomness (exercise sessions), build a **
 
 ## Coverage rules
 
+- Screenshots are recorded on every run (`roborazzi.test.record=true` in `gradle.properties`). This matters for coverage: drawing code (`Canvas`, `drawBehind`) only runs when a frame is rendered, and only the screenshot tests render frames.
+
 - 100% **line** coverage on `debug` unit tests, enforced by Kover (`app/build.gradle.kts`).
 - Excluded only: `BuildConfig`, Compose's generated `ComposableSingletons`, and functions annotated `@Preview`.
 - Do not add exclusions to make the number pass. If a line cannot be reached, it is dead code: delete it.
@@ -100,4 +102,4 @@ When a screen's next state depends on randomness (exercise sessions), build a **
 3. Write the screen in `feature/<name>/`, stateless where possible.
 4. Add a Compose test for every button and every state (loading, error, empty, success, dark theme if it has custom colours).
 5. Add the screen to `ScreenshotTest`.
-6. Run `./gradlew recordRoborazziDebug koverVerifyDebug` and look at the screenshots.
+6. Run `./gradlew koverVerifyDebug` (it runs the tests) and look at the screenshots in `app/screenshots/`.
