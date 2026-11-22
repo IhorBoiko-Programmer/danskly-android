@@ -1,5 +1,7 @@
 package app.danskly.support
 
+import androidx.compose.ui.semantics.SemanticsProperties
+import androidx.compose.ui.semantics.getOrNull
 import androidx.compose.ui.test.SemanticsNodeInteraction
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
@@ -58,7 +60,7 @@ abstract class UiTest {
 
     /** Matches nodes whose test tag starts with [prefix], e.g. every `option:…`. */
     fun tagStartsWith(prefix: String) = androidx.compose.ui.test.SemanticsMatcher("testTag starts with $prefix") {
-        it.config.getOrNull(androidx.compose.ui.semantics.SemanticsProperties.TestTag)?.startsWith(prefix) == true
+        it.config.getOrNull(SemanticsProperties.TestTag)?.startsWith(prefix) == true
     }
 
     fun exists(value: String, substring: Boolean = false): Boolean =
