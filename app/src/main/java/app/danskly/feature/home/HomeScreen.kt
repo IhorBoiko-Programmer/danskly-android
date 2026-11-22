@@ -125,10 +125,10 @@ private fun TileRow(left: Tile, right: Tile) {
     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         listOf(left, right).forEach { t ->
             Box(Modifier.weight(1f)) {
-                TileCard(t.title, t.colors, wide = false, onClick = t.onClick) {
-                    TileIcon(t.icon, t.colors, it, size = 64)
-                    Column(Modifier.padding(top = 12.dp)) {
-                        Text(t.title, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = LocalPalette.current.ink)
+                TileCard(t.title, t.colors, wide = false, onClick = t.onClick) { pressed ->
+                    Column {
+                        TileIcon(t.icon, t.colors, pressed, size = 64)
+                        Text(t.title, Modifier.padding(top = 12.dp), fontWeight = FontWeight.Bold, fontSize = 18.sp, color = LocalPalette.current.ink)
                         Text(t.subtitle, color = LocalPalette.current.muted, fontSize = 13.sp)
                     }
                 }
