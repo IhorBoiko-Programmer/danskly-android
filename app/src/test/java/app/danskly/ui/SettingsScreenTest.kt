@@ -117,6 +117,7 @@ class SettingsScreenTest : UiTest() {
     @Test
     fun placeholderUsesBuiltInServer() {
         launch(Route.Settings, testGraph(serverUrl = ""))
+        clickTag("server-url") // Material 3 shows the placeholder once the field is focused
         assertTrue(exists("https://danskly.….workers.dev"))
     }
 }

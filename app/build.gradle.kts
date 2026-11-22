@@ -70,6 +70,11 @@ android {
             all {
                 it.maxHeapSize = "3g"
                 it.systemProperty("robolectric.pixelCopyRenderMode", "hardware")
+                it.testLogging {
+                    events("failed")
+                    exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+                    showStackTraces = true
+                }
             }
         }
     }

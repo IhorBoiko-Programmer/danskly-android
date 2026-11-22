@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # only used to publish build outputs to the ci-output branch
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -26,7 +26,7 @@ jobs:
           java-version: 21
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit + UI tests (Robolectric), screenshots, coverage
-        run: ./gradlew --stacktrace recordRoborazziDebug koverXmlReportDebug koverHtmlReportDebug
+        run: ./gradlew --continue --stacktrace recordRoborazziDebug koverXmlReportDebug koverHtmlReportDebug
       - name: Enforce 100% line coverage
         run: ./gradlew koverVerifyDebug
       - name: Upload test reports
@@ -49,6 +49,9 @@ jobs:
         with:
           name: screenshots
           path: app/screenshots
+      - name: Publish screenshots and reports to the ci-output branch
+        if: always() && github.event_name != 'pull_request'
+        run: scripts/publish-ci-output.sh tests app/screenshots app/build/test-results app/build/reports/kover/reportDebug.xml
 
   build:
     name: APK and App Bundle
@@ -95,3 +98,6 @@ jobs:
         with:
           name: danskly-aab
           path: app/build/outputs/bundle/release/*.aab
+      - name: Publish the APK to the ci-output branch
+        if: github.event_name != 'pull_request'
+        run: scripts/publish-ci-output.sh apk app/build/outputs/apk/debug app/build/outputs/apk/release
