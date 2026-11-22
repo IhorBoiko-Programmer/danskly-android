@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.SettingsScreenTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:23.947Z" hostname="ip-10-0-142-11" time="0.633">
+  <properties/>
+  <testcase name="connectionCheckReportsMissingKeysAndErrors" classname="app.danskly.ui.SettingsScreenTest" time="0.09"/>
+  <testcase name="placeholderUsesBuiltInServer" classname="app.danskly.ui.SettingsScreenTest" time="0.109"/>
+  <testcase name="aiSettingsAndConnectionCheck" classname="app.danskly.ui.SettingsScreenTest" time="0.142"/>
+  <testcase name="noVoicesExplainsHowToInstall" classname="app.danskly.ui.SettingsScreenTest" time="0.042"/>
+  <testcase name="speedPresetsSlidersAndTest" classname="app.danskly.ui.SettingsScreenTest" time="0.056"/>
+  <testcase name="learningOptionsAndResetWithConfirmation" classname="app.danskly.ui.SettingsScreenTest" time="0.117"/>
+  <testcase name="genderAndVoiceChoice" classname="app.danskly.ui.SettingsScreenTest" time="0.075"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

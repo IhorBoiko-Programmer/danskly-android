@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.exercise.QuizGeneratorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:08.030Z" hostname="ip-10-0-142-11" time="0.212">
+  <properties/>
+  <testcase name="needsTwoWords" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.001"/>
+  <testcase name="articleModeNeedsNouns" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.002"/>
+  <testcase name="reverseShowsUkrainianAndAsksDanish" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.001"/>
+  <testcase name="everyModeGivesASolvableQuestion" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.208"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

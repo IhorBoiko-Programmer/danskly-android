@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.json.JsonTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:08.245Z" hostname="ip-10-0-142-11" time="0.004">
+  <properties/>
+  <testcase name="writesAndRoundTrips" classname="app.danskly.core.json.JsonTest" time="0.002"/>
+  <testcase name="parsesEscapesAndUnicode" classname="app.danskly.core.json.JsonTest" time="0.0"/>
+  <testcase name="parsesAllValueTypes" classname="app.danskly.core.json.JsonTest" time="0.0"/>
+  <testcase name="refusesUnsupportedTypes" classname="app.danskly.core.json.JsonTest" time="0.001"/>
+  <testcase name="parsesTopLevelArraysAndEmptyContainers" classname="app.danskly.core.json.JsonTest" time="0.0"/>
+  <testcase name="rejectsMalformedJson" classname="app.danskly.core.json.JsonTest" time="0.001"/>
+  <testcase name="readingHelpersFailOrDefaultSensibly" classname="app.danskly.core.json.JsonTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

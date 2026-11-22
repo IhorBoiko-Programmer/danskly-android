@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.QuizScreenTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:15.320Z" hostname="ip-10-0-142-11" time="0.233">
+  <properties/>
+  <testcase name="listeningHidesTheWordUntilAnswered" classname="app.danskly.ui.QuizScreenTest" time="0.062"/>
+  <testcase name="allModesWork" classname="app.danskly.ui.QuizScreenTest" time="0.1"/>
+  <testcase name="tinyTopicExplainsWhyThereIsNoQuiz" classname="app.danskly.ui.QuizScreenTest" time="0.037"/>
+  <testcase name="articleModeHiddenForVerbTopics" classname="app.danskly.ui.QuizScreenTest" time="0.031"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

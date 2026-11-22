@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.data.AndroidSpeakerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:08.332Z" hostname="ip-10-0-142-11" time="0.102">
+  <properties/>
+  <testcase name="defaultFactoryCreatesARealEngine" classname="app.danskly.data.AndroidSpeakerTest" time="0.022"/>
+  <testcase name="handlesReadinessReportedDuringConstruction" classname="app.danskly.data.AndroidSpeakerTest" time="0.017"/>
+  <testcase name="failedEngineIsUnavailableAndSilent" classname="app.danskly.data.AndroidSpeakerTest" time="0.011"/>
+  <testcase name="listsDanishVoicesBestFirstAfterInit" classname="app.danskly.data.AndroidSpeakerTest" time="0.011"/>
+  <testcase name="stopsAndShutsDown" classname="app.danskly.data.AndroidSpeakerTest" time="0.011"/>
+  <testcase name="fallsBackToDanishLanguageWithoutVoices" classname="app.danskly.data.AndroidSpeakerTest" time="0.015"/>
+  <testcase name="speaksSentencesWithChosenVoiceRateAndVolume" classname="app.danskly.data.AndroidSpeakerTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

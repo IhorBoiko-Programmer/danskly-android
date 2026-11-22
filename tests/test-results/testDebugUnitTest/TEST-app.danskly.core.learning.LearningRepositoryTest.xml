@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.learning.LearningRepositoryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:08.264Z" hostname="ip-10-0-142-11" time="0.035">
+  <properties/>
+  <testcase name="gradingMovesWordsThroughBoxesAndSaves" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.018"/>
+  <testcase name="settingsCachesAndReset" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.002"/>
+  <testcase name="dueWordsAreThoseWhoseTimeHasCome" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.001"/>
+  <testcase name="newWordsAreStableForTheDayAndSkipSeenWords" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.007"/>
+  <testcase name="streakGrowsOnConsecutiveDaysAndResetsAfterAGap" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.001"/>
+  <testcase name="deletingACustomWordForgetsEverythingAboutIt" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.002"/>
+  <testcase name="customWordsAppearInMyWordsTopicFirst" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.001"/>
+  <testcase name="loadsPreviouslySavedProgress" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.001"/>
+  <testcase name="markDoneTicksWithoutCounting" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.0"/>
+  <testcase name="duplicateWordsAreRejected" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.001"/>
+  <testcase name="ruleAndTextOfDayChangeDaily" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.0"/>
+  <testcase name="quizAndReadingScoresAreKept" classname="app.danskly.core.learning.LearningRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

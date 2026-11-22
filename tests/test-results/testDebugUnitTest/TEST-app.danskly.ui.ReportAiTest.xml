@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ReportAiTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:16.002Z" hostname="ip-10-0-142-11" time="0.457">
+  <properties/>
+  <testcase name="errorsCannotBeReported" classname="app.danskly.ui.ReportAiTest" time="0.073"/>
+  <testcase name="hintsCannotBeReported" classname="app.danskly.ui.ReportAiTest" time="0.047"/>
+  <testcase name="cancelSendsNothing" classname="app.danskly.ui.ReportAiTest" time="0.139"/>
+  <testcase name="tutorAnswerCanBeReportedAsOffensive" classname="app.danskly.ui.ReportAiTest" time="0.08"/>
+  <testcase name="failedReportExplainsWhy" classname="app.danskly.ui.ReportAiTest" time="0.115"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

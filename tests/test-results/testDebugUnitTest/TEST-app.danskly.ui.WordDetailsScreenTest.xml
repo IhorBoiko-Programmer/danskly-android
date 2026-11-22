@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.WordDetailsScreenTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:25.661Z" hostname="ip-10-0-142-11" time="0.324">
+  <properties/>
+  <testcase name="withoutServerExplainsWhereExamplesComeFrom" classname="app.danskly.ui.WordDetailsScreenTest" time="0.028"/>
+  <testcase name="customWordsCanBeDeleted" classname="app.danskly.ui.WordDetailsScreenTest" time="0.047"/>
+  <testcase name="aiFormsAreUsedWhenNoTableExists" classname="app.danskly.ui.WordDetailsScreenTest" time="0.035"/>
+  <testcase name="verbShowsAllTensesAiDetailsAndGrammarExamples" classname="app.danskly.ui.WordDetailsScreenTest" time="0.052"/>
+  <testcase name="loadingStateIsShownWhileWaiting" classname="app.danskly.ui.WordDetailsScreenTest" time="0.027"/>
+  <testcase name="nounAndAdjectiveTables" classname="app.danskly.ui.WordDetailsScreenTest" time="0.062"/>
+  <testcase name="errorsAndRetry" classname="app.danskly.ui.WordDetailsScreenTest" time="0.041"/>
+  <testcase name="missingWordShowsNothing" classname="app.danskly.ui.WordDetailsScreenTest" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

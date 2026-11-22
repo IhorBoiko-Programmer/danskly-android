@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ReadingScreensTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:15.555Z" hostname="ip-10-0-142-11" time="0.444">
+  <properties/>
+  <testcase name="readTranslateAnswerAndScore" classname="app.danskly.ui.ReadingScreensTest" time="0.114"/>
+  <testcase name="listOpensTexts" classname="app.danskly.ui.ReadingScreensTest" time="0.057"/>
+  <testcase name="listeningHidesTextAndReadsWithoutSpeakerNames" classname="app.danskly.ui.ReadingScreensTest" time="0.115"/>
+  <testcase name="scoresAppearInTheList" classname="app.danskly.ui.ReadingScreensTest" time="0.05"/>
+  <testcase name="lastTextWrapsToTheFirst" classname="app.danskly.ui.ReadingScreensTest" time="0.104"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.content.ContentParserTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:06.871Z" hostname="ip-10-0-142-11" time="0.025">
+  <properties/>
+  <testcase name="loadsEverything" classname="app.danskly.core.content.ContentParserTest" time="0.022"/>
+  <testcase name="readingQuestionsHaveThreeOptions" classname="app.danskly.core.content.ContentParserTest" time="0.0"/>
+  <testcase name="formTablesAreConsistent" classname="app.danskly.core.content.ContentParserTest" time="0.001"/>
+  <testcase name="wordsAreClean" classname="app.danskly.core.content.ContentParserTest" time="0.002"/>
+  <testcase name="everyExampleHasATranslation" classname="app.danskly.core.content.ContentParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

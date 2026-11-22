@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ExerciseSessionScreenTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:12.111Z" hostname="ip-10-0-142-11" time="1.526">
+  <properties/>
+  <testcase name="tilesExercise" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.174"/>
+  <testcase name="typingCorrectAnswerGradesTheWord" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.097"/>
+  <testcase name="typingWithDanishLetterAndEnter" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.1"/>
+  <testcase name="mixSessionRuns" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.054"/>
+  <testcase name="gapSessionToResultsAndAgain" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.292"/>
+  <testcase name="dictationSpeaksAndHidesTheWord" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.126"/>
+  <testcase name="goodButNotGreatResult" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.311"/>
+  <testcase name="forgivenMistakeShowsANote" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.097"/>
+  <testcase name="poorResultAndBackToList" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.27"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

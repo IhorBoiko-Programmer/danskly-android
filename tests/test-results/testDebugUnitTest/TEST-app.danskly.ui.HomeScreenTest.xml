@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.HomeScreenTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:14.012Z" hostname="ip-10-0-142-11" time="0.901">
+  <properties/>
+  <testcase name="settingsGearOpensSettingsAndHidesThere" classname="app.danskly.ui.HomeScreenTest" time="0.16"/>
+  <testcase name="saysWhenTodaysRevisionIsDone" classname="app.danskly.ui.HomeScreenTest" time="0.061"/>
+  <testcase name="greetingDependsOnTimeOfDay" classname="app.danskly.ui.HomeScreenTest" time="0.027"/>
+  <testcase name="everyTileOpensItsSection" classname="app.danskly.ui.HomeScreenTest" time="0.538"/>
+  <testcase name="showsBrandGreetingAndDailyProgress" classname="app.danskly.ui.HomeScreenTest" time="0.058"/>
+  <testcase name="darkThemeAndSystemThemeBothRender" classname="app.danskly.ui.HomeScreenTest" time="0.052"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

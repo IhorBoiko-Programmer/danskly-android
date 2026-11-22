@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.TutorScreenTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:25.488Z" hostname="ip-10-0-142-11" time="0.17">
+  <properties/>
+  <testcase name="startersAndMessagesStream" classname="app.danskly.ui.TutorScreenTest" time="0.07"/>
+  <testcase name="unconfiguredServerExplains" classname="app.danskly.ui.TutorScreenTest" time="0.028"/>
+  <testcase name="errorsAppearAsAMessage" classname="app.danskly.ui.TutorScreenTest" time="0.036"/>
+  <testcase name="nonAiErrorsAreShownToo" classname="app.danskly.ui.TutorScreenTest" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

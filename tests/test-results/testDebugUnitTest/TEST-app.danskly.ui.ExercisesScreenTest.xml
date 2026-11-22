@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ExercisesScreenTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-22T22:42:13.639Z" hostname="ip-10-0-142-11" time="0.135">
+  <properties/>
+  <testcase name="listsAllTypesAndOpensOne" classname="app.danskly.ui.ExercisesScreenTest" time="0.08"/>
+  <testcase name="dictationHiddenWithoutSpeech" classname="app.danskly.ui.ExercisesScreenTest" time="0.052"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
