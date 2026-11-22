@@ -83,6 +83,6 @@ class AndroidSpeaker(
     }
 
     private companion object {
-        val DANISH: Locale = Locale.forLanguageTag("da-DK")
+        private val DANISH: Locale = Locale.forLanguageTag("da-DK")
     }
 }

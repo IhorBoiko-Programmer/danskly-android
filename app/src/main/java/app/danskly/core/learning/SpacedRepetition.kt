@@ -22,8 +22,8 @@ class SpacedRepetition(private val intervalsDays: List<Int> = DEFAULT_INTERVALS)
 
     fun isDue(state: CardState, nowMillis: Long): Boolean = state.dueAt <= nowMillis
 
-    companion object {
+    private companion object {
         /** Days until the next review for boxes 0..4. */
-        val DEFAULT_INTERVALS = listOf(0, 1, 3, 7, 21)
+        private val DEFAULT_INTERVALS = listOf(0, 1, 3, 7, 21)
     }
 }
