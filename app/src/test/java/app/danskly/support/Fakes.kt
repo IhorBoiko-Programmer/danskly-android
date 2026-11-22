@@ -102,7 +102,8 @@ class FakeAiClient(
 /** A complete app graph with real content and progress in memory. */
 fun testGraph(
     ai: FakeAiClient = FakeAiClient.smart(),
-    speaker: FakeSpeaker = FakeSpeaker(listOf(Voice("Sara", "da-DK"), Voice("Magnus (Enhanced)", "da-DK"))),
+    // Speakers list voices best first, like AndroidSpeaker does.
+    speaker: FakeSpeaker = FakeSpeaker(listOf(Voice("Magnus (Enhanced)", "da-DK"), Voice("Sara", "da-DK"))),
     serverUrl: String = "https://danskly.test",
     clock: FixedClock = FixedClock(20_000 * FixedClock.DAY_MILLIS),
     store: InMemoryProgressStore = InMemoryProgressStore(),

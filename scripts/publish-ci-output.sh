@@ -5,6 +5,8 @@
 # Artifacts on the Actions page stay the main way to download them; this branch is a
 # plain-git mirror for tools that cannot reach artifact storage.
 set -euo pipefail
+export GIT_AUTHOR_NAME="github-actions" GIT_AUTHOR_EMAIL="github-actions@users.noreply.github.com"
+export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME" GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 folder="$1"; shift
 work="$(mktemp -d)"
 remote="$(git config --get remote.origin.url)"

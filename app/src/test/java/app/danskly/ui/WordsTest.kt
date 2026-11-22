@@ -172,7 +172,7 @@ class AddWordScreenTest : UiTest() {
         clickTag("topic-picker")
         click("Дім і побут")
         click("Зберегти слово")
-        assertEquals("Дім і побут", graph.repository.findWord("at støvsuge")!!.topic)
+        assertEquals(listOf("at støvsuge" to "Дім і побут"), graph.repository.progress.value.customWords.map { it.danish to it.topic })
     }
 
     @Test

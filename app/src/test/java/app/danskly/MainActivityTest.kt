@@ -3,6 +3,7 @@ package app.danskly
 import androidx.compose.ui.test.junit4.createEmptyComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import app.danskly.core.navigation.Route
@@ -13,8 +14,10 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
+@Config(qualifiers = "w411dp-h820dp-xxhdpi")
 class MainActivityTest {
 
     @get:Rule
@@ -26,7 +29,7 @@ class MainActivityTest {
         val graph = testGraph()
         app.graph = graph
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            compose.onNodeWithTag("tile:Граматика").performClick()
+            compose.onNodeWithTag("tile:Граматика").performScrollTo().performClick()
             compose.waitForIdle()
             assertEquals(Route.Grammar, graph.navigator.current)
             scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }

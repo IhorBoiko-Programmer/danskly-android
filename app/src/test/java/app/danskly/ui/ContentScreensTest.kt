@@ -11,6 +11,7 @@ import app.danskly.core.ai.AiErrorKind
 import app.danskly.core.exercise.ExerciseType
 import app.danskly.core.navigation.Route
 import app.danskly.core.speech.Voice
+import app.danskly.core.speech.VoiceSelector
 import app.danskly.support.FakeAiClient
 import app.danskly.support.FakeSpeaker
 import app.danskly.support.UiTest
@@ -99,7 +100,8 @@ class GrammarScreensTest : UiTest() {
         assertTrue(exists("Теперішній час"))
         compose.onAllNodes(hasContentDescription("Прослухати:", substring = true))[0].performClick()
         assertTrue(speaker.spoken.isNotEmpty())
-        assertFalse(speaker.last!!.contains("*"))
+        // Highlight marks are removed before speaking (the real speaker speaks these utterances).
+        assertFalse(VoiceSelector.utterances(speaker.last!!).any { it.contains("*") })
     }
 }
 
