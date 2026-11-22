@@ -1,0 +1,48 @@
+{
+ "tasks": [
+  {
+   "title": "Формальний лист",
+   "task": "Du kan ikke komme til din prøve på sprogskolen. Skriv til skolen, forklar hvorfor, og spørg om en ny tid. (ca. 80 ord)",
+   "sample": "Kære Anne,\n\nJeg hedder Maria Hansen, og jeg går på hold 3.5. Desværre kan jeg ikke komme til prøven på torsdag, fordi jeg er blevet syg. Jeg har været hos lægen, og han har sagt, at jeg skal blive hjemme i en uge.\n\nKunne jeg få en ny tid til prøven? Jeg kan komme både mandag og onsdag efter klokken 14. Jeg sender gerne en lægeerklæring.\n\nTak for hjælpen.\n\nMed venlig hilsen\nMaria Hansen",
+   "tips": "Структура: привітання, хто ти, проблема й причина, прохання, подяка, прощання. Звертайся на «du» до школи й підписуйся повним ім’ям."
+  },
+  {
+   "title": "Лист другу",
+   "task": "Skriv en mail til en ven. Inviter ham til din fødselsdag, og fortæl hvor og hvornår den er. (ca. 80 ord)",
+   "sample": "Hej Mikkel,\n\nHvordan går det? Jeg skriver, fordi jeg gerne vil invitere dig til min fødselsdag lørdag den 12. december. Vi holder fest i min lejlighed i København, og den begynder klokken 18.\n\nJeg laver mad, men du må gerne tage noget at drikke med. Kan du komme? Skriv til mig, hvis du ikke kan.\n\nVi ses forhåbentlig!\n\nHilsen\nMaria",
+   "tips": "Неформальний стиль: Hej, коротші речення, Hilsen. Не забудь дату, місце, час і прохання відповісти."
+  },
+  {
+   "title": "Текст-думка",
+   "task": "Hvad synes du om at arbejde hjemmefra? Skriv en tekst, og begrund din mening. (ca. 100 ord)",
+   "sample": "Jeg synes, at det er en god idé at arbejde hjemmefra nogle dage om ugen. For det første sparer man tid, fordi man ikke skal køre på arbejde. For det andet kan man ofte koncentrere sig bedre, når der er ro.\n\nTil gengæld kan det være ensomt, og man savner sine kolleger. Derfor mener jeg, at den bedste løsning er to dage hjemme og tre dage på kontoret.",
+   "tips": "Структура: твоя думка, 2 аргументи (for det første / for det andet), мінус (til gengæld), висновок (derfor)."
+  },
+  {
+   "title": "Скарга",
+   "task": "Du har købt en cykel i en butik, men den er gået i stykker. Skriv en klage til butikken, og bed om at få pengene tilbage. (ca. 80 ord)",
+   "sample": "Kære Cykelbutik,\n\nJeg købte en cykel hos jer den 3. november. Den kostede 2.500 kroner. Desværre gik bremserne i stykker allerede efter en uge, og det er farligt at køre på den.\n\nJeg synes, at det er dårlig service, fordi jeg har betalt for en ny cykel. Jeg vil derfor gerne have pengene tilbage eller en ny cykel. Jeg har kvitteringen, og jeg kan komme forbi i weekenden.\n\nJeg håber at høre fra jer snart.\n\nMed venlig hilsen\nMaria Hansen",
+   "tips": "Структура: що купив і коли, у чому проблема, чого хочеш (гроші назад чи заміна), термін, ввічливе завершення. Тон ввічливий, але чіткий."
+  },
+  {
+   "title": "Заява на роботу",
+   "task": "Du vil søge et job som lagermedarbejder. Skriv en kort ansøgning, og fortæl om dig selv og hvorfor du passer til jobbet. (ca. 100 ord)",
+   "sample": "Kære Hr. Jensen,\n\nJeg skriver, fordi jeg gerne vil søge stillingen som lagermedarbejder. Jeg hedder Maria Hansen, og jeg er 32 år. Jeg har boet i Danmark i to år og taler dansk på niveau B1.\n\nI Ukraine arbejdede jeg på et lager i fem år. Jeg er punktlig, flittig og god til at samarbejde. Jeg kan løfte tungt og er vant til at arbejde med computer.\n\nJeg kunne godt tænke mig at komme til en samtale. Jeg kan starte med det samme.\n\nMed venlig hilsen\nMaria Hansen",
+   "tips": "Структура: яку посаду, хто ти, досвід, риси характеру, прохання про співбесіду, дата початку. Пиши про факти, а не про загальні слова."
+  },
+  {
+   "title": "Пропозиція",
+   "task": "Din sprogskole eller arbejdsplads kan blive bedre. Skriv et forslag til din lærer eller leder, og forklar hvorfor det er en god idé. (ca. 100 ord)",
+   "sample": "Hej Lars,\n\nJeg har et forslag til vores sprogskole. Jeg synes, at vi skal have en samtaleklub hver fredag efter timen.\n\nFor det første kan vi øve os i at tale dansk uden at være bange for at lave fejl. For det andet lærer vi hinanden bedre at kende, og det gør klassen hyggeligere. Desuden koster det ikke noget, fordi vi kan sidde i kantinen.\n\nJeg tror, at mange har lyst til at deltage. Hvad synes du om idéen?\n\nVenlig hilsen\nMaria",
+   "tips": "Структура: твоя ідея, 2–3 аргументи (for det første, for det andet, desuden), запитання до адресата."
+  }
+ ],
+ "phrases": [
+  "Привітання: Kære Anne, / Hej Mikkel,",
+  "Мета: Jeg skriver, fordi … / Jeg vil gerne spørge, om …",
+  "Прохання: Kunne du …? / Det ville være rart, hvis …",
+  "Зв’язки: for det første, for det andet, desuden, til gengæld, derfor, men",
+  "Думка: Jeg synes, at … / Efter min mening …",
+  "Завершення: Tak for hjælpen. / Med venlig hilsen / Hilsen"
+ ]
+}

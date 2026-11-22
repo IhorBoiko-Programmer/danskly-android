@@ -1,0 +1,70 @@
+# Danskly
+
+Android-застосунок для вивчення данської мови українською: 1000+ слів за темами, граматика, вимова, вправи, читання й слухання у форматі Prøve i Dansk 3, письмо та ШІ-тренер.
+
+*An Android app for Ukrainian speakers learning Danish (Kotlin, Jetpack Compose).*
+
+## Можливості
+
+- **Сьогодні**: щоденний план з інтервальним повторенням (1, 3, 7, 21 день), правило дня, вправа дня, текст дня, денна мета й серія днів.
+- **Слова**: 1062 слова в 27 темах, картки, тест (4 режими, зокрема «на слух»), свої слова, сторінка слова з усіма часами чи формами та прикладами.
+- **Граматика**: 82 правила в 11 розділах, кожен приклад з перекладом і озвученням.
+- **Вимова**: алфавіт і складні звуки; звичайна й повільна (🐢) вимова; вибір голосу, швидкості й гучності.
+- **Завдання**: встав слово, збери речення, напиши данською (кнопки æ ø å), форми дієслів, рід і множина, диктант, мікс.
+- **Читання й слухання**: тексти як на іспиті з питаннями; режим «Слухати» ховає текст до перевірки.
+- **Письмо**: 6 типів текстів із прикладами, фразами й перевіркою ШІ.
+- **ШІ-тренер**: розмова й вправи; відповіді приходять потоком.
+
+ШІ працює через сервер [`server/`](server/) (Cloudflare Worker): ключі API зберігаються лише там, застосунок їх не бачить.
+
+## Архітектура
+
+```
+app/src/main/java/app/danskly/
+├── core/            ← уся логіка, чистий Kotlin без Android (тестується JUnit)
+│   ├── model/       контент і прогрес (data-класи)
+│   ├── content/     розбір вбудованих JSON-файлів
+│   ├── json/        маленький JSON-парсер без залежностей
+│   ├── learning/    репозиторій прогресу, інтервальне повторення, форми слів
+│   ├── exercise/    генератори вправ і тесту, перевірка відповідей, сесія
+│   ├── ai/          інтерфейс клієнта ШІ, промпти, розбір відповідей і SSE
+│   ├── speech/      інтерфейс озвучення й вибір голосу
+│   ├── navigation/  маршрути й стек екранів
+│   └── progress/    збереження прогресу (кодек)
+├── data/            ← Android-реалізації: TextToSpeech, OkHttp, SharedPreferences, assets
+├── feature/         ← екрани Compose, по папці на розділ
+├── ui/              ← тема, спільні компоненти, корінь застосунку
+├── AppGraph.kt      ← усі залежності в одному місці (ручний DI)
+└── MainActivity.kt
+app/src/main/assets/content/   ← слова, граматика, тексти (JSON)
+```
+
+Як додати нову функцію: маршрут у `core/navigation`, логіка в `core/` з тестами, екран у `feature/`, тести екрана, рядок у `ScreenshotTest`. Детально — у [.claude/skills/android-testing/SKILL.md](.claude/skills/android-testing/SKILL.md).
+
+## Збірка й тести
+
+Потрібен JDK 21 і Android SDK (Android Studio встановлює все сам).
+
+```bash
+./gradlew testDebugUnitTest          # усі тести (без емулятора)
+./gradlew recordRoborazziDebug       # тести + скріншоти всіх екранів → app/screenshots/
+./gradlew koverVerifyDebug           # перевірка 100% покриття рядків
+./gradlew assembleDebug              # APK для встановлення на телефон
+./gradlew bundleRelease              # App Bundle (.aab) для Google Play
+```
+
+Адреса сервера ШІ задається змінною `DANSKLY_AI_URL` (або `ai.serverUrl` у `local.properties`), а також у налаштуваннях застосунку.
+
+## CI
+
+GitHub Actions (`.github/workflows/android.yml`) на кожен пуш:
+1. запускає всі тести, робить скріншоти й перевіряє 100% покриття;
+2. збирає debug і release APK та App Bundle.
+
+Результати — у вкладці **Actions** → запуск → **Artifacts**: `danskly-apk`, `danskly-aab`, `screenshots`, `coverage`, `test-reports`.
+
+Підпис для Google Play: додай у **Settings → Secrets and variables → Actions** секрети `RELEASE_KEYSTORE_BASE64`, `RELEASE_STORE_PASSWORD`, `RELEASE_KEY_ALIAS`, `RELEASE_KEY_PASSWORD`. Без них release-збірка підписується debug-ключем (лише для тестування).
+
+## Публікація
+
+Покрокова інструкція й матеріали для сторінки в магазині — у [store/](store/) і [docs/PLAY_RELEASE.md](docs/PLAY_RELEASE.md).

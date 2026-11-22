@@ -1,0 +1,1584 @@
+[
+ {
+  "title": "Іменники",
+  "icon": "🏠",
+  "rules": [
+   {
+    "title": "Рід: en чи et",
+    "body": "Іменник має спільний рід (en) або середній (et). Приблизно три слова з чотирьох — en, тому вчи слово відразу з артиклем.",
+    "examples": [
+     {
+      "da": "*en* bog",
+      "uk": "книга"
+     },
+     {
+      "da": "*et* hus",
+      "uk": "будинок"
+     },
+     {
+      "da": "*en* kvinde, *et* barn",
+      "uk": "жінка, дитина"
+     }
+    ]
+   },
+   {
+    "title": "Означена форма",
+    "body": "Означений артикль додається в кінець слова: en → -en, et → -et. Якщо слово закінчується на -e, додається лише -n або -t.",
+    "examples": [
+     {
+      "da": "en bog → bog*en*",
+      "uk": "книга → ця книга"
+     },
+     {
+      "da": "et hus → hus*et*",
+      "uk": "будинок → цей будинок"
+     },
+     {
+      "da": "en pige → pige*n*",
+      "uk": "дівчина → ця дівчина"
+     }
+    ]
+   },
+   {
+    "title": "Множина",
+    "body": "Три основні закінчення: -er, -e або без закінчення. Часто змінюється голосна, тому вчи множину разом зі словом.",
+    "examples": [
+     {
+      "da": "en dag → dag*e*",
+      "uk": "день → дні"
+     },
+     {
+      "da": "en bog → b*ø*ger",
+      "uk": "книга → книги"
+     },
+     {
+      "da": "et barn → b*ø*rn",
+      "uk": "дитина → діти"
+     },
+     {
+      "da": "en lærer → lærer*e*",
+      "uk": "вчитель → вчителі"
+     }
+    ]
+   },
+   {
+    "title": "Присвійний -s",
+    "body": "Приналежність виражається додаванням -s, без апострофа.",
+    "examples": [
+     {
+      "da": "Anne*s* bil",
+      "uk": "машина Анни"
+     },
+     {
+      "da": "min vens hus",
+      "uk": "будинок мого друга"
+     }
+    ]
+   },
+   {
+    "title": "Неправильна множина",
+    "body": "Частина слів змінює голосну або має особливу форму. Їх варто вивчити окремо.",
+    "examples": [
+     {
+      "da": "et barn → *børn*",
+      "uk": "дитина → діти"
+     },
+     {
+      "da": "en mand → *mænd*",
+      "uk": "чоловік → чоловіки"
+     },
+     {
+      "da": "en fod → *fødder*",
+      "uk": "стопа → стопи"
+     },
+     {
+      "da": "et øje → *øjne*",
+      "uk": "око → очі"
+     },
+     {
+      "da": "en sko → *sko*",
+      "uk": "черевик → черевики"
+     }
+    ]
+   },
+   {
+    "title": "Складні слова",
+    "body": "Данська легко з’єднує слова в одне. Рід і множину визначає остання частина. Між частинами часто з’являється -s- або -e-.",
+    "examples": [
+     {
+      "da": "et køkken + et bord → et *køkkenbord*",
+      "uk": "кухонний стіл"
+     },
+     {
+      "da": "et arbejde + en tid → en *arbejdstid*",
+      "uk": "робочий час"
+     },
+     {
+      "da": "en skole + en lærer → en *skolelærer*",
+      "uk": "шкільний учитель"
+     }
+    ]
+   },
+   {
+    "title": "Незлічувані іменники",
+    "body": "Речовини й абстрактні поняття вживаються без en/et. Для «трохи» кажуть noget, для «багато» meget. Penge (гроші) завжди в множині.",
+    "examples": [
+     {
+      "da": "Jeg drikker *vand*.",
+      "uk": "Я п’ю воду."
+     },
+     {
+      "da": "Kan jeg få *noget* mælk?",
+      "uk": "Можна трохи молока?"
+     },
+     {
+      "da": "Har du *mange penge*?",
+      "uk": "У тебе багато грошей?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Займенники",
+  "icon": "👤",
+  "rules": [
+   {
+    "title": "Особові",
+    "body": "Підмет: jeg, du, han, hun, den/det, vi, I, de. Додаток: mig, dig, ham, hende, den/det, os, jer, dem.",
+    "examples": [
+     {
+      "da": "*Jeg* kender *dig*.",
+      "uk": "Я знаю тебе."
+     },
+     {
+      "da": "*Hun* hjælper *mig*.",
+      "uk": "Вона допомагає мені."
+     },
+     {
+      "da": "*Vi* ser *dem* i morgen.",
+      "uk": "Ми побачимо їх завтра."
+     }
+    ]
+   },
+   {
+    "title": "Присвійні",
+    "body": "min/mit/mine, din/dit/dine залежать від роду й числа речі. Hans, hendes, vores, jeres, deres не змінюються.",
+    "examples": [
+     {
+      "da": "*min* bil, *mit* hus, *mine* børn",
+      "uk": "моя машина, мій дім, мої діти"
+     },
+     {
+      "da": "*hendes* bror",
+      "uk": "її брат"
+     },
+     {
+      "da": "*vores* lejlighed",
+      "uk": "наша квартира"
+     }
+    ]
+   },
+   {
+    "title": "Свій: sin/sit/sine",
+    "body": "Якщо власник — підмет цього ж речення, вживай sin/sit/sine. Якщо це інша особа — hans/hendes.",
+    "examples": [
+     {
+      "da": "Han elsker *sin* kone.",
+      "uk": "Він кохає свою дружину."
+     },
+     {
+      "da": "Han ser *hans* bror.",
+      "uk": "Він бачить його (чужого) брата."
+     }
+    ]
+   },
+   {
+    "title": "Питальні й вказівні",
+    "body": "hvem (хто), hvad (що), hvilken/hvilket/hvilke (який), denne/dette/disse (цей).",
+    "examples": [
+     {
+      "da": "*Hvem* er det?",
+      "uk": "Хто це?"
+     },
+     {
+      "da": "*Hvilket* hus bor du i?",
+      "uk": "У якому будинку ти живеш?"
+     }
+    ]
+   },
+   {
+    "title": "Зворотний sig",
+    "body": "sig вживається, коли дія повертається на підмет (han, hun, de). Для jeg, du, vi: mig, dig, os.",
+    "examples": [
+     {
+      "da": "Han vasker *sig*.",
+      "uk": "Він миється."
+     },
+     {
+      "da": "Jeg glæder *mig*.",
+      "uk": "Я з нетерпінням чекаю."
+     }
+    ]
+   },
+   {
+    "title": "Відносні som і der",
+    "body": "som вводить означальне речення й може бути підметом або додатком. der вживається лише як підмет. Якщо som є додатком, його часто пропускають.",
+    "examples": [
+     {
+      "da": "Manden, *som* bor her, er læge.",
+      "uk": "Чоловік, який тут живе, — лікар."
+     },
+     {
+      "da": "Kvinden, *der* ringede, hedder Anne.",
+      "uk": "Жінку, яка телефонувала, звати Анна."
+     },
+     {
+      "da": "Bogen, (som) jeg læser, er god.",
+      "uk": "Книга, яку я читаю, добра."
+     }
+    ]
+   },
+   {
+    "title": "Неозначені займенники",
+    "body": "nogen (хтось, якісь), noget (щось), nogle (кілька), ingen (ніхто, жоден), intet (ніщо), alle (усі), alt (усе), hver/hvert (кожен).",
+    "examples": [
+     {
+      "da": "Er der *nogen* hjemme?",
+      "uk": "Є хтось удома?"
+     },
+     {
+      "da": "Jeg har *noget* at sige.",
+      "uk": "Мені є що сказати."
+     },
+     {
+      "da": "*Nogle* venner kommer i aften.",
+      "uk": "Увечері прийдуть кілька друзів."
+     },
+     {
+      "da": "Der er *ingen* mælk.",
+      "uk": "Молока немає."
+     },
+     {
+      "da": "*Hver* dag lærer jeg ti ord.",
+      "uk": "Щодня я вчу десять слів."
+     }
+    ]
+   },
+   {
+    "title": "Безособове man",
+    "body": "man означає «люди загалом» і вживається з дієсловом як він/вона. Часто перекладається безособовою формою.",
+    "examples": [
+     {
+      "da": "*Man* må ikke ryge her.",
+      "uk": "Тут не можна палити."
+     },
+     {
+      "da": "Hvordan siger *man* det på dansk?",
+      "uk": "Як це кажуть данською?"
+     }
+    ]
+   },
+   {
+    "title": "Формальні det і der",
+    "body": "det стоїть на місці підмета в реченнях про погоду, час, оцінки. der er означає «є, існує».",
+    "examples": [
+     {
+      "da": "*Det* regner.",
+      "uk": "Іде дощ."
+     },
+     {
+      "da": "*Det* er svært at lære dansk.",
+      "uk": "Вивчати данську важко."
+     },
+     {
+      "da": "*Der er* en bank på hjørnet.",
+      "uk": "На розі є банк."
+     },
+     {
+      "da": "*Der er* mange mennesker i dag.",
+      "uk": "Сьогодні багато людей."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Дієслова",
+  "icon": "🏃",
+  "rules": [
+   {
+    "title": "Теперішній час",
+    "body": "Не змінюється за особами: до кореня додається -r або -er.",
+    "examples": [
+     {
+      "da": "at bo → jeg bo*r*",
+      "uk": "жити → я живу"
+     },
+     {
+      "da": "at købe → vi købe*r*",
+      "uk": "купувати → ми купуємо"
+     },
+     {
+      "da": "at spise → de spise*r*",
+      "uk": "їсти → вони їдять"
+     }
+    ]
+   },
+   {
+    "title": "Минулий час",
+    "body": "Правильні дієслова: -ede або -te. Неправильні треба вчити напам’ять.",
+    "examples": [
+     {
+      "da": "Jeg bo*ede* i Odense.",
+      "uk": "Я жив в Оденсе."
+     },
+     {
+      "da": "Hun køb*te* en bog.",
+      "uk": "Вона купила книгу."
+     },
+     {
+      "da": "Vi *var* i Aarhus.",
+      "uk": "Ми були в Орхусі."
+     }
+    ]
+   },
+   {
+    "title": "Перфект: har/er + дієприкметник",
+    "body": "Минуле, пов’язане з теперішнім. Зазвичай har, а для руху й зміни стану — er.",
+    "examples": [
+     {
+      "da": "Jeg *har boet* her i to år.",
+      "uk": "Я живу тут уже два роки."
+     },
+     {
+      "da": "Han *er kommet* hjem.",
+      "uk": "Він прийшов додому."
+     },
+     {
+      "da": "Har du *spist*?",
+      "uk": "Ти вже поїв?"
+     }
+    ]
+   },
+   {
+    "title": "Неправильні дієслова",
+    "body": "Форми: інфінітив – минулий – дієприкметник.",
+    "examples": [
+     {
+      "da": "at være – var – været",
+      "uk": "бути"
+     },
+     {
+      "da": "at have – havde – haft",
+      "uk": "мати"
+     },
+     {
+      "da": "at gå – gik – gået",
+      "uk": "йти"
+     },
+     {
+      "da": "at se – så – set",
+      "uk": "бачити"
+     },
+     {
+      "da": "at tage – tog – taget",
+      "uk": "брати"
+     },
+     {
+      "da": "at give – gav – givet",
+      "uk": "давати"
+     },
+     {
+      "da": "at skrive – skrev – skrevet",
+      "uk": "писати"
+     },
+     {
+      "da": "at finde – fandt – fundet",
+      "uk": "знаходити"
+     },
+     {
+      "da": "at sige – sagde – sagt",
+      "uk": "казати"
+     },
+     {
+      "da": "at drikke – drak – drukket",
+      "uk": "пити"
+     }
+    ]
+   },
+   {
+    "title": "Модальні дієслова",
+    "body": "kan (вмію, можу), skal (маю), vil (хочу), må (мушу, можна), bør (варто) + інфінітив без at.",
+    "examples": [
+     {
+      "da": "Jeg *kan* tale dansk.",
+      "uk": "Я вмію говорити данською."
+     },
+     {
+      "da": "Du *skal* komme kl. 8.",
+      "uk": "Ти маєш прийти о 8."
+     },
+     {
+      "da": "Vi *vil* gerne bestille bord.",
+      "uk": "Ми хочемо замовити столик."
+     },
+     {
+      "da": "Man *må* ikke ryge her.",
+      "uk": "Тут не можна палити."
+     }
+    ]
+   },
+   {
+    "title": "Майбутнє",
+    "body": "Часто vil/skal + інфінітив або kommer til at. Для планів досить теперішнього часу з обставиною.",
+    "examples": [
+     {
+      "da": "Jeg *rejser* i morgen.",
+      "uk": "Я їду завтра."
+     },
+     {
+      "da": "Det *kommer til at* regne.",
+      "uk": "Піде дощ."
+     },
+     {
+      "da": "Hun *vil* blive læge.",
+      "uk": "Вона стане лікаркою."
+     }
+    ]
+   },
+   {
+    "title": "Наказовий спосіб",
+    "body": "Корінь дієслова без закінчення. Для ввічливості додай tak.",
+    "examples": [
+     {
+      "da": "*Kom* herind!",
+      "uk": "Заходь сюди!"
+     },
+     {
+      "da": "*Vent* et øjeblik, tak.",
+      "uk": "Зачекайте хвилинку, будь ласка."
+     },
+     {
+      "da": "*Skriv* til mig.",
+      "uk": "Напиши мені."
+     }
+    ]
+   },
+   {
+    "title": "Пасив",
+    "body": "Інфінітив + -s або blive + дієприкметник.",
+    "examples": [
+     {
+      "da": "Bogen *læses* af mange.",
+      "uk": "Книгу читають багато людей."
+     },
+     {
+      "da": "Huset *blev bygget* i 1990.",
+      "uk": "Будинок збудували в 1990 році."
+     }
+    ]
+   },
+   {
+    "title": "Плюсквамперфект",
+    "body": "havde/var + дієприкметник. Показує дію, що відбулася раніше за іншу дію в минулому.",
+    "examples": [
+     {
+      "da": "Jeg *havde* allerede *spist*, da han kom.",
+      "uk": "Я вже поїв, коли він прийшов."
+     },
+     {
+      "da": "Toget *var kørt*, da vi kom.",
+      "uk": "Потяг уже поїхав, коли ми прийшли."
+     }
+    ]
+   },
+   {
+    "title": "Дієслова на -s",
+    "body": "Деякі дієслова завжди мають закінчення -s: synes, mødes, ses, findes, lykkes. Вони не мають наказової форми.",
+    "examples": [
+     {
+      "da": "Jeg *synes*, det er en god idé.",
+      "uk": "Я вважаю, що це гарна ідея."
+     },
+     {
+      "da": "Vi *ses* i morgen!",
+      "uk": "Побачимось завтра!"
+     },
+     {
+      "da": "Der *findes* mange muligheder.",
+      "uk": "Існує багато можливостей."
+     }
+    ]
+   },
+   {
+    "title": "Зворотні дієслова",
+    "body": "Дієслово + займенник: mig, dig, sig, os, jer, sig. Часті: glæde sig, skynde sig, sætte sig, føle sig, interessere sig for.",
+    "examples": [
+     {
+      "da": "Jeg *glæder mig* til ferien.",
+      "uk": "Я з нетерпінням чекаю відпустки."
+     },
+     {
+      "da": "Vi *skynder os*.",
+      "uk": "Ми поспішаємо."
+     },
+     {
+      "da": "Hun *føler sig* træt.",
+      "uk": "Вона почувається втомленою."
+     },
+     {
+      "da": "*Sæt dig* ned!",
+      "uk": "Сідай!"
+     }
+    ]
+   },
+   {
+    "title": "Дієслова з часткою",
+    "body": "Частка (op, ud, på, af, ind) змінює значення і стоїть після додатка.",
+    "examples": [
+     {
+      "da": "Jeg *står op* kl. 7.",
+      "uk": "Я встаю о 7."
+     },
+     {
+      "da": "Hun *tager* jakken *på*.",
+      "uk": "Вона вдягає куртку."
+     },
+     {
+      "da": "Jeg kan ikke *finde ud af* det.",
+      "uk": "Я не можу в цьому розібратися."
+     },
+     {
+      "da": "*Hold op* med det!",
+      "uk": "Припини це!"
+     }
+    ]
+   },
+   {
+    "title": "Дія в процесі",
+    "body": "Данська не має окремого тривалого часу. Замість нього: være ved at або sidde/stå/ligge og + дієслово.",
+    "examples": [
+     {
+      "da": "Jeg *er ved at* lave mad.",
+      "uk": "Я саме готую їжу."
+     },
+     {
+      "da": "Hun *sidder og* læser.",
+      "uk": "Вона сидить і читає."
+     },
+     {
+      "da": "De *står og* venter på bussen.",
+      "uk": "Вони стоять і чекають автобус."
+     }
+    ]
+   },
+   {
+    "title": "Звичка й щойно",
+    "body": "plejer at — «зазвичай»; har lige — «щойно»; skal til at — «якраз збираюся».",
+    "examples": [
+     {
+      "da": "Jeg *plejer at* cykle på arbejde.",
+      "uk": "Я зазвичай їжджу на роботу велосипедом."
+     },
+     {
+      "da": "Jeg *har lige* spist.",
+      "uk": "Я щойно поїв."
+     },
+     {
+      "da": "Vi *skal til at* gå.",
+      "uk": "Ми якраз збираємося йти."
+     }
+    ]
+   },
+   {
+    "title": "Умовний спосіб",
+    "body": "ville + інфінітив: «я б». Нереальна умова: hvis + минулий час, головне речення з ville.",
+    "examples": [
+     {
+      "da": "Jeg *ville* gerne have en kaffe.",
+      "uk": "Я б хотів каву."
+     },
+     {
+      "da": "*Hvis* jeg *havde* tid, *ville* jeg rejse.",
+      "uk": "Якби я мав час, я б подорожував."
+     },
+     {
+      "da": "*Hvis* jeg *havde vidst* det, *ville* jeg *være kommet*.",
+      "uk": "Якби я знав, я б прийшов."
+     }
+    ]
+   },
+   {
+    "title": "Модальні в минулому",
+    "body": "Форми минулого часу модальних дієслів: kunne, skulle, ville, måtte, burde.",
+    "examples": [
+     {
+      "da": "Jeg *kunne* ikke komme.",
+      "uk": "Я не міг прийти."
+     },
+     {
+      "da": "Du *burde* ringe til lægen.",
+      "uk": "Тобі варто зателефонувати лікареві."
+     },
+     {
+      "da": "Vi *skulle* mødes kl. 10.",
+      "uk": "Ми мали зустрітися о 10."
+     }
+    ]
+   },
+   {
+    "title": "Інфінітив з at і без at",
+    "body": "Після модальних дієслів at не ставиться. Після інших дієслів і виразів потрібне at.",
+    "examples": [
+     {
+      "da": "Jeg *kan* svømme.",
+      "uk": "Я вмію плавати."
+     },
+     {
+      "da": "Jeg *prøver at* lære dansk.",
+      "uk": "Я намагаюся вивчити данську."
+     },
+     {
+      "da": "Det er sjovt *at* rejse.",
+      "uk": "Подорожувати весело."
+     }
+    ]
+   },
+   {
+    "title": "Непряма мова",
+    "body": "Після дієслова в минулому часі дієслово в підрядному реченні теж переходить у минулий.",
+    "examples": [
+     {
+      "da": "Han siger, at han *er* træt.",
+      "uk": "Він каже, що втомлений."
+     },
+     {
+      "da": "Han sagde, at han *var* træt.",
+      "uk": "Він сказав, що втомлений."
+     }
+    ]
+   },
+   {
+    "title": "Дієприкметник на -ende",
+    "body": "Утворюється від інфінітива + -nde. Вживається як прикметник або після komme.",
+    "examples": [
+     {
+      "da": "et *smilende* barn",
+      "uk": "усміхнена дитина"
+     },
+     {
+      "da": "Han kom *løbende*.",
+      "uk": "Він прибіг."
+     }
+    ]
+   },
+   {
+    "title": "Як справи: at have det",
+    "body": "Стан людини описують через have det.",
+    "examples": [
+     {
+      "da": "Hvordan *har du det*?",
+      "uk": "Як ти?"
+     },
+     {
+      "da": "Jeg *har det* godt.",
+      "uk": "У мене все добре."
+     },
+     {
+      "da": "Hun *har det* ikke så godt.",
+      "uk": "Їй не дуже добре."
+     }
+    ]
+   },
+   {
+    "title": "Ще неправильні дієслова",
+    "body": "Інфінітив – минулий – дієприкметник.",
+    "examples": [
+     {
+      "da": "at komme – kom – kommet",
+      "uk": "приходити"
+     },
+     {
+      "da": "at sove – sov – sovet",
+      "uk": "спати"
+     },
+     {
+      "da": "at sidde – sad – siddet",
+      "uk": "сидіти"
+     },
+     {
+      "da": "at stå – stod – stået",
+      "uk": "стояти"
+     },
+     {
+      "da": "at ligge – lå – ligget",
+      "uk": "лежати"
+     },
+     {
+      "da": "at sætte – satte – sat",
+      "uk": "ставити"
+     },
+     {
+      "da": "at vælge – valgte – valgt",
+      "uk": "обирати"
+     },
+     {
+      "da": "at fortælle – fortalte – fortalt",
+      "uk": "розповідати"
+     },
+     {
+      "da": "at spørge – spurgte – spurgt",
+      "uk": "питати"
+     },
+     {
+      "da": "at hjælpe – hjalp – hjulpet",
+      "uk": "допомагати"
+     },
+     {
+      "da": "at vinde – vandt – vundet",
+      "uk": "вигравати"
+     },
+     {
+      "da": "at vide – vidste – vidst",
+      "uk": "знати"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Прикметники",
+  "icon": "🎨",
+  "rules": [
+   {
+    "title": "Узгодження",
+    "body": "en: основна форма; et: +t; множина й означена форма: +e.",
+    "examples": [
+     {
+      "da": "en *stor* by",
+      "uk": "велике місто"
+     },
+     {
+      "da": "et *stort* hus",
+      "uk": "великий будинок"
+     },
+     {
+      "da": "*store* byer",
+      "uk": "великі міста"
+     }
+    ]
+   },
+   {
+    "title": "Означена форма",
+    "body": "den/det/de + прикметник на -e + іменник.",
+    "examples": [
+     {
+      "da": "den *store* by",
+      "uk": "це велике місто"
+     },
+     {
+      "da": "det *nye* job",
+      "uk": "нова робота"
+     },
+     {
+      "da": "de *gamle* huse",
+      "uk": "старі будинки"
+     }
+    ]
+   },
+   {
+    "title": "Ступені порівняння",
+    "body": "Правильні: -ere, -est. Часті неправильні форми варто вивчити.",
+    "examples": [
+     {
+      "da": "billig – billig*ere* – billig*st*",
+      "uk": "дешевий – дешевший – найдешевший"
+     },
+     {
+      "da": "god – bedre – bedst",
+      "uk": "добрий – кращий – найкращий"
+     },
+     {
+      "da": "mange – flere – flest",
+      "uk": "багато – більше – найбільше"
+     },
+     {
+      "da": "lille – mindre – mindst",
+      "uk": "малий – менший – найменший"
+     }
+    ]
+   },
+   {
+    "title": "Незмінні прикметники",
+    "body": "Прикметники на -e не змінюються. На -sk не отримують -t. На -t не подвоюють t.",
+    "examples": [
+     {
+      "da": "et *moderne* hus",
+      "uk": "сучасний будинок"
+     },
+     {
+      "da": "*stille* gader",
+      "uk": "тихі вулиці"
+     },
+     {
+      "da": "et *dansk* firma",
+      "uk": "данська фірма"
+     },
+     {
+      "da": "et *let* job",
+      "uk": "легка робота"
+     }
+    ]
+   },
+   {
+    "title": "lille і små",
+    "body": "lille в однині, små у множині. В означеній однині теж lille.",
+    "examples": [
+     {
+      "da": "en *lille* by, et *lille* hus",
+      "uk": "маленьке місто, маленький будинок"
+     },
+     {
+      "da": "*små* byer",
+      "uk": "маленькі міста"
+     },
+     {
+      "da": "den *lille* pige",
+      "uk": "ця маленька дівчинка"
+     }
+    ]
+   },
+   {
+    "title": "egen, eget, egne",
+    "body": "«Власний» узгоджується як прикметник.",
+    "examples": [
+     {
+      "da": "min *egen* bil",
+      "uk": "моя власна машина"
+     },
+     {
+      "da": "mit *eget* værelse",
+      "uk": "моя власна кімната"
+     },
+     {
+      "da": "mine *egne* børn",
+      "uk": "мої власні діти"
+     }
+    ]
+   },
+   {
+    "title": "Прислівник з прикметника",
+    "body": "Щоб сказати «як» роблять дію, прикметник отримує -t.",
+    "examples": [
+     {
+      "da": "Hun taler *godt* dansk.",
+      "uk": "Вона добре говорить данською."
+     },
+     {
+      "da": "Han kører *hurtigt*.",
+      "uk": "Він швидко їздить."
+     }
+    ]
+   },
+   {
+    "title": "Порівняння: end, som, mere",
+    "body": "end — «ніж». lige så … som — «такий самий, як». Для довгих слів — mere/mest.",
+    "examples": [
+     {
+      "da": "Peter er *højere end* Jens.",
+      "uk": "Петер вищий за Єнса."
+     },
+     {
+      "da": "Hun er *lige så* gammel *som* jeg.",
+      "uk": "Вона такого ж віку, як я."
+     },
+     {
+      "da": "Det er den *mest* populære app.",
+      "uk": "Це найпопулярніший застосунок."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Прислівники",
+  "icon": "🧭",
+  "rules": [
+   {
+    "title": "Місце й напрямок",
+    "body": "Пари прислівників: hjem/hjemme, ind/inde, ud/ude, op/oppe, ned/nede. Перший — рух, другий — перебування.",
+    "examples": [
+     {
+      "da": "Jeg går *hjem*.",
+      "uk": "Я йду додому."
+     },
+     {
+      "da": "Jeg er *hjemme*.",
+      "uk": "Я вдома."
+     },
+     {
+      "da": "Kom *ind*!",
+      "uk": "Заходь!"
+     },
+     {
+      "da": "Børnene leger *ude*.",
+      "uk": "Діти граються надворі."
+     }
+    ]
+   },
+   {
+    "title": "Позиція коротких прислівників",
+    "body": "ikke, aldrig, altid, også, gerne, kun, ofte, allerede стоять там само, де ikke: після дієслова в головному реченні, перед ним у підрядному.",
+    "examples": [
+     {
+      "da": "Jeg drikker *altid* kaffe.",
+      "uk": "Я завжди п’ю каву."
+     },
+     {
+      "da": "Jeg ved, at han *altid* drikker kaffe.",
+      "uk": "Я знаю, що він завжди п’є каву."
+     },
+     {
+      "da": "Har du *også* en bil?",
+      "uk": "У тебе теж є машина?"
+     }
+    ]
+   },
+   {
+    "title": "gerne",
+    "body": "gerne означає «охоче». З vil/ville це ввічливе «хотів би».",
+    "examples": [
+     {
+      "da": "Jeg vil *gerne* have en kop te.",
+      "uk": "Я хотів би чашку чаю."
+     },
+     {
+      "da": "Jeg spiller *gerne* fodbold.",
+      "uk": "Я охоче граю у футбол."
+     }
+    ]
+   },
+   {
+    "title": "Частки jo, nok, vel",
+    "body": "Маленькі слова, що додають відтінок: jo — «адже», nok — «мабуть», vel — «же, мабуть» у питаннях.",
+    "examples": [
+     {
+      "da": "Det er *jo* rigtigt.",
+      "uk": "Це ж правда."
+     },
+     {
+      "da": "Han kommer *nok* i morgen.",
+      "uk": "Він, мабуть, прийде завтра."
+     },
+     {
+      "da": "Du er *vel* ikke syg?",
+      "uk": "Ти ж не хворий?"
+     }
+    ]
+   },
+   {
+    "title": "Ще, вже, досі",
+    "body": "endnu ikke — «ще не», allerede — «вже», stadig — «досі».",
+    "examples": [
+     {
+      "da": "Jeg er *ikke* færdig *endnu*.",
+      "uk": "Я ще не закінчив."
+     },
+     {
+      "da": "Hun er *allerede* gået.",
+      "uk": "Вона вже пішла."
+     },
+     {
+      "da": "Han bor *stadig* i Aarhus.",
+      "uk": "Він досі живе в Орхусі."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Прийменники",
+  "icon": "📍",
+  "rules": [
+   {
+    "title": "Місце",
+    "body": "i: всередині міста чи країни; på: установи, острови, поверхні; hos: у людини вдома; ved: біля.",
+    "examples": [
+     {
+      "da": "Jeg bor *i* København.",
+      "uk": "Я живу в Копенгагені."
+     },
+     {
+      "da": "Hun er *på* arbejde.",
+      "uk": "Вона на роботі."
+     },
+     {
+      "da": "Vi er *hos* Anne.",
+      "uk": "Ми в Анни."
+     },
+     {
+      "da": "Bordet står *ved* vinduet.",
+      "uk": "Стіл стоїть біля вікна."
+     }
+    ]
+   },
+   {
+    "title": "Напрямок",
+    "body": "til: рух до; fra: звідки; hjem: додому (без til).",
+    "examples": [
+     {
+      "da": "Jeg rejser *til* Danmark.",
+      "uk": "Я їду до Данії."
+     },
+     {
+      "da": "Han kommer *fra* Ukraine.",
+      "uk": "Він родом з України."
+     },
+     {
+      "da": "Vi går *hjem*.",
+      "uk": "Ми йдемо додому."
+     }
+    ]
+   },
+   {
+    "title": "Час",
+    "body": "kl.: година; om: через або у часі; i: протягом; på: наступного дня тижня; før/efter: до/після.",
+    "examples": [
+     {
+      "da": "Mødet er *kl.* 14.",
+      "uk": "Зустріч о 14:00."
+     },
+     {
+      "da": "Jeg kommer *om* en time.",
+      "uk": "Я прийду за годину."
+     },
+     {
+      "da": "Jeg har boet her *i* to år.",
+      "uk": "Я живу тут два роки."
+     },
+     {
+      "da": "Vi ses *på* mandag.",
+      "uk": "Побачимось у понеділок."
+     }
+    ]
+   },
+   {
+    "title": "Інші частотні",
+    "body": "med (з), uden (без), om (про), for (для), af (від, з), mod (проти), mellem (між).",
+    "examples": [
+     {
+      "da": "Jeg taler *med* min chef.",
+      "uk": "Я розмовляю з керівником."
+     },
+     {
+      "da": "kaffe *uden* sukker",
+      "uk": "кава без цукру"
+     },
+     {
+      "da": "Vi taler *om* arbejde.",
+      "uk": "Ми говоримо про роботу."
+     },
+     {
+      "da": "Det er godt *for* dig.",
+      "uk": "Це добре для тебе."
+     }
+    ]
+   },
+   {
+    "title": "Час: for … siden, på, i",
+    "body": "for … siden — «тому»; på + період — «за»; i + період — «протягом».",
+    "examples": [
+     {
+      "da": "Jeg kom til Danmark *for* to år *siden*.",
+      "uk": "Я приїхав до Данії два роки тому."
+     },
+     {
+      "da": "Jeg lærte det *på* en uge.",
+      "uk": "Я вивчив це за тиждень."
+     },
+     {
+      "da": "Jeg boede der *i* fem år.",
+      "uk": "Я жив там п’ять років."
+     }
+    ]
+   },
+   {
+    "title": "Сталі прийменники після дієслів",
+    "body": "Деякі дієслова завжди вимагають свого прийменника. Вчи їх разом.",
+    "examples": [
+     {
+      "da": "Jeg *tænker på* dig.",
+      "uk": "Я думаю про тебе."
+     },
+     {
+      "da": "Vi *venter på* bussen.",
+      "uk": "Ми чекаємо автобус."
+     },
+     {
+      "da": "Jeg *glæder mig til* weekenden.",
+      "uk": "Я чекаю вихідних."
+     },
+     {
+      "da": "Hun er *bange for* hunde.",
+      "uk": "Вона боїться собак."
+     },
+     {
+      "da": "Jeg er *interesseret i* jobbet.",
+      "uk": "Мене цікавить ця робота."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Сполучники",
+  "icon": "🔗",
+  "rules": [
+   {
+    "title": "Сурядні: og, men, eller, for, så",
+    "body": "Порядок слів після них не змінюється.",
+    "examples": [
+     {
+      "da": "Jeg er træt, *men* jeg arbejder.",
+      "uk": "Я втомлений, але працюю."
+     },
+     {
+      "da": "Vil du have te *eller* kaffe?",
+      "uk": "Хочеш чай чи каву?"
+     }
+    ]
+   },
+   {
+    "title": "Підрядні: at, fordi, hvis, når, selvom",
+    "body": "У підрядному реченні порядок такий: підмет, ikke чи прислівник, дієслово.",
+    "examples": [
+     {
+      "da": "Jeg tror, *at* han *ikke* kommer.",
+      "uk": "Думаю, що він не прийде."
+     },
+     {
+      "da": "Jeg bliver hjemme, *fordi* jeg er syg.",
+      "uk": "Я лишаюся вдома, бо хворий."
+     },
+     {
+      "da": "*Hvis* det regner, bliver vi hjemme.",
+      "uk": "Якщо піде дощ, залишимося вдома."
+     },
+     {
+      "da": "*Selvom* jeg er træt, arbejder jeg.",
+      "uk": "Хоч я втомлений, я працюю."
+     }
+    ]
+   },
+   {
+    "title": "Зв’язки для письма",
+    "body": "Слова, які роблять текст логічним: for det første, for det andet, desuden, til gengæld, derfor, endelig.",
+    "examples": [
+     {
+      "da": "*For det første* sparer man tid.",
+      "uk": "По-перше, економиться час."
+     },
+     {
+      "da": "*Desuden* er det billigere.",
+      "uk": "До того ж це дешевше."
+     },
+     {
+      "da": "*Til gengæld* er det ensomt.",
+      "uk": "Натомість це самотньо."
+     },
+     {
+      "da": "*Derfor* mener jeg, at …",
+      "uk": "Тому я вважаю, що …"
+     }
+    ]
+   },
+   {
+    "title": "da чи når",
+    "body": "da — одна подія в минулому. når — повторювана дія або майбутнє.",
+    "examples": [
+     {
+      "da": "*Da* jeg var barn, boede jeg i Kyiv.",
+      "uk": "Коли я був дитиною, я жив у Києві."
+     },
+     {
+      "da": "*Når* det regner, tager jeg bussen.",
+      "uk": "Коли йде дощ, я їду автобусом."
+     }
+    ]
+   },
+   {
+    "title": "hvis чи om",
+    "body": "hvis — «якщо» (умова). om — «чи» (непряме питання).",
+    "examples": [
+     {
+      "da": "*Hvis* du har tid, kan vi mødes.",
+      "uk": "Якщо маєш час, можемо зустрітися."
+     },
+     {
+      "da": "Jeg ved ikke, *om* han kommer.",
+      "uk": "Я не знаю, чи він прийде."
+     }
+    ]
+   },
+   {
+    "title": "fordi чи for",
+    "body": "Обидва означають «бо». Після fordi — порядок підрядного речення, після for — головного.",
+    "examples": [
+     {
+      "da": "Jeg bliver hjemme, *fordi* jeg *ikke har* tid.",
+      "uk": "Я лишаюся вдома, бо не маю часу."
+     },
+     {
+      "da": "Jeg bliver hjemme, *for* jeg *har ikke* tid.",
+      "uk": "Я лишаюся вдома, бо не маю часу."
+     }
+    ]
+   },
+   {
+    "title": "Парні сполучники",
+    "body": "både … og (і … і), enten … eller (або … або), hverken … eller (ні … ні).",
+    "examples": [
+     {
+      "da": "Hun taler *både* dansk *og* engelsk.",
+      "uk": "Вона говорить і данською, і англійською."
+     },
+     {
+      "da": "Vi kan *enten* tage toget *eller* bussen.",
+      "uk": "Ми можемо поїхати або потягом, або автобусом."
+     },
+     {
+      "da": "Jeg drikker *hverken* kaffe *eller* te.",
+      "uk": "Я не п’ю ні кави, ні чаю."
+     }
+    ]
+   },
+   {
+    "title": "Мета: for at",
+    "body": "for at + інфінітив означає «щоб».",
+    "examples": [
+     {
+      "da": "Jeg lærer dansk *for at* få et job.",
+      "uk": "Я вчу данську, щоб отримати роботу."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Порядок слів",
+  "icon": "🧱",
+  "rules": [
+   {
+    "title": "V2: дієслово на другому місці",
+    "body": "У головному реченні дієслово стоїть другим. Якщо на початку обставина, підмет іде після дієслова.",
+    "examples": [
+     {
+      "da": "Jeg *bor* i København.",
+      "uk": "Я живу в Копенгагені."
+     },
+     {
+      "da": "I dag *bor* jeg i Odense.",
+      "uk": "Сьогодні я живу в Оденсе."
+     }
+    ]
+   },
+   {
+    "title": "Питання",
+    "body": "Без питального слова дієслово перше. З hvad, hvor, hvornår, hvorfor, hvordan, hvem: слово, потім дієслово.",
+    "examples": [
+     {
+      "da": "*Bor* du her?",
+      "uk": "Ти тут живеш?"
+     },
+     {
+      "da": "*Hvornår* åbner banken?",
+      "uk": "Коли відкривається банк?"
+     }
+    ]
+   },
+   {
+    "title": "Заперечення ikke",
+    "body": "У головному реченні після дієслова, у підрядному перед ним. Aldrig (ніколи) поводиться так само.",
+    "examples": [
+     {
+      "da": "Jeg bor *ikke* her.",
+      "uk": "Я тут не живу."
+     },
+     {
+      "da": "Jeg ved, at han *ikke* bor her.",
+      "uk": "Я знаю, що він тут не живе."
+     },
+     {
+      "da": "Hun kommer *aldrig* for sent.",
+      "uk": "Вона ніколи не запізнюється."
+     }
+    ]
+   },
+   {
+    "title": "Непрямі питання",
+    "body": "Після «чи», «де», «коли» в середині речення — порядок підрядного речення: підмет перед дієсловом.",
+    "examples": [
+     {
+      "da": "Ved du, hvor *han bor*?",
+      "uk": "Знаєш, де він живе?"
+     },
+     {
+      "da": "Jeg spørger, om *hun kommer*.",
+      "uk": "Я питаю, чи вона прийде."
+     }
+    ]
+   },
+   {
+    "title": "Підрядне речення на початку",
+    "body": "Якщо речення починається з підрядного, далі одразу йде дієслово головного речення.",
+    "examples": [
+     {
+      "da": "Når jeg kommer hjem, *spiser jeg*.",
+      "uk": "Коли я приходжу додому, я їм."
+     },
+     {
+      "da": "Hvis det regner, *bliver vi* hjemme.",
+      "uk": "Якщо піде дощ, ми лишимося вдома."
+     }
+    ]
+   },
+   {
+    "title": "Займенник-додаток та ikke",
+    "body": "Короткий займенник-додаток стоїть перед ikke, звичайний іменник — після.",
+    "examples": [
+     {
+      "da": "Jeg kender *ham ikke*.",
+      "uk": "Я його не знаю."
+     },
+     {
+      "da": "Jeg kender *ikke* manden.",
+      "uk": "Я не знаю цього чоловіка."
+     }
+    ]
+   },
+   {
+    "title": "Виділення: det er … der/som",
+    "body": "Щоб підкреслити частину речення.",
+    "examples": [
+     {
+      "da": "*Det er* Anne, *der* har ringet.",
+      "uk": "Це Анна телефонувала."
+     },
+     {
+      "da": "*Det er* i morgen, *at* vi rejser.",
+      "uk": "Ми їдемо саме завтра."
+     }
+    ]
+   },
+   {
+    "title": "Схема головного речення",
+    "body": "Перше місце – дієслово – підмет (якщо не на першому місці) – ikke чи прислівник – друге дієслово – додаток – місце – час.",
+    "examples": [
+     {
+      "da": "Jeg *har ikke* set filmen i biografen i går.",
+      "uk": "Я не бачив цей фільм у кіно вчора."
+     },
+     {
+      "da": "I går *har* jeg *ikke* set filmen.",
+      "uk": "Учора я не бачив цей фільм."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Числа й час",
+  "icon": "🔢",
+  "rules": [
+   {
+    "title": "Числа 20–100",
+    "body": "Данська рахує по-своєму: 50 = halvtreds, 60 = tres, 70 = halvfjerds, 80 = firs, 90 = halvfems.",
+    "examples": [
+     {
+      "da": "tyve, tredive, fyrre",
+      "uk": "20, 30, 40"
+     },
+     {
+      "da": "halvtreds, tres",
+      "uk": "50, 60"
+     },
+     {
+      "da": "halvfjerds, firs, halvfems",
+      "uk": "70, 80, 90"
+     },
+     {
+      "da": "hundrede, tusind",
+      "uk": "100, 1000"
+     }
+    ]
+   },
+   {
+    "title": "Година",
+    "body": "halv + наступна година: halv tre = 2:30. kvart over = п’ятнадцять після, kvart i = без п’ятнадцяти.",
+    "examples": [
+     {
+      "da": "Klokken er *halv tre*.",
+      "uk": "Зараз 2:30."
+     },
+     {
+      "da": "*Kvart over* otte",
+      "uk": "8:15"
+     },
+     {
+      "da": "*Kvart i* ni",
+      "uk": "8:45"
+     }
+    ]
+   },
+   {
+    "title": "Порядкові числівники й дати",
+    "body": "1. første, 2. anden, 3. tredje, 4. fjerde. Дата: den 12. december.",
+    "examples": [
+     {
+      "da": "Min fødselsdag er *den 12. december*.",
+      "uk": "Мій день народження 12 грудня."
+     },
+     {
+      "da": "Det er *første* gang.",
+      "uk": "Це перший раз."
+     }
+    ]
+   },
+   {
+    "title": "Складені числа",
+    "body": "Одиниці кажуть перед десятками: 21 — «один і двадцять».",
+    "examples": [
+     {
+      "da": "21 = *enogtyve*",
+      "uk": "двадцять один"
+     },
+     {
+      "da": "47 = *syvogfyrre*",
+      "uk": "сорок сім"
+     },
+     {
+      "da": "85 = *femogfirs*",
+      "uk": "вісімдесят п’ять"
+     }
+    ]
+   },
+   {
+    "title": "Роки, ціни, телефони",
+    "body": "Роки до 2000 — сотнями. Телефон читають парами цифр. Кома в цінах відділяє ере.",
+    "examples": [
+     {
+      "da": "1995 = *nitten femoghalvfems*",
+      "uk": "1995"
+     },
+     {
+      "da": "2026 = *to tusind seksogtyve*",
+      "uk": "2026"
+     },
+     {
+      "da": "49,95 kr. = *niogfyrre femoghalvfems*",
+      "uk": "49,95 крони"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Правопис і кома",
+  "icon": "✏️",
+  "rules": [
+   {
+    "title": "Велика літера",
+    "body": "Дні, місяці, мови й національності пишуться з малої. З великої — I (ви, мн.) і ввічливе De.",
+    "examples": [
+     {
+      "da": "på *mandag* i *januar*",
+      "uk": "у понеділок у січні"
+     },
+     {
+      "da": "Hun taler *dansk*.",
+      "uk": "Вона говорить данською."
+     },
+     {
+      "da": "Han er *dansker*.",
+      "uk": "Він данець."
+     },
+     {
+      "da": "Kommer *I* i morgen?",
+      "uk": "Ви прийдете завтра?"
+     }
+    ]
+   },
+   {
+    "title": "Кома",
+    "body": "Після підрядного речення на початку кома обов’язкова. Перед підрядним реченням (at, fordi, hvis, som) кома необов’язкова: можна писати з нею або без неї, але однаково в усьому тексті.",
+    "examples": [
+     {
+      "da": "Jeg tror at det regner. / Jeg tror*,* at det regner.",
+      "uk": "Я думаю, що йде дощ."
+     },
+     {
+      "da": "Hvis det regner*,* bliver vi hjemme.",
+      "uk": "Якщо піде дощ, лишимося вдома."
+     }
+    ]
+   },
+   {
+    "title": "Присвійний апостроф",
+    "body": "Апостроф ставиться лише після імен, що закінчуються на s, x чи z.",
+    "examples": [
+     {
+      "da": "*Lars'* bil",
+      "uk": "машина Ларса"
+     },
+     {
+      "da": "*Annes* bil",
+      "uk": "машина Анни"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Вимова",
+  "icon": "🔊",
+  "rules": [
+   {
+    "title": "å, ø, æ",
+    "body": "Три додаткові літери. å ≈ «о», ø ≈ «ьо», æ ≈ «е» (відкрите).",
+    "examples": [
+     {
+      "da": "å",
+      "uk": "річка"
+     },
+     {
+      "da": "øl",
+      "uk": "пиво"
+     },
+     {
+      "da": "vælge",
+      "uk": "обирати"
+     }
+    ]
+   },
+   {
+    "title": "Тихі й м’які звуки",
+    "body": "Данське r після голосної майже не чути, а d у закінченнях часто м’який (як th в англійському this). Тому слухай більше, ніж читай.",
+    "examples": [
+     {
+      "da": "gade",
+      "uk": "вулиця"
+     },
+     {
+      "da": "hånd",
+      "uk": "кисть руки"
+     },
+     {
+      "da": "spiser",
+      "uk": "їсть"
+     }
+    ]
+   }
+  ]
+ }
+]

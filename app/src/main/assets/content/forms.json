@@ -1,0 +1,1447 @@
+{
+ "verbs": [
+  {
+   "infinitive": "være",
+   "present": "er",
+   "past": "var",
+   "participle": "været",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "have",
+   "present": "har",
+   "past": "havde",
+   "participle": "haft",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "gøre",
+   "present": "gør",
+   "past": "gjorde",
+   "participle": "gjort",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "gå",
+   "present": "går",
+   "past": "gik",
+   "participle": "gået",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "komme",
+   "present": "kommer",
+   "past": "kom",
+   "participle": "kommet",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "se",
+   "present": "ser",
+   "past": "så",
+   "participle": "set",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tage",
+   "present": "tager",
+   "past": "tog",
+   "participle": "taget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "give",
+   "present": "giver",
+   "past": "gav",
+   "participle": "givet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "sige",
+   "present": "siger",
+   "past": "sagde",
+   "participle": "sagt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "få",
+   "present": "får",
+   "past": "fik",
+   "participle": "fået",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vide",
+   "present": "ved",
+   "past": "vidste",
+   "participle": "vidst",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "kunne",
+   "present": "kan",
+   "past": "kunne",
+   "participle": "kunnet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "skulle",
+   "present": "skal",
+   "past": "skulle",
+   "participle": "skullet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "ville",
+   "present": "vil",
+   "past": "ville",
+   "participle": "villet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "måtte",
+   "present": "må",
+   "past": "måtte",
+   "participle": "måttet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "burde",
+   "present": "bør",
+   "past": "burde",
+   "participle": "burdet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "blive",
+   "present": "bliver",
+   "past": "blev",
+   "participle": "blevet",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "finde",
+   "present": "finder",
+   "past": "fandt",
+   "participle": "fundet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "drikke",
+   "present": "drikker",
+   "past": "drak",
+   "participle": "drukket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "spise",
+   "present": "spiser",
+   "past": "spiste",
+   "participle": "spist",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "sove",
+   "present": "sover",
+   "past": "sov",
+   "participle": "sovet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "ligge",
+   "present": "ligger",
+   "past": "lå",
+   "participle": "ligget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "sidde",
+   "present": "sidder",
+   "past": "sad",
+   "participle": "siddet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "stå",
+   "present": "står",
+   "past": "stod",
+   "participle": "stået",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "lægge",
+   "present": "lægger",
+   "past": "lagde",
+   "participle": "lagt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "sætte",
+   "present": "sætter",
+   "past": "satte",
+   "participle": "sat",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tælle",
+   "present": "tæller",
+   "past": "talte",
+   "participle": "talt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vælge",
+   "present": "vælger",
+   "past": "valgte",
+   "participle": "valgt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "sælge",
+   "present": "sælger",
+   "past": "solgte",
+   "participle": "solgt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "fortælle",
+   "present": "fortæller",
+   "past": "fortalte",
+   "participle": "fortalt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "spørge",
+   "present": "spørger",
+   "past": "spurgte",
+   "participle": "spurgt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bede",
+   "present": "beder",
+   "past": "bad",
+   "participle": "bedt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "skrive",
+   "present": "skriver",
+   "past": "skrev",
+   "participle": "skrevet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "synge",
+   "present": "synger",
+   "past": "sang",
+   "participle": "sunget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vinde",
+   "present": "vinder",
+   "past": "vandt",
+   "participle": "vundet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "hjælpe",
+   "present": "hjælper",
+   "past": "hjalp",
+   "participle": "hjulpet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bære",
+   "present": "bærer",
+   "past": "bar",
+   "participle": "båret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "falde",
+   "present": "falder",
+   "past": "faldt",
+   "participle": "faldet",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "holde",
+   "present": "holder",
+   "past": "holdt",
+   "participle": "holdt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "hedde",
+   "present": "hedder",
+   "past": "hed",
+   "participle": "heddet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "græde",
+   "present": "græder",
+   "past": "græd",
+   "participle": "grædt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "le",
+   "present": "ler",
+   "past": "lo",
+   "participle": "leet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "flyve",
+   "present": "flyver",
+   "past": "fløj",
+   "participle": "fløjet",
+   "auxiliary": "har/er"
+  },
+  {
+   "infinitive": "løbe",
+   "present": "løber",
+   "past": "løb",
+   "participle": "løbet",
+   "auxiliary": "har/er"
+  },
+  {
+   "infinitive": "dø",
+   "present": "dør",
+   "past": "døde",
+   "participle": "død",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "forstå",
+   "present": "forstår",
+   "past": "forstod",
+   "participle": "forstået",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "betyde",
+   "present": "betyder",
+   "past": "betød",
+   "participle": "betydet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "trække",
+   "present": "trækker",
+   "past": "trak",
+   "participle": "trukket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "lyve",
+   "present": "lyver",
+   "past": "løj",
+   "participle": "løjet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "følge",
+   "present": "følger",
+   "past": "fulgte",
+   "participle": "fulgt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "gælde",
+   "present": "gælder",
+   "past": "gjaldt",
+   "participle": "gjaldt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "nyde",
+   "present": "nyder",
+   "past": "nød",
+   "participle": "nydt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "smide",
+   "present": "smider",
+   "past": "smed",
+   "participle": "smidt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "undgå",
+   "present": "undgår",
+   "past": "undgik",
+   "participle": "undgået",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "sende",
+   "present": "sender",
+   "past": "sendte",
+   "participle": "sendt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tro",
+   "present": "tror",
+   "past": "troede",
+   "participle": "troet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bo",
+   "present": "bor",
+   "past": "boede",
+   "participle": "boet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bruge",
+   "present": "bruger",
+   "past": "brugte",
+   "participle": "brugt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "lære",
+   "present": "lærer",
+   "past": "lærte",
+   "participle": "lært",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "købe",
+   "present": "køber",
+   "past": "købte",
+   "participle": "købt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "glemme",
+   "present": "glemmer",
+   "past": "glemte",
+   "participle": "glemt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "huske",
+   "present": "husker",
+   "past": "huskede",
+   "participle": "husket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "arbejde",
+   "present": "arbejder",
+   "past": "arbejdede",
+   "participle": "arbejdet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tale",
+   "present": "taler",
+   "past": "talte",
+   "participle": "talt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "høre",
+   "present": "hører",
+   "past": "hørte",
+   "participle": "hørt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "læse",
+   "present": "læser",
+   "past": "læste",
+   "participle": "læst",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "ringe",
+   "present": "ringer",
+   "past": "ringede",
+   "participle": "ringet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vente",
+   "present": "venter",
+   "past": "ventede",
+   "participle": "ventet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "rejse",
+   "present": "rejser",
+   "past": "rejste",
+   "participle": "rejst",
+   "auxiliary": "har/er"
+  },
+  {
+   "infinitive": "kende",
+   "present": "kender",
+   "past": "kendte",
+   "participle": "kendt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tænke",
+   "present": "tænker",
+   "past": "tænkte",
+   "participle": "tænkt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "synes",
+   "present": "synes",
+   "past": "syntes",
+   "participle": "syntes",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "mødes",
+   "present": "mødes",
+   "past": "mødtes",
+   "participle": "mødtes",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "mene",
+   "present": "mener",
+   "past": "mente",
+   "participle": "ment",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "prøve",
+   "present": "prøver",
+   "past": "prøvede",
+   "participle": "prøvet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "leve",
+   "present": "lever",
+   "past": "levede",
+   "participle": "levet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "elske",
+   "present": "elsker",
+   "past": "elskede",
+   "participle": "elsket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "betale",
+   "present": "betaler",
+   "past": "betalte",
+   "participle": "betalt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "møde",
+   "present": "møder",
+   "past": "mødte",
+   "participle": "mødt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "begynde",
+   "present": "begynder",
+   "past": "begyndte",
+   "participle": "begyndt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "åbne",
+   "present": "åbner",
+   "past": "åbnede",
+   "participle": "åbnet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "lukke",
+   "present": "lukker",
+   "past": "lukkede",
+   "participle": "lukket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "køre",
+   "present": "kører",
+   "past": "kørte",
+   "participle": "kørt",
+   "auxiliary": "har/er"
+  },
+  {
+   "infinitive": "vise",
+   "present": "viser",
+   "past": "viste",
+   "participle": "vist",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "flytte",
+   "present": "flytter",
+   "past": "flyttede",
+   "participle": "flyttet",
+   "auxiliary": "har/er"
+  },
+  {
+   "infinitive": "bestille",
+   "present": "bestiller",
+   "past": "bestilte",
+   "participle": "bestilt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "besøge",
+   "present": "besøger",
+   "past": "besøgte",
+   "participle": "besøgt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "forklare",
+   "present": "forklarer",
+   "past": "forklarede",
+   "participle": "forklaret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "lave",
+   "present": "laver",
+   "past": "lavede",
+   "participle": "lavet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "starte",
+   "present": "starter",
+   "past": "startede",
+   "participle": "startet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "stoppe",
+   "present": "stopper",
+   "past": "stoppede",
+   "participle": "stoppet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "lytte",
+   "present": "lytter",
+   "past": "lyttede",
+   "participle": "lyttet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "svare",
+   "present": "svarer",
+   "past": "svarede",
+   "participle": "svaret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "cykle",
+   "present": "cykler",
+   "past": "cyklede",
+   "participle": "cyklet",
+   "auxiliary": "har/er"
+  },
+  {
+   "infinitive": "hente",
+   "present": "henter",
+   "past": "hentede",
+   "participle": "hentet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "koste",
+   "present": "koster",
+   "past": "kostede",
+   "participle": "kostet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "skifte",
+   "present": "skifter",
+   "past": "skiftede",
+   "participle": "skiftet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vaske",
+   "present": "vasker",
+   "past": "vaskede",
+   "participle": "vasket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tabe",
+   "present": "taber",
+   "past": "tabte",
+   "participle": "tabt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "miste",
+   "present": "mister",
+   "past": "mistede",
+   "participle": "mistet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vågne",
+   "present": "vågner",
+   "past": "vågnede",
+   "participle": "vågnet",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "glæde",
+   "present": "glæder",
+   "past": "glædede",
+   "participle": "glædet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "skynde",
+   "present": "skynder",
+   "past": "skyndte",
+   "participle": "skyndt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "gifte",
+   "present": "gifter",
+   "past": "giftede",
+   "participle": "giftet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "føle",
+   "present": "føler",
+   "past": "følte",
+   "participle": "følt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "savne",
+   "present": "savner",
+   "past": "savnede",
+   "participle": "savnet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "opleve",
+   "present": "oplever",
+   "past": "oplevede",
+   "participle": "oplevet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "søge",
+   "present": "søger",
+   "past": "søgte",
+   "participle": "søgt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "spille",
+   "present": "spiller",
+   "past": "spillede",
+   "participle": "spillet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "danse",
+   "present": "danser",
+   "past": "dansede",
+   "participle": "danset",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "svømme",
+   "present": "svømmer",
+   "past": "svømmede",
+   "participle": "svømmet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bage",
+   "present": "bager",
+   "past": "bagte",
+   "participle": "bagt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "koge",
+   "present": "koger",
+   "past": "kogte",
+   "participle": "kogt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "stege",
+   "present": "steger",
+   "past": "stegte",
+   "participle": "stegt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "leje",
+   "present": "lejer",
+   "past": "lejede",
+   "participle": "lejet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "vokse",
+   "present": "vokser",
+   "past": "voksede",
+   "participle": "vokset",
+   "auxiliary": "er"
+  },
+  {
+   "infinitive": "klage",
+   "present": "klager",
+   "past": "klagede",
+   "participle": "klaget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "takke",
+   "present": "takker",
+   "past": "takkede",
+   "participle": "takket",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "invitere",
+   "present": "inviterer",
+   "past": "inviterede",
+   "participle": "inviteret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "deltage",
+   "present": "deltager",
+   "past": "deltog",
+   "participle": "deltaget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "modtage",
+   "present": "modtager",
+   "past": "modtog",
+   "participle": "modtaget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "foreslå",
+   "present": "foreslår",
+   "past": "foreslog",
+   "participle": "foreslået",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "oversætte",
+   "present": "oversætter",
+   "past": "oversatte",
+   "participle": "oversat",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "gentage",
+   "present": "gentager",
+   "past": "gentog",
+   "participle": "gentaget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bestå",
+   "present": "består",
+   "past": "bestod",
+   "participle": "bestået",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "ændre",
+   "present": "ændrer",
+   "past": "ændrede",
+   "participle": "ændret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "kræve",
+   "present": "kræver",
+   "past": "krævede",
+   "participle": "krævet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "bygge",
+   "present": "bygger",
+   "past": "byggede",
+   "participle": "bygget",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "dele",
+   "present": "deler",
+   "past": "delte",
+   "participle": "delt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "samle",
+   "present": "samler",
+   "past": "samlede",
+   "participle": "samlet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tjene",
+   "present": "tjener",
+   "past": "tjente",
+   "participle": "tjent",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "parkere",
+   "present": "parkerer",
+   "past": "parkerede",
+   "participle": "parkeret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "reparere",
+   "present": "reparerer",
+   "past": "reparerede",
+   "participle": "repareret",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "planlægge",
+   "present": "planlægger",
+   "past": "planlagde",
+   "participle": "planlagt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "fortsætte",
+   "present": "fortsætter",
+   "past": "fortsatte",
+   "participle": "fortsat",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "beslutte",
+   "present": "beslutter",
+   "past": "besluttede",
+   "participle": "besluttet",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "tillade",
+   "present": "tillader",
+   "past": "tillod",
+   "participle": "tilladt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "forbyde",
+   "present": "forbyder",
+   "past": "forbød",
+   "participle": "forbudt",
+   "auxiliary": "har"
+  },
+  {
+   "infinitive": "håbe",
+   "present": "håber",
+   "past": "håbede",
+   "participle": "håbet",
+   "auxiliary": "har"
+  }
+ ],
+ "nouns": [
+  {
+   "singular": "barn",
+   "definite": "barnet",
+   "plural": "børn",
+   "pluralDefinite": "børnene"
+  },
+  {
+   "singular": "mand",
+   "definite": "manden",
+   "plural": "mænd",
+   "pluralDefinite": "mændene"
+  },
+  {
+   "singular": "bog",
+   "definite": "bogen",
+   "plural": "bøger",
+   "pluralDefinite": "bøgerne"
+  },
+  {
+   "singular": "hånd",
+   "definite": "hånden",
+   "plural": "hænder",
+   "pluralDefinite": "hænderne"
+  },
+  {
+   "singular": "fod",
+   "definite": "foden",
+   "plural": "fødder",
+   "pluralDefinite": "fødderne"
+  },
+  {
+   "singular": "tand",
+   "definite": "tanden",
+   "plural": "tænder",
+   "pluralDefinite": "tænderne"
+  },
+  {
+   "singular": "øje",
+   "definite": "øjet",
+   "plural": "øjne",
+   "pluralDefinite": "øjnene"
+  },
+  {
+   "singular": "øre",
+   "definite": "øret",
+   "plural": "ører",
+   "pluralDefinite": "ørerne"
+  },
+  {
+   "singular": "mor",
+   "definite": "moren",
+   "plural": "mødre",
+   "pluralDefinite": "mødrene"
+  },
+  {
+   "singular": "far",
+   "definite": "faren",
+   "plural": "fædre",
+   "pluralDefinite": "fædrene"
+  },
+  {
+   "singular": "bror",
+   "definite": "broren",
+   "plural": "brødre",
+   "pluralDefinite": "brødrene"
+  },
+  {
+   "singular": "datter",
+   "definite": "datteren",
+   "plural": "døtre",
+   "pluralDefinite": "døtrene"
+  },
+  {
+   "singular": "søster",
+   "definite": "søsteren",
+   "plural": "søstre",
+   "pluralDefinite": "søstrene"
+  },
+  {
+   "singular": "nat",
+   "definite": "natten",
+   "plural": "nætter",
+   "pluralDefinite": "nætterne"
+  },
+  {
+   "singular": "ko",
+   "definite": "koen",
+   "plural": "køer",
+   "pluralDefinite": "køerne"
+  },
+  {
+   "singular": "sko",
+   "definite": "skoen",
+   "plural": "sko",
+   "pluralDefinite": "skoene"
+  },
+  {
+   "singular": "hus",
+   "definite": "huset",
+   "plural": "huse",
+   "pluralDefinite": "husene"
+  },
+  {
+   "singular": "dag",
+   "definite": "dagen",
+   "plural": "dage",
+   "pluralDefinite": "dagene"
+  },
+  {
+   "singular": "år",
+   "definite": "året",
+   "plural": "år",
+   "pluralDefinite": "årene"
+  },
+  {
+   "singular": "ord",
+   "definite": "ordet",
+   "plural": "ord",
+   "pluralDefinite": "ordene"
+  },
+  {
+   "singular": "menneske",
+   "definite": "mennesket",
+   "plural": "mennesker",
+   "pluralDefinite": "menneskene"
+  },
+  {
+   "singular": "by",
+   "definite": "byen",
+   "plural": "byer",
+   "pluralDefinite": "byerne"
+  },
+  {
+   "singular": "ven",
+   "definite": "vennen",
+   "plural": "venner",
+   "pluralDefinite": "vennerne"
+  },
+  {
+   "singular": "uge",
+   "definite": "ugen",
+   "plural": "uger",
+   "pluralDefinite": "ugerne"
+  },
+  {
+   "singular": "time",
+   "definite": "timen",
+   "plural": "timer",
+   "pluralDefinite": "timerne"
+  },
+  {
+   "singular": "kat",
+   "definite": "katten",
+   "plural": "katte",
+   "pluralDefinite": "kattene"
+  },
+  {
+   "singular": "hund",
+   "definite": "hunden",
+   "plural": "hunde",
+   "pluralDefinite": "hundene"
+  },
+  {
+   "singular": "bil",
+   "definite": "bilen",
+   "plural": "biler",
+   "pluralDefinite": "bilerne"
+  },
+  {
+   "singular": "job",
+   "definite": "jobbet",
+   "plural": "job",
+   "pluralDefinite": "jobbene"
+  },
+  {
+   "singular": "lærer",
+   "definite": "læreren",
+   "plural": "lærere",
+   "pluralDefinite": "lærerne"
+  },
+  {
+   "singular": "bus",
+   "definite": "bussen",
+   "plural": "busser",
+   "pluralDefinite": "busserne"
+  },
+  {
+   "singular": "æble",
+   "definite": "æblet",
+   "plural": "æbler",
+   "pluralDefinite": "æblerne"
+  },
+  {
+   "singular": "pige",
+   "definite": "pigen",
+   "plural": "piger",
+   "pluralDefinite": "pigerne"
+  },
+  {
+   "singular": "dreng",
+   "definite": "drengen",
+   "plural": "drenge",
+   "pluralDefinite": "drengene"
+  },
+  {
+   "singular": "kvinde",
+   "definite": "kvinden",
+   "plural": "kvinder",
+   "pluralDefinite": "kvinderne"
+  },
+  {
+   "singular": "værelse",
+   "definite": "værelset",
+   "plural": "værelser",
+   "pluralDefinite": "værelserne"
+  },
+  {
+   "singular": "lejlighed",
+   "definite": "lejligheden",
+   "plural": "lejligheder",
+   "pluralDefinite": "lejlighederne"
+  },
+  {
+   "singular": "billet",
+   "definite": "billetten",
+   "plural": "billetter",
+   "pluralDefinite": "billetterne"
+  },
+  {
+   "singular": "tog",
+   "definite": "toget",
+   "plural": "tog",
+   "pluralDefinite": "togene"
+  },
+  {
+   "singular": "cykel",
+   "definite": "cyklen",
+   "plural": "cykler",
+   "pluralDefinite": "cyklerne"
+  },
+  {
+   "singular": "nøgle",
+   "definite": "nøglen",
+   "plural": "nøgler",
+   "pluralDefinite": "nøglerne"
+  },
+  {
+   "singular": "skole",
+   "definite": "skolen",
+   "plural": "skoler",
+   "pluralDefinite": "skolerne"
+  },
+  {
+   "singular": "sprog",
+   "definite": "sproget",
+   "plural": "sprog",
+   "pluralDefinite": "sprogene"
+  },
+  {
+   "singular": "spørgsmål",
+   "definite": "spørgsmålet",
+   "plural": "spørgsmål",
+   "pluralDefinite": "spørgsmålene"
+  },
+  {
+   "singular": "fejl",
+   "definite": "fejlen",
+   "plural": "fejl",
+   "pluralDefinite": "fejlene"
+  }
+ ],
+ "adjectives": [
+  {
+   "base": "god",
+   "neuter": "godt",
+   "plural": "gode",
+   "comparative": "bedre",
+   "superlative": "bedst"
+  },
+  {
+   "base": "dårlig",
+   "neuter": "dårligt",
+   "plural": "dårlige",
+   "comparative": "værre / dårligere",
+   "superlative": "værst / dårligst"
+  },
+  {
+   "base": "gammel",
+   "neuter": "gammelt",
+   "plural": "gamle",
+   "comparative": "ældre",
+   "superlative": "ældst"
+  },
+  {
+   "base": "ung",
+   "neuter": "ungt",
+   "plural": "unge",
+   "comparative": "yngre",
+   "superlative": "yngst"
+  },
+  {
+   "base": "stor",
+   "neuter": "stort",
+   "plural": "store",
+   "comparative": "større",
+   "superlative": "størst"
+  },
+  {
+   "base": "lille",
+   "neuter": "lille",
+   "plural": "små (множина), lille (означена)",
+   "comparative": "mindre",
+   "superlative": "mindst"
+  },
+  {
+   "base": "lang",
+   "neuter": "langt",
+   "plural": "lange",
+   "comparative": "længere",
+   "superlative": "længst"
+  },
+  {
+   "base": "kort",
+   "neuter": "kort",
+   "plural": "korte",
+   "comparative": "kortere",
+   "superlative": "kortest"
+  },
+  {
+   "base": "høj",
+   "neuter": "højt",
+   "plural": "høje",
+   "comparative": "højere",
+   "superlative": "højest"
+  },
+  {
+   "base": "ny",
+   "neuter": "nyt",
+   "plural": "nye",
+   "comparative": "nyere",
+   "superlative": "nyest"
+  },
+  {
+   "base": "glad",
+   "neuter": "glad",
+   "plural": "glade",
+   "comparative": "gladere",
+   "superlative": "gladest"
+  },
+  {
+   "base": "billig",
+   "neuter": "billigt",
+   "plural": "billige",
+   "comparative": "billigere",
+   "superlative": "billigst"
+  },
+  {
+   "base": "dyr",
+   "neuter": "dyrt",
+   "plural": "dyre",
+   "comparative": "dyrere",
+   "superlative": "dyrest"
+  },
+  {
+   "base": "varm",
+   "neuter": "varmt",
+   "plural": "varme",
+   "comparative": "varmere",
+   "superlative": "varmest"
+  },
+  {
+   "base": "kold",
+   "neuter": "koldt",
+   "plural": "kolde",
+   "comparative": "koldere",
+   "superlative": "koldest"
+  },
+  {
+   "base": "træt",
+   "neuter": "træt",
+   "plural": "trætte",
+   "comparative": "mere træt",
+   "superlative": "mest træt"
+  },
+  {
+   "base": "sød",
+   "neuter": "sødt",
+   "plural": "søde",
+   "comparative": "sødere",
+   "superlative": "sødest"
+  },
+  {
+   "base": "let",
+   "neuter": "let",
+   "plural": "lette",
+   "comparative": "lettere",
+   "superlative": "lettest"
+  },
+  {
+   "base": "svær",
+   "neuter": "svært",
+   "plural": "svære",
+   "comparative": "sværere",
+   "superlative": "sværest"
+  },
+  {
+   "base": "vigtig",
+   "neuter": "vigtigt",
+   "plural": "vigtige",
+   "comparative": "vigtigere",
+   "superlative": "vigtigst"
+  },
+  {
+   "base": "interessant",
+   "neuter": "interessant",
+   "plural": "interessante",
+   "comparative": "mere interessant",
+   "superlative": "mest interessant"
+  },
+  {
+   "base": "moderne",
+   "neuter": "moderne",
+   "plural": "moderne",
+   "comparative": "mere moderne",
+   "superlative": "mest moderne"
+  },
+  {
+   "base": "hurtig",
+   "neuter": "hurtigt",
+   "plural": "hurtige",
+   "comparative": "hurtigere",
+   "superlative": "hurtigst"
+  },
+  {
+   "base": "smuk",
+   "neuter": "smukt",
+   "plural": "smukke",
+   "comparative": "smukkere",
+   "superlative": "smukkest"
+  },
+  {
+   "base": "tung",
+   "neuter": "tungt",
+   "plural": "tunge",
+   "comparative": "tungere",
+   "superlative": "tungest"
+  },
+  {
+   "base": "nem",
+   "neuter": "nemt",
+   "plural": "nemme",
+   "comparative": "nemmere",
+   "superlative": "nemmest"
+  },
+  {
+   "base": "grøn",
+   "neuter": "grønt",
+   "plural": "grønne",
+   "comparative": "grønnere",
+   "superlative": "grønnest"
+  },
+  {
+   "base": "rød",
+   "neuter": "rødt",
+   "plural": "røde",
+   "comparative": "rødere",
+   "superlative": "rødest"
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+[
+ {
+  "title": "Оголошення в мовній школі",
+  "kind": "Оголошення",
+  "icon": "📌",
+  "da": "Kære kursister\n\nNæste uge er der ingen undervisning om onsdagen, fordi lærerne skal på kursus. I stedet holder vi en ekstra lektion fredag fra kl. 13 til 15. Husk, at modulprøven er den 10. december. Hvis du ikke kan komme til prøven, skal du give besked til kontoret senest den 1. december. Du kan også skrive til os på mail.\n\nVenlig hilsen\nSprogcentret",
+  "uk": "Шановні слухачі курсів!\n\nНаступного тижня в середу занять не буде, бо вчителі їдуть на курси. Натомість у п’ятницю з 13:00 до 15:00 буде додаткове заняття. Пам’ятайте, що модульний тест 10 грудня. Якщо ви не можете прийти на тест, повідомте офіс не пізніше 1 грудня. Ви також можете написати нам на пошту.\n\nЗ повагою\nМовний центр",
+  "questions": [
+   {
+    "question": "Hvorfor er der ingen undervisning onsdag?",
+    "hint": "Чому в середу немає занять?",
+    "options": [
+     "Lærerne skal på kursus.",
+     "Skolen er lukket på grund af sne.",
+     "Det er en helligdag."
+    ]
+   },
+   {
+    "question": "Hvornår er den ekstra lektion?",
+    "hint": "Коли додаткове заняття?",
+    "options": [
+     "Fredag kl. 13–15.",
+     "Onsdag kl. 13–15.",
+     "Torsdag kl. 15."
+    ]
+   },
+   {
+    "question": "Hvad skal du gøre, hvis du ikke kan komme til prøven?",
+    "hint": "Що робити, якщо не можеш прийти на тест?",
+    "options": [
+     "Give besked til kontoret senest 1. december.",
+     "Ringe til læreren om morgenen.",
+     "Komme en anden dag uden at sige det."
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Лист від орендодавця",
+  "kind": "Лист",
+  "icon": "✉️",
+  "da": "Hej Olena\n\nTak for din besked om vandhanen i køkkenet. Jeg har talt med en VVS-mand, og han kan komme på torsdag mellem kl. 8 og 10. Kan du være hjemme på det tidspunkt? Hvis ikke, kan du lægge nøglen hos naboen i nummer 4. Reparationen er gratis for dig, fordi det er min opgave som udlejer.\n\nMed venlig hilsen\nBent Larsen",
+  "uk": "Привіт, Олено!\n\nДякую за повідомлення про кран на кухні. Я поговорив із сантехніком, і він може прийти в четвер між 8 і 10 годиною. Ти можеш бути вдома в цей час? Якщо ні, можеш залишити ключ у сусіда з квартири номер 4. Ремонт для тебе безкоштовний, бо це мій обов’язок як орендодавця.\n\nЗ повагою\nБент Ларсен",
+  "questions": [
+   {
+    "question": "Hvad er problemet?",
+    "hint": "У чому проблема?",
+    "options": [
+     "Vandhanen i køkkenet.",
+     "Vinduet i stuen.",
+     "Varmen i badeværelset."
+    ]
+   },
+   {
+    "question": "Hvornår kommer VVS-manden?",
+    "hint": "Коли прийде сантехнік?",
+    "options": [
+     "Torsdag mellem kl. 8 og 10.",
+     "Tirsdag om eftermiddagen.",
+     "I weekenden."
+    ]
+   },
+   {
+    "question": "Hvem betaler for reparationen?",
+    "hint": "Хто платить за ремонт?",
+    "options": [
+     "Udlejeren.",
+     "Olena.",
+     "Naboen."
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Оголошення про роботу",
+  "kind": "Вакансія",
+  "icon": "💼",
+  "da": "Vi søger en køkkenmedhjælper\n\nRådhusets kantine søger en flittig medarbejder til 25 timer om ugen. Du skal hjælpe med at lave frokost, gøre rent i køkkenet og tage imod varer. Arbejdstiden er mandag til fredag fra kl. 8 til 13. Det er en fordel, hvis du har erfaring fra et køkken, men det er ikke et krav. Du skal kunne tale og forstå dansk. Send en kort ansøgning til køkkenchef Lone Madsen senest den 5. januar.",
+  "uk": "Шукаємо помічника на кухню\n\nЇдальня ратуші шукає старанного працівника на 25 годин на тиждень. Ти допомагатимеш готувати обід, прибирати на кухні й приймати товари. Робочий час — з понеділка до п’ятниці з 8:00 до 13:00. Досвід роботи на кухні буде перевагою, але це не обов’язково. Ти повинен уміти говорити й розуміти данською. Надішли коротку заяву шеф-кухарці Лоне Мадсен до 5 січня.",
+  "questions": [
+   {
+    "question": "Hvor mange timer om ugen er jobbet?",
+    "hint": "Скільки годин на тиждень ця робота?",
+    "options": [
+     "25 timer.",
+     "37 timer.",
+     "13 timer."
+    ]
+   },
+   {
+    "question": "Hvad er et krav?",
+    "hint": "Що є обов’язковою вимогою?",
+    "options": [
+     "At man kan tale og forstå dansk.",
+     "At man har erfaring fra et køkken.",
+     "At man kan arbejde i weekenden."
+    ]
+   },
+   {
+    "question": "Hvad skal man IKKE lave i jobbet?",
+    "hint": "Чого НЕ треба робити на цій роботі?",
+    "options": [
+     "Servere aftensmad.",
+     "Lave frokost.",
+     "Gøre rent i køkkenet."
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Дзвінок до лікаря",
+  "kind": "Діалог",
+  "icon": "🩺",
+  "da": "Sekretær: Lægehuset, det er Mette.\nAhmad: Hej, jeg hedder Ahmad Rahimi. Jeg vil gerne bestille en tid. Min datter har haft feber i tre dage.\nSekretær: Det lyder ikke godt. Hvor gammel er hun?\nAhmad: Hun er seks år.\nSekretær: Kan I komme i dag kl. 14.30?\nAhmad: Ja, det passer fint. Skal jeg tage noget med?\nSekretær: Husk hendes sundhedskort. Og giv hende rigeligt at drikke.\nAhmad: Tak for hjælpen. Vi ses.",
+  "uk": "Секретарка: Лікарня, це Метте.\nАхмад: Добрий день, мене звати Ахмад Рахімі. Я хотів би записатися на прийом. У моєї доньки вже три дні гарячка.\nСекретарка: Це звучить погано. Скільки їй років?\nАхмад: Їй шість.\nСекретарка: Можете прийти сьогодні о 14:30?\nАхмад: Так, мені підходить. Потрібно щось узяти з собою?\nСекретарка: Не забудьте її медичну картку. І давайте їй багато пити.\nАхмад: Дякую за допомогу. До зустрічі.",
+  "questions": [
+   {
+    "question": "Hvorfor ringer Ahmad?",
+    "hint": "Чому телефонує Ахмад?",
+    "options": [
+     "Hans datter har feber.",
+     "Han har ondt i ryggen.",
+     "Han skal have en ny recept."
+    ]
+   },
+   {
+    "question": "Hvornår skal de komme?",
+    "hint": "Коли їм прийти?",
+    "options": [
+     "I dag kl. 14.30.",
+     "I morgen kl. 14.30.",
+     "Om tre dage."
+    ]
+   },
+   {
+    "question": "Hvad skal Ahmad huske?",
+    "hint": "Про що має пам’ятати Ахмад?",
+    "options": [
+     "Datterens sundhedskort.",
+     "Penge til lægen.",
+     "Et brev fra skolen."
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Новини: зміна маршруту автобуса",
+  "kind": "Новина",
+  "icon": "🚌",
+  "da": "Fra mandag den 3. februar kører bus 12 ikke længere gennem centrum. Vejen ved Torvet skal repareres, og arbejdet varer cirka to måneder. Bussen kører i stedet ad Havnegade. Der kommer et midlertidigt stoppested ved biblioteket. Kommunen beder borgerne om at beregne ekstra tid til rejsen, især om morgenen.",
+  "uk": "З понеділка, 3 лютого, автобус 12 більше не їздитиме через центр. Дорогу біля Торвета ремонтуватимуть, роботи триватимуть приблизно два місяці. Натомість автобус їздитиме вулицею Гавнегаде. Біля бібліотеки з’явиться тимчасова зупинка. Муніципалітет просить мешканців закладати більше часу на дорогу, особливо вранці.",
+  "questions": [
+   {
+    "question": "Hvorfor ændres busruten?",
+    "hint": "Чому змінюється маршрут?",
+    "options": [
+     "Vejen ved Torvet skal repareres.",
+     "Der er for få passagerer.",
+     "Bussen er for gammel."
+    ]
+   },
+   {
+    "question": "Hvor længe varer arbejdet?",
+    "hint": "Скільки триватимуть роботи?",
+    "options": [
+     "Cirka to måneder.",
+     "To uger.",
+     "Et år."
+    ]
+   },
+   {
+    "question": "Hvor er det nye stoppested?",
+    "hint": "Де нова зупинка?",
+    "options": [
+     "Ved biblioteket.",
+     "Ved Torvet.",
+     "Ved stationen."
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Блог Марії: моя перша зима",
+  "kind": "Розповідь",
+  "icon": "❄️",
+  "da": "Da jeg kom til Danmark, var det november. Det var mørkt allerede klokken fire, og det regnede næsten hver dag. Jeg savnede min familie og solen i Ukraine. Men så lærte jeg ordet hygge. Mine naboer inviterede mig på kaffe og kage, og vi tændte stearinlys. Nu glæder jeg mig faktisk til vinteren. Jeg går til dansk fire gange om ugen, og til foråret vil jeg begynde på en uddannelse som sygeplejerske.",
+  "uk": "Коли я приїхала до Данії, був листопад. Темніло вже о четвертій, і дощ ішов майже щодня. Я сумувала за родиною і сонцем в Україні. Але потім я вивчила слово «hygge». Сусіди запросили мене на каву з тістечком, і ми запалили свічки. Тепер я навіть чекаю на зиму. Я ходжу на данську чотири рази на тиждень, а навесні хочу почати навчання на медсестру.",
+  "questions": [
+   {
+    "question": "Hvordan var vejret, da Maria kom?",
+    "hint": "Якою була погода, коли Марія приїхала?",
+    "options": [
+     "Mørkt og regnfuldt.",
+     "Varmt og solrigt.",
+     "Koldt med meget sne."
+    ]
+   },
+   {
+    "question": "Hvad hjalp hende?",
+    "hint": "Що їй допомогло?",
+    "options": [
+     "Naboerne inviterede hende.",
+     "Hun rejste hjem til Ukraine.",
+     "Hun fik et nyt job."
+    ]
+   },
+   {
+    "question": "Hvad vil hun gøre til foråret?",
+    "hint": "Що вона хоче зробити навесні?",
+    "options": [
+     "Begynde på en uddannelse som sygeplejerske.",
+     "Flytte til en anden by.",
+     "Stoppe på sprogskolen."
+    ]
+   }
+  ]
+ }
+]
