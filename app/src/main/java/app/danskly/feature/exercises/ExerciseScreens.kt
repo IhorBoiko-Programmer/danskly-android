@@ -138,12 +138,11 @@ fun ExerciseScreen(graph: AppGraph, type: ExerciseType) {
             if (q is TypingQuestion && q.word != null) repo.grade(q.word, v.correct) else repo.recordAction()
             state = session.state()
         }
-        // Chosen with a plain `when` statement: an exhaustive statement needs no fallback branch.
-        val exercise: @Composable () -> Unit
-        when (val q = state.question) {
-            is ChoiceQuestion -> exercise = { ChoiceExercise(q, state.verdict) { record(session.answerChoice(it)) } }
-            is TilesQuestion -> exercise = { TilesExercise(q, state.verdict != null) { record(session.answerTiles(it)) } }
-            is TypingQuestion -> exercise = { TypingExercise(q, state.verdict != null) { record(session.answerTyped(it)) } }
+        // The last branch is `else`: an exhaustive `is` check would add a fallback branch that can never run.
+        val exercise: @Composable () -> Unit = when (val q = state.question) {
+            is ChoiceQuestion -> { { ChoiceExercise(q, state.verdict) { record(session.answerChoice(it)) } } }
+            is TilesQuestion -> { { TilesExercise(q, state.verdict != null) { record(session.answerTiles(it)) } } }
+            else -> { { TypingExercise(q as TypingQuestion, state.verdict != null) { record(session.answerTyped(it)) } } }
         }
         key(session, state.index) { exercise() }
         state.verdict?.let { v ->
