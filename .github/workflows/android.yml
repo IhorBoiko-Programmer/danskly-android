@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # only used to publish build outputs to the ci-output branch
+  contents: write # only used to publish build outputs to the ci-tests and ci-apk branches
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -49,7 +49,7 @@ jobs:
         with:
           name: screenshots
           path: app/screenshots
-      - name: Publish screenshots and reports to the ci-output branch
+      - name: Publish screenshots and reports to the ci-tests branch
         if: always() && github.event_name != 'pull_request'
         run: scripts/publish-ci-output.sh tests app/screenshots app/build/test-results app/build/reports/kover/reportDebug.xml
 
@@ -98,6 +98,6 @@ jobs:
         with:
           name: danskly-aab
           path: app/build/outputs/bundle/release/*.aab
-      - name: Publish the APK to the ci-output branch
+      - name: Publish the APK and App Bundle to the ci-apk branch
         if: github.event_name != 'pull_request'
-        run: scripts/publish-ci-output.sh apk app/build/outputs/apk/debug app/build/outputs/apk/release
+        run: scripts/publish-ci-output.sh apk app/build/outputs/apk/debug app/build/outputs/apk/release app/build/outputs/bundle/release

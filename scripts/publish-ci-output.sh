@@ -1,54 +1,36 @@
 #!/usr/bin/env bash
-# Publishes build outputs to the `ci-output` branch, under one folder per kind:
-#   scripts/publish-ci-output.sh <folder> <path>...
-# The branch keeps only the latest outputs (one commit, force-pushed), so it never grows.
-# Artifacts on the Actions page stay the main way to download them; this branch is a
-# plain-git mirror for tools that cannot reach artifact storage.
+# Publishes build outputs to their own branch, `ci-<name>` (ci-tests, ci-apk):
+#   scripts/publish-ci-output.sh <name> <path>...
+# Each branch holds one commit with the latest outputs (force-pushed), so it never grows
+# and two jobs never overwrite each other. Artifacts on the Actions page stay the main
+# way to download; these branches are a plain-git mirror for tools that cannot reach
+# artifact storage.
 set -euo pipefail
 export GIT_AUTHOR_NAME="github-actions" GIT_AUTHOR_EMAIL="github-actions@users.noreply.github.com"
 export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME" GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-folder="$1"; shift
+
+name="$1"; shift
+branch="ci-$name"
 work="$(mktemp -d)"
 remote="$(git config --get remote.origin.url)"
+# Reuse the credentials actions/checkout stored for this repository.
+auth_key="$(git config --name-only --get-regexp '^http\..*\.extraheader$' | head -1 || true)"
 
-if git ls-remote --exit-code --heads origin ci-output >/dev/null 2>&1; then
-  git clone --quiet --depth 1 --branch ci-output "$remote" "$work"
-else
-  git init --quiet -b ci-output "$work"
-  git -C "$work" remote add origin "$remote"
-fi
-# Reuse the checkout's credentials.
-auth="$(git config --get-regexp '^http\..*\.extraheader$' | head -1 || true)"
-if [ -n "$auth" ]; then git -C "$work" config "${auth%% *}" "${auth#* }"; fi
-
-rm -rf "${work:?}/$folder"
-mkdir -p "$work/$folder"
+git init --quiet -b "$branch" "$work"
 for path in "$@"; do
-  [ -e "$path" ] && cp -r "$path" "$work/$folder/"
+  [ -e "$path" ] && cp -r "$path" "$work/"
 done
 {
   echo "commit: $GITHUB_SHA"
   echo "run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
   date -u
-} > "$work/$folder/BUILD_INFO.txt"
+} > "$work/BUILD_INFO.txt"
 
 cd "$work"
 git add -A
-git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" \
-  commit --quiet --allow-empty -m "CI output: $folder for $GITHUB_SHA"
-# Squash to a single commit so the branch stays small.
-git reset --quiet --soft "$(git commit-tree HEAD^{tree} -m "Latest CI output")"
-for attempt in 1 2 3; do
-  git push --quiet --force origin HEAD:ci-output && exit 0
-  sleep $((attempt * 5))
-  # Another job pushed meanwhile: rebuild on top of it.
-  git fetch --quiet --depth 1 origin ci-output
-  keep="$(mktemp -d)"; cp -r "$folder" "$keep/"
-  git reset --quiet --hard FETCH_HEAD
-  rm -rf "$folder"; cp -r "$keep/$folder" .
-  git add -A
-  git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" \
-    commit --quiet --allow-empty -m "CI output: $folder"
-  git reset --quiet --soft "$(git commit-tree HEAD^{tree} -m "Latest CI output")"
-done
-exit 1
+git commit --quiet -m "Latest CI output ($name) for $GITHUB_SHA"
+if [ -n "$auth_key" ]; then
+  git -c "$auth_key=$(git -C "$GITHUB_WORKSPACE" config --get "$auth_key")" push --quiet --force "$remote" "HEAD:$branch"
+else
+  git push --quiet --force "$remote" "HEAD:$branch"
+fi
