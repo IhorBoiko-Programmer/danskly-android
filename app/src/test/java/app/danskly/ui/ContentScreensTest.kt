@@ -192,7 +192,7 @@ class TutorScreenTest : UiTest() {
         click("Надіслати")
         tag("message:3").assertExists()
         click("Надіслати")
-        assertEquals(4, compose.onAllNodes(hasTestTag("message:", substring = true)).fetchSemanticsNodes().size)
+        assertEquals(4, compose.onAllNodes(tagStartsWith("message:")).fetchSemanticsNodes().size)
     }
 
     @Test

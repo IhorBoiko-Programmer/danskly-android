@@ -31,7 +31,7 @@ import kotlin.random.Random
 class QuizScreenTest : UiTest() {
 
     private fun answerFirstOption() {
-        compose.onAllNodes(androidx.compose.ui.test.hasTestTag("option:", substring = true))[0].performClick()
+        compose.onAllNodes(tagStartsWith("option:"))[0].performClick()
         compose.waitForIdle()
     }
 

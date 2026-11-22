@@ -56,6 +56,11 @@ abstract class UiTest {
         this
     }
 
+    /** Matches nodes whose test tag starts with [prefix], e.g. every `option:…`. */
+    fun tagStartsWith(prefix: String) = androidx.compose.ui.test.SemanticsMatcher("testTag starts with $prefix") {
+        it.config.getOrNull(androidx.compose.ui.semantics.SemanticsProperties.TestTag)?.startsWith(prefix) == true
+    }
+
     fun exists(value: String, substring: Boolean = false): Boolean =
         compose.onAllNodes(androidx.compose.ui.test.hasText(value, substring = substring)).fetchSemanticsNodes().isNotEmpty()
 }
