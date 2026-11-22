@@ -5,6 +5,7 @@ import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import app.danskly.AppGraph
 import app.danskly.core.ai.AiErrorKind
@@ -113,7 +114,7 @@ class PronunciationScreenTest : UiTest() {
         assertTrue(exists("Голос: Magnus (Enhanced)", substring = true))
         clickTag("letter:Ø")
         assertEquals("Ø. øl", speaker.last)
-        compose.onAllNodes(hasContentDescription("Повільно: hund"))[0].performClick()
+        compose.onAllNodes(hasContentDescription("Повільно: hund"))[0].performScrollTo().performClick()
         assertEquals("hund" to true, speaker.spoken.last())
     }
 

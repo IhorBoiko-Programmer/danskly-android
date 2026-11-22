@@ -164,7 +164,7 @@ class AddWordScreenTest : UiTest() {
     @Test
     fun verbWithDanishLettersInTopicFromPicker() {
         launch(Route.AddWord(null))
-        compose.onNodeWithTag("field-danish").performTextInput("s")
+        compose.onNodeWithTag("field-danish").performTextInput("st")
         click("ø")
         compose.onNodeWithTag("field-danish").performTextInput("vsuge")
         compose.onNodeWithTag("field-ukrainian").performTextInput("пилососити")
