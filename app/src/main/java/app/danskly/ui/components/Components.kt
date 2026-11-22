@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -375,6 +374,3 @@ fun DanishLetters(onLetter: (String) -> Unit) {
         listOf("æ", "ø", "å").forEach { letter -> Chip(letter, modifier = Modifier.widthIn(min = 48.dp)) { onLetter(letter) } }
     }
 }
-
-@Composable
-fun VSpace(height: Dp) = Spacer(Modifier.height(height))

@@ -47,6 +47,7 @@ class ProgressCodecTest {
         assertEquals(Progress(), ProgressCodec.decode(" "))
         assertEquals(Progress(), ProgressCodec.decode("{broken"))
         assertEquals(Progress(), ProgressCodec.decode("[1]"))
+        assertEquals(Progress(), ProgressCodec.decode("{}"))
         assertEquals(Progress(), ProgressCodec.decode("""{"day":{"actions":1}}"""))
     }
 

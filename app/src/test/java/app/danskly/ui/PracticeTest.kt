@@ -143,6 +143,17 @@ class ExerciseSessionScreenTest : UiTest() {
     }
 
     @Test
+    fun perfectSessionListsNoMistakes() {
+        start(ExerciseType.GAP)
+        repeat(10) {
+            answerChoice(correct = true)
+            next()
+        }
+        assertTrue(exists("10/10"))
+        assertFalse(exists("Помилки"))
+    }
+
+    @Test
     fun poorResultAndBackToList() {
         start(ExerciseType.NOUN)
         repeat(10) {

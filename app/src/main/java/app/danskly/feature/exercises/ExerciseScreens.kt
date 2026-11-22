@@ -138,13 +138,13 @@ fun ExerciseScreen(graph: AppGraph, type: ExerciseType) {
             if (q is TypingQuestion && q.word != null) repo.grade(q.word, v.correct) else repo.recordAction()
             state = session.state()
         }
-        key(session, state.index) {
-            when (val q = state.question) {
-                is ChoiceQuestion -> ChoiceExercise(q, state.verdict) { record(session.answerChoice(it)) }
-                is TilesQuestion -> TilesExercise(q, state.verdict != null) { record(session.answerTiles(it)) }
-                is TypingQuestion -> TypingExercise(q, state.verdict != null) { record(session.answerTyped(it)) }
-            }
+        // Picks the view outside composition, so Compose needs no group for an impossible branch.
+        val exercise: @Composable () -> Unit = when (val q = state.question) {
+            is ChoiceQuestion -> { { ChoiceExercise(q, state.verdict) { record(session.answerChoice(it)) } } }
+            is TilesQuestion -> { { TilesExercise(q, state.verdict != null) { record(session.answerTiles(it)) } } }
+            is TypingQuestion -> { { TypingExercise(q, state.verdict != null) { record(session.answerTyped(it)) } } }
         }
+        key(session, state.index) { exercise() }
         state.verdict?.let { v ->
             Feedback(v, state.question)
             PrimaryButton(if (state.isLast) "Результат" else "Далі", Modifier.fillMaxWidth().padding(top = 4.dp)) {

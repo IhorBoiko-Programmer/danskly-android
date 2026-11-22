@@ -25,8 +25,7 @@ class ExerciseSession(
     private val generator: ExerciseGenerator,
     val length: Int = DEFAULT_LENGTH,
 ) {
-    var index: Int = 0
-        private set
+    private var index: Int = 0
     var score: Int = 0
         private set
     var question: Question = generator.next(type)
