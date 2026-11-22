@@ -16,7 +16,11 @@ fun setting(name: String, env: String): String? =
 
 android {
     namespace = "app.danskly"
-    compileSdk = 36
+    // AndroidX 2026.11 libraries need the Android 17 (37.1) SDK to compile against.
+    // The app still targets API 36, which is what Google Play requires.
+    compileSdk {
+        version = release(37) { minorApiLevel = 1 }
+    }
 
     defaultConfig {
         applicationId = "app.danskly"
