@@ -164,4 +164,16 @@ jobs:
           # Keys live only in Cloudflare's encrypted secrets; GitHub passes them through without printing them.
           if [ -n "$OPENCODE_KEYS" ]; then printf '%s' "$OPENCODE_KEYS" | npx --yes wrangler@4 secret put OPENCODE_KEYS; fi
           if [ -n "$ACCESS_CODE" ]; then printf '%s' "$ACCESS_CODE" | npx --yes wrangler@4 secret put ACCESS_CODE; fi
+      - name: Smoke test the live server
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          sub=$(curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" | jq -r '.result.subdomain // empty')
+          base="https://danskly.$sub.workers.dev"
+          sleep 5
+          echo "Health:"; curl -sS "$base/api/health"; echo
+          echo "Content manifest:"; curl -sS "$base/content/manifest.json"; echo
+          echo "AI answer:"
+          curl -sS -m 60 -X POST "$base/api/ai" -H "content-type: application/json" -H "x-access-code: $ACCESS_CODE" \
+            -d '{"messages":[{"role":"user","content":"Svar kun med ét dansk ord: hej"}],"stream":false}' -D - | grep -iE '^x-danskly-model|^HTTP|"text"|"error"' || true
 
