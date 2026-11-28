@@ -8,10 +8,14 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -30,12 +34,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.danskly.AppGraph
@@ -49,6 +55,7 @@ import app.danskly.core.learning.LearningRepository
 import app.danskly.core.learning.NewWordResult
 import app.danskly.core.learning.WordKind
 import app.danskly.core.model.Progress
+import app.danskly.core.model.Topic
 import app.danskly.core.model.Word
 import app.danskly.core.navigation.Route
 import app.danskly.feature.today.FlipCard
@@ -63,6 +70,7 @@ import app.danskly.ui.components.Note
 import app.danskly.ui.components.PrimaryButton
 import app.danskly.ui.components.RowDivider
 import app.danskly.ui.components.SecondaryButton
+import app.danskly.ui.components.SectionTitle
 import app.danskly.ui.components.Segmented
 import app.danskly.ui.components.SpeakButton
 import app.danskly.ui.components.SpeakPair
@@ -77,20 +85,79 @@ fun TopicsScreen(graph: AppGraph) {
     val progress by repo.progress.collectAsState()
     ScreenColumn {
         LargeTitle("Слова")
-        Subtitle("Обери тему")
+        Subtitle("${repo.allWords.size} слів у ${repo.topics.size} темах")
         val rows = listOf(
             Triple("➕", "Додати своє слово", "Слова з уроків чи з життя") to Route.AddWord(null),
             Triple("🗂️", "Усі слова", "${repo.allWords.size} слів") to Route.Topic(null),
-        ) + repo.topics.map { t ->
-            val words = repo.wordsIn(t.name)
-            Triple(t.icon, t.name, "${words.size} слів · вивчено ${words.count { progress.isKnown(it) }}") to Route.Topic(t.name)
-        }
+        ) + repo.topTopics.map { t -> Triple(t.icon, t.name, topicProgress(repo.wordsIn(t.name), progress)) to Route.Topic(t.name) }
         GroupedList(rows.withIndex().toList()) { (i, row) ->
             val (icon, title, subtitle) = row.first
             ListRow(icon, title, subtitle, TileColors.list[i % TileColors.list.size]) { graph.navigator.open(row.second) }
         }
+        repo.topicGroups.forEachIndexed { g, group ->
+            SectionTitle(group.name)
+            TopicGrid(group.topics, colorOffset = g) { topic, color ->
+                TopicTile(topic, repo.wordsIn(topic.name), progress, color) { graph.navigator.open(Route.Topic(topic.name)) }
+            }
+        }
     }
 }
+
+private fun topicProgress(words: List<Word>, progress: Progress) =
+    "${words.size} слів · вивчено ${words.count { progress.isKnown(it) }}"
+
+/** Topics as square tiles, three in a row. */
+@Composable
+private fun TopicGrid(topics: List<Topic>, colorOffset: Int, tile: @Composable RowScope.(Topic, Color) -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        topics.chunked(TOPICS_PER_ROW).forEachIndexed { r, row ->
+            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                row.forEachIndexed { c, topic ->
+                    val color = TileColors.list[(colorOffset * 2 + r * TOPICS_PER_ROW + c) % TileColors.list.size]
+                    tile(topic, color)
+                }
+                repeat(TOPICS_PER_ROW - row.size) { Spacer(Modifier.weight(1f)) }
+            }
+        }
+    }
+}
+
+@Composable
+private fun RowScope.TopicTile(topic: Topic, words: List<Word>, progress: Progress, color: Color, onClick: () -> Unit) {
+    val p = LocalPalette.current
+    val shape = RoundedCornerShape(18.dp)
+    Column(
+        Modifier
+            .weight(1f)
+            .aspectRatio(1f)
+            .clip(shape)
+            .background(p.glass)
+            .border(1.dp, p.line, shape)
+            .clickable(onClickLabel = topic.name, role = Role.Button, onClick = onClick)
+            .padding(8.dp)
+            .testTag("topic:${topic.name}"),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Box(Modifier.size(48.dp).clip(RoundedCornerShape(12.dp)).background(color), contentAlignment = Alignment.Center) {
+            Text(topic.icon, fontSize = 26.sp)
+        }
+        Text(
+            topic.name,
+            Modifier.padding(top = 6.dp),
+            color = p.ink,
+            fontSize = 13.sp,
+            lineHeight = 15.sp,
+            fontWeight = FontWeight.SemiBold,
+            textAlign = TextAlign.Center,
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+        )
+        Text("${words.count { progress.isKnown(it) }}/${words.size}", color = p.muted, fontSize = 11.sp)
+    }
+}
+
+private const val TOPICS_PER_ROW = 3
 
 @Composable
 fun TopicScreen(graph: AppGraph, topic: String?) {

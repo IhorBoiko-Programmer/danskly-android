@@ -29,6 +29,7 @@ class ScreenshotTest : UiTest() {
     @Test fun review() = shoot("03_review", Route.Review)
     @Test fun reviewBack() = shoot("03b_review_back", Route.Review) { clickTag("flip-card") }
     @Test fun topics() = shoot("04_topics", Route.Topics)
+    @Test fun topicsDark() = shoot("04_topics", Route.Topics, dark = true)
     @Test fun topic() = shoot("05_topic", Route.Topic("Подорожі"))
     @Test fun cards() = shoot("06_cards", Route.Cards("Подорожі")) { clickTag("flip-card") }
     @Test fun wordVerb() = shoot("07_word_verb", Route.WordDetails("at gå"))
@@ -36,19 +37,24 @@ class ScreenshotTest : UiTest() {
     @Test fun wordDark() = shoot("07_word_verb", Route.WordDetails("at gå"), dark = true)
     @Test fun addWord() = shoot("08_add_word", Route.AddWord(null))
     @Test fun quiz() = shoot("09_quiz", Route.Quiz(null))
+    @Test fun quizQuestion() = shoot("09b_quiz_question", Route.Quiz("Подорожі")) { clickTag("length:20") }
     @Test fun exercises() = shoot("10_exercises", Route.Exercises)
     @Test fun gap() = shoot("11_ex_gap", Route.Exercise(ExerciseType.GAP))
     @Test fun build() = shoot("12_ex_build", Route.Exercise(ExerciseType.BUILD)) { clickTag("bank:0") }
     @Test fun write() = shoot("13_ex_write", Route.Exercise(ExerciseType.WRITE))
     @Test fun dictation() = shoot("14_ex_dictation", Route.Exercise(ExerciseType.DICTATION))
     @Test fun readingList() = shoot("15_reading_list", Route.ReadingList)
+    @Test fun texts() = shoot("15b_texts_listening", Route.Texts(listening = true))
     @Test fun reading() = shoot("16_reading", Route.Reading(3))
+    @Test fun listening() = shoot("16b_listening", Route.Reading(3, listening = true))
     @Test fun grammar() = shoot("17_grammar", Route.Grammar)
     @Test fun grammarSection() = shoot("18_grammar_verbs", Route.GrammarSection(2))
+    @Test fun grammarExam() = shoot("18b_grammar_exam", Route.GrammarSection(10))
     @Test fun pronunciation() = shoot("19_pronunciation", Route.Pronunciation)
     @Test fun writingList() = shoot("20_writing_list", Route.WritingList)
     @Test fun writing() = shoot("21_writing", Route.Writing(3)) { click("Приклад відповіді") }
     @Test fun tutor() = shoot("22_tutor", Route.Tutor) { click("Розмова: подорожі") }
     @Test fun settings() = shoot("23_settings", Route.Settings)
+    @Test fun settingsVoices() = shoot("23b_settings_voices", Route.Settings) { click("Magnus (Enhanced)") }
     @Test fun settingsDark() = shoot("23_settings", Route.Settings, dark = true)
 }

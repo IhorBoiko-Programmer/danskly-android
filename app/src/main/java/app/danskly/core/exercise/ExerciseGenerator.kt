@@ -21,7 +21,7 @@ class ExerciseGenerator(
     private data class Sentence(val danish: String, val ukrainian: String)
 
     private val forms = WordFormsBuilder(content)
-    private val structural = Regex("[→–=/()]")
+    private val structural = Regex("[→–=/()…]")
     private val marked = Regex("(^|[^\\p{L}])\\*([^*]+)\\*(?!\\p{L})")
     private val sentenceEnd = Regex("[.!?]$")
 

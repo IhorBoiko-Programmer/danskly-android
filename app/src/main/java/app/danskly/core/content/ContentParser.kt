@@ -44,7 +44,7 @@ object ContentParser {
         val forms = Json.parse(read(ContentFiles.FORMS)).obj()
         val pronunciation = Json.parse(read(ContentFiles.PRONUNCIATION)).obj()
         return Content(
-            topics = words.list("topics").map { it.obj().let { o -> Topic(o.str("name"), o.str("icon")) } },
+            topics = words.list("topics").map { it.obj().let { o -> Topic(o.str("name"), o.str("icon"), o.strOrNull("group").orEmpty()) } },
             words = words.list("words").map { it.obj().toWord() },
             grammar = Json.parse(read(ContentFiles.GRAMMAR)).arr().map { it.obj().toSection() },
             writingTasks = writing.list("tasks").map {

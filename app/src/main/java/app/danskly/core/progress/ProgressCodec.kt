@@ -23,7 +23,6 @@ import app.danskly.core.model.Example
 import app.danskly.core.model.LabeledExample
 import app.danskly.core.model.Progress
 import app.danskly.core.model.Settings
-import app.danskly.core.model.VoiceGender
 import app.danskly.core.model.Word
 import app.danskly.core.model.WordDetails
 
@@ -43,12 +42,12 @@ object ProgressCodec {
             "quizCorrect" to p.quizCorrect,
             "quizTotal" to p.quizTotal,
             "reading" to p.readingScores.mapKeys { it.key.toString() },
+            "listening" to p.listeningScores.mapKeys { it.key.toString() },
             "custom" to p.customWords.map { json("da" to it.danish, "uk" to it.ukrainian, "topic" to it.topic, "article" to it.article?.text) },
             "details" to p.wordDetails.mapValues { (_, d) -> encodeDetails(d) },
             "examples" to p.exampleSentences.mapValues { (_, e) -> json("da" to e.danish, "uk" to e.ukrainian) },
             "settings" to p.settings.let {
                 json(
-                    "gender" to it.voiceGender.name,
                     "voice" to it.voiceName,
                     "rate" to it.speechRate,
                     "volume" to it.volume,
@@ -81,10 +80,8 @@ object ProgressCodec {
             plan = o.child("plan")?.let { DailyPlan(it.str("date"), it.strings("words")) },
             quizCorrect = o.int("quizCorrect"),
             quizTotal = o.int("quizTotal"),
-            readingScores = o.child("reading")?.fields.orEmpty().mapNotNull { (k, v) ->
-                val index = k.toIntOrNull() ?: return@mapNotNull null
-                index to ((v as? JsonValue.Num)?.value?.toInt() ?: 0)
-            }.toMap(),
+            readingScores = scores(o.child("reading")),
+            listeningScores = scores(o.child("listening")),
             customWords = o.list("custom").map { it.obj() }.map {
                 Word(it.str("da"), it.str("uk"), it.str("topic"), Article.fromText(it.strOrNull("article")), isCustom = true)
             },
@@ -92,7 +89,6 @@ object ProgressCodec {
             exampleSentences = o.child("examples")?.fields.orEmpty().mapValues { (_, v) -> v.obj().let { Example(it.str("da"), it.str("uk")) } },
             settings = o.child("settings")?.let { s ->
                 Settings(
-                    voiceGender = VoiceGender.entries.firstOrNull { it.name == s.strOrNull("gender") } ?: VoiceGender.BEST,
                     voiceName = s.strOrNull("voice"),
                     speechRate = s.double("rate", Settings().speechRate.toDouble()).toFloat(),
                     volume = s.double("volume", 1.0).toFloat(),
@@ -103,6 +99,11 @@ object ProgressCodec {
             } ?: Settings(),
         )
     }
+
+    private fun scores(o: JsonValue.Obj?): Map<Int, Int> = o?.fields.orEmpty().mapNotNull { (k, v) ->
+        val index = k.toIntOrNull() ?: return@mapNotNull null
+        index to ((v as? JsonValue.Num)?.value?.toInt() ?: 0)
+    }.toMap()
 
     fun encodeDetails(d: WordDetails): JsonValue.Obj = json(
         "pos" to d.partOfSpeech,

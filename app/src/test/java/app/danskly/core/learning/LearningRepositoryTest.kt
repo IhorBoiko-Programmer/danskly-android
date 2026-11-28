@@ -6,7 +6,6 @@ import app.danskly.core.model.CardState
 import app.danskly.core.model.DailyTask
 import app.danskly.core.model.Example
 import app.danskly.core.model.LabeledExample
-import app.danskly.core.model.VoiceGender
 import app.danskly.core.model.Word
 import app.danskly.core.model.WordDetails
 import app.danskly.core.progress.InMemoryProgressStore
@@ -107,6 +106,17 @@ class LearningRepositoryTest {
     }
 
     @Test
+    fun topicsSplitIntoTopListAndGroups() {
+        assertEquals(listOf("Корисні фрази"), repo.topTopics.map { it.name })
+        assertEquals("Люди й спілкування", repo.topicGroups.first().name)
+        assertEquals(listOf("Щоденні дії", "Мова й думки", "Рух і дозвілля", "Справи й рішення", "Життя й почуття"),
+            repo.topicGroups.first { it.name == "Дієслова" }.topics.map { it.name })
+        repo.addCustomWord(Word("skraldespand", "смітник", LearningRepository.MY_WORDS, Article.EN))
+        assertEquals(listOf(LearningRepository.MY_WORDS, "Корисні фрази"), repo.topTopics.map { it.name })
+        assertEquals(repo.topics.size, repo.topTopics.size + repo.topicGroups.sumOf { it.topics.size })
+    }
+
+    @Test
     fun duplicateWordsAreRejected() {
         val result = repo.addCustomWord(Word("Bog", "книга", LearningRepository.MY_WORDS))
         assertEquals(AddWordResult.Duplicate(bog), result)
@@ -129,7 +139,9 @@ class LearningRepositoryTest {
         repo.recordQuizAnswer(true)
         repo.recordQuizAnswer(false)
         repo.saveReadingScore(2, 3)
+        repo.saveReadingScore(1, 2, listening = true)
         val p = repo.progress.value
+        assertEquals(mapOf(1 to 2), p.listeningScores)
         assertEquals(1, p.quizCorrect)
         assertEquals(2, p.quizTotal)
         assertEquals(mapOf(2 to 3), p.readingScores)
@@ -138,14 +150,14 @@ class LearningRepositoryTest {
 
     @Test
     fun settingsCachesAndReset() {
-        repo.updateSettings { it.copy(voiceGender = VoiceGender.MALE, speechRate = 1.2f) }
+        repo.updateSettings { it.copy(voiceName = "Magnus", speechRate = 1.2f) }
         repo.cacheDetails(bog, details())
         repo.cacheExample(bog, Example("Jeg læser en bog.", "Я читаю книгу."))
         repo.grade(bog, true)
         repo.resetProgress()
         val p = repo.progress.value
         assertTrue(p.cards.isEmpty())
-        assertEquals(VoiceGender.MALE, p.settings.voiceGender)
+        assertEquals("Magnus", p.settings.voiceName)
         assertEquals(1, p.wordDetails.size)
         repo.clearAiCache()
         assertTrue(repo.progress.value.wordDetails.isEmpty() && repo.progress.value.exampleSentences.isEmpty())

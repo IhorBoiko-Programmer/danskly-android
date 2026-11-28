@@ -11,7 +11,6 @@ import app.danskly.core.model.Example
 import app.danskly.core.model.LabeledExample
 import app.danskly.core.model.Progress
 import app.danskly.core.model.Settings
-import app.danskly.core.model.VoiceGender
 import app.danskly.core.model.Word
 import app.danskly.core.model.WordDetails
 import org.junit.Assert.assertEquals
@@ -29,10 +28,11 @@ class ProgressCodecTest {
         quizCorrect = 3,
         quizTotal = 5,
         readingScores = mapOf(1 to 3, 4 to 0),
+        listeningScores = mapOf(2 to 1),
         customWords = listOf(Word("skraldespand", "смітник", "Мої слова", Article.EN, true), Word("at støvsuge", "пилососити", "Мої слова", null, true)),
         wordDetails = mapOf("bog" to WordDetails("іменник", "часто", listOf("Множина" to "bøger"), listOf(LabeledExample("Дім", "Jeg læser.", "Я читаю.")), listOf(Example("en god bog", "добра книга")))),
         exampleSentences = mapOf("hus" to Example("Huset er stort.", "Будинок великий.")),
-        settings = Settings(VoiceGender.FEMALE, "Sara", 0.7f, 0.5f, true, "kode", "https://danskly.example"),
+        settings = Settings("Sara", 0.7f, 0.5f, true, "kode", "https://danskly.example"),
     )
 
     @Test
@@ -58,7 +58,6 @@ class ProgressCodecTest {
         )
         assertEquals(setOf(DailyTask.REVIEW), p.day!!.done)
         assertEquals(mapOf(2 to 0, 3 to 2), p.readingScores)
-        assertEquals(VoiceGender.BEST, p.settings.voiceGender)
         assertNull(p.settings.voiceName)
         assertEquals(Settings().speechRate, p.settings.speechRate)
     }

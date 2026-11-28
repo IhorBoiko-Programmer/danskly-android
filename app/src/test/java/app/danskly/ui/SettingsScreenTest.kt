@@ -5,7 +5,6 @@ import androidx.compose.ui.test.performSemanticsAction
 import androidx.compose.ui.test.performTextInput
 import app.danskly.core.ai.AiErrorKind
 import app.danskly.core.ai.ServerHealth
-import app.danskly.core.model.VoiceGender
 import app.danskly.core.navigation.Route
 import app.danskly.core.speech.Voice
 import app.danskly.core.speech.VoiceSelector
@@ -30,22 +29,26 @@ class SettingsScreenTest : UiTest() {
     }
 
     @Test
-    fun genderAndVoiceChoice() {
+    fun voiceRowOpensAListOfVoices() {
         launch(Route.Settings, testGraph(speaker = FakeSpeaker(voices)))
-        click("Жіночий")
-        assertEquals(VoiceGender.FEMALE, settings.voiceGender)
-        assertEquals(VoiceSelector.SAMPLE, speaker.last)
-        click("Чоловічий")
-        assertEquals(VoiceGender.MALE, settings.voiceGender)
+        assertFalse(exists("Жіночий"))
+        assertFalse(exists("Чоловічий"))
+        assertTrue(exists("Автоматично · чоловічий · якісний"))
+        assertFalse(exists("Sara"))
+        click("Magnus (Enhanced)")
+        assertTrue(exists("▴"))
+        assertTrue(exists("Найкращий голос на телефоні"))
+        assertTrue(exists("жіночий"))
+        assertTrue(exists("голос"))
         click("Sara")
         assertEquals("Sara", settings.voiceName)
-        assertEquals(VoiceGender.FEMALE, settings.voiceGender)
-        click("da-dk-x-abc")
-        assertEquals(VoiceGender.BEST, settings.voiceGender)
-        assertTrue(exists("стать не вказана"))
-        assertTrue(exists("чоловічий · якісний"))
-        click("Найкращий")
+        assertEquals(VoiceSelector.SAMPLE, speaker.last)
+        assertFalse(exists("Найкращий голос на телефоні"))
+        assertTrue(exists("жіночий"))
+        click("Sara")
+        click("Автоматично")
         assertNull(settings.voiceName)
+        assertTrue(exists("Автоматично · чоловічий · якісний"))
     }
 
     @Test

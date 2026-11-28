@@ -7,7 +7,6 @@ import android.speech.tts.Voice
 import androidx.test.core.app.ApplicationProvider
 import app.danskly.AppGraph
 import app.danskly.core.model.Settings
-import app.danskly.core.model.VoiceGender
 import app.danskly.support.FakeSpeaker
 import app.danskly.support.testGraph
 import org.junit.Assert.assertEquals
@@ -100,7 +99,7 @@ class AndroidSpeakerTest {
 
     @Test
     fun speaksSentencesWithChosenVoiceRateAndVolume() {
-        settings = Settings(voiceGender = VoiceGender.FEMALE, speechRate = 1.1f, volume = 0.5f)
+        settings = Settings(voiceName = "Sara", speechRate = 1.1f, volume = 0.5f)
         val s = speaker()
         s.onInit(TextToSpeech.SUCCESS)
         s.speak("Sekretær: Hej! Kan I komme kl. 14.30?")

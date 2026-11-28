@@ -1,20 +1,19 @@
 package app.danskly.ui
 
-import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsNotEnabled
-import androidx.compose.ui.test.hasTestTag
-import androidx.compose.ui.test.onNodeWithTag
-import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.performImeAction
 import androidx.compose.ui.test.performTextInput
 import app.danskly.AppGraph
 import app.danskly.core.exercise.ChoiceQuestion
 import app.danskly.core.exercise.ExerciseGenerator
 import app.danskly.core.exercise.ExerciseSession
+import app.danskly.core.exercise.ExerciseType
+import app.danskly.core.exercise.QuizGenerator
+import app.danskly.core.exercise.QuizMode
+import app.danskly.core.exercise.QuizRound
 import app.danskly.core.exercise.TilesQuestion
 import app.danskly.core.exercise.TypingQuestion
-import app.danskly.core.exercise.ExerciseType
-import app.danskly.core.exercise.QuizMode
 import app.danskly.core.learning.LearningRepository
 import app.danskly.core.model.DailyTask
 import app.danskly.core.model.Word
@@ -22,48 +21,113 @@ import app.danskly.core.navigation.Route
 import app.danskly.support.FakeSpeaker
 import app.danskly.support.UiTest
 import app.danskly.support.testGraph
+import kotlin.random.Random
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import kotlin.random.Random
 
 class QuizScreenTest : UiTest() {
 
-    private fun answerFirstOption() {
-        compose.onAllNodes(tagStartsWith("option:"))[0].performClick()
-        compose.waitForIdle()
+    /** The same questions the screen will ask: same words, same seed as [testGraph]'s random. */
+    private fun mirror(topic: String?, mode: QuizMode, length: Int) =
+        QuizGenerator(graph.repository.wordsIn(topic), Random(7)).round(mode, length)
+
+    private fun start(topic: String?, mode: QuizMode = QuizMode.TRANSLATE, length: Int = 10): QuizRound {
+        launch(Route.Quiz(topic))
+        val round = mirror(topic, mode, length)
+        if (mode != QuizMode.TRANSLATE) click(mode.label)
+        clickTag("length:$length")
+        return round
+    }
+
+    /** Answers the first [right] questions correctly and the rest wrongly, then opens the result. */
+    private fun play(round: QuizRound, right: Int) {
+        round.questions.forEachIndexed { i, q ->
+            val option = if (i < right) q.answer else q.options.first { it != q.answer }
+            clickTag("option:$option")
+            click(if (i == round.size - 1) "Результат" else "Далі")
+        }
     }
 
     @Test
-    fun allModesWork() {
-        launch(Route.Quiz(null))
+    fun setupOffersModesAndThreeLengths() {
+        launch(Route.Quiz("Подорожі"))
+        assertTrue(exists("Подорожі · ${graph.repository.wordsIn("Подорожі").size} слів"))
+        QuizMode.entries.forEach { assertTrue(it.label, exists(it.label)) }
+        listOf(10, 20, 50).forEach { assertTrue(exists("Тест: $it питань")) }
+    }
+
+    @Test
+    fun aTestHasAFixedNumberOfQuestions() {
+        val round = start(null, length = 20)
+        tag("quiz-counter").assertTextEquals("Питання 1 з 20")
         text("Далі").assertIsNotEnabled()
-        answerFirstOption()
-        text("Далі").assertIsEnabled()
-        assertEquals(1, graph.repository.progress.value.quizTotal)
+        clickTag("option:${round.current.answer}")
+        assertTrue(exists("✓ 1"))
         assertTrue(speaker.spoken.isNotEmpty())
         click("Далі")
-        for (mode in QuizMode.entries) {
-            click(mode.label)
-            answerFirstOption()
-        }
-        assertTrue(exists("Усі слова · правильно", substring = true))
+        tag("quiz-counter").assertTextEquals("Питання 2 з 20")
+        assertEquals(1, graph.repository.progress.value.quizTotal)
+    }
+
+    @Test
+    fun resultListsMistakesAndCanRestart() {
+        val round = start("Подорожі")
+        play(round, right = 7)
+        tag("quiz-score").assertTextEquals("7 з 10")
+        assertTrue(exists("Правильно 70%"))
+        assertTrue(exists("🎉"))
+        assertTrue(exists("Повтори ці слова"))
+        assertTrue(exists(round.questions.last().word.display))
+        assertEquals(7, graph.repository.progress.value.quizCorrect)
+        assertEquals(10, graph.repository.progress.value.quizTotal)
+        click("Ще раз")
+        tag("quiz-counter").assertTextEquals("Питання 1 з 10")
+    }
+
+    @Test
+    fun perfectScoreHasNoMistakeList() {
+        play(start("Подорожі"), right = 10)
+        assertTrue(exists("🏆"))
+        assertFalse(exists("Повтори ці слова"))
+        click("Інший тест")
+        assertTrue(exists("Тест: 50 питань"))
+    }
+
+    @Test
+    fun halfScore() {
+        play(start("Подорожі"), right = 5)
+        assertTrue(exists("👍"))
+    }
+
+    @Test
+    fun zeroScore() {
+        play(start("Подорожі"), right = 0)
+        assertTrue(exists("💪"))
+        tag("quiz-score").assertTextEquals("0 з 10")
     }
 
     @Test
     fun listeningHidesTheWordUntilAnswered() {
-        launch(Route.Quiz("Подорожі"))
-        click(QuizMode.LISTEN.label)
+        val round = start("Подорожі", QuizMode.LISTEN)
         assertTrue(exists("Послухай і обери переклад"))
-        val heard = speaker.last!!
-        answerFirstOption()
-        assertTrue(exists(heard))
+        assertEquals(round.current.word.display, speaker.last)
+        clickTag("option:${round.current.answer}")
+        assertTrue(exists(round.current.word.display))
+    }
+
+    @Test
+    fun articleModeAsksEnOrEt() {
+        val round = start("Подорожі", QuizMode.ARTICLE)
+        assertTrue(exists(round.current.prompt))
+        assertTrue(exists("en"))
+        assertTrue(exists("et"))
     }
 
     @Test
     fun articleModeHiddenForVerbTopics() {
-        launch(Route.Quiz("Часті дієслова"))
+        launch(Route.Quiz("Щоденні дії"))
         assertFalse(exists(QuizMode.ARTICLE.label))
     }
 

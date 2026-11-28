@@ -13,10 +13,10 @@ class ContentParserTest {
 
     @Test
     fun loadsEverything() {
-        assertEquals(27, content.topics.size)
-        assertTrue(content.words.size >= 1000)
-        assertEquals(11, content.grammar.size)
-        assertTrue(content.ruleCount >= 80)
+        assertEquals(42, content.topics.size)
+        assertTrue(content.words.size >= 1100)
+        assertEquals(13, content.grammar.size)
+        assertTrue(content.ruleCount >= 115)
         assertEquals(6, content.writingTasks.size)
         assertEquals(6, content.writingPhrases.size)
         assertEquals(6, content.reading.size)
@@ -26,6 +26,15 @@ class ContentParserTest {
         assertEquals(29, content.alphabet.size)
         assertEquals(9, content.sounds.size)
         assertEquals(ContentFiles.ALL.size, 6)
+    }
+
+    @Test
+    fun topicsAreSmallAndGrouped() {
+        assertEquals(listOf("Корисні фрази"), content.topics.filter { it.group.isEmpty() }.map { it.name })
+        assertEquals(9, content.topics.map { it.group }.filter { it.isNotEmpty() }.distinct().size)
+        val sizes = content.topics.associate { t -> t.name to content.words.count { it.topic == t.name } }
+        assertTrue("every topic has words: $sizes", sizes.values.all { it > 0 })
+        assertTrue("subtopics stay small: $sizes", sizes.filterKeys { it != "Корисні фрази" }.values.all { it <= 45 })
     }
 
     @Test

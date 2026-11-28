@@ -46,11 +46,9 @@ object VoiceSelector {
     /** Danish voices only, best quality first. */
     fun danishVoices(all: List<Voice>): List<Voice> = all.filter(::isDanish).sortedByDescending(::score)
 
-    /** The learner's chosen voice, else the best voice of the chosen gender, else the best voice. */
+    /** The learner's chosen voice, else the best voice (voices come best first). */
     fun choose(voices: List<Voice>, settings: Settings): Voice? =
-        voices.firstOrNull { it.name == settings.voiceName }
-            ?: voices.firstOrNull { settings.voiceGender != VoiceGender.BEST && genderOf(it) == settings.voiceGender }
-            ?: voices.firstOrNull()
+        voices.firstOrNull { it.name == settings.voiceName } ?: voices.firstOrNull()
 
     /** Speech rate for normal or slow (turtle) playback. */
     fun rate(settings: Settings, slow: Boolean): Float =

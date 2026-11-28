@@ -28,6 +28,7 @@ import app.danskly.core.ai.AiTasks
 import app.danskly.core.ai.ChatMessage
 import app.danskly.core.ai.Role
 import app.danskly.core.model.VoiceGender
+import app.danskly.core.speech.Voice
 import app.danskly.core.speech.VoiceSelector
 import app.danskly.ui.ScreenColumn
 import app.danskly.ui.components.Chip
@@ -38,12 +39,12 @@ import app.danskly.ui.components.ListRow
 import app.danskly.ui.components.LocalSpeaker
 import app.danskly.ui.components.Note
 import app.danskly.ui.components.PrimaryButton
+import app.danskly.ui.components.RowDivider
 import app.danskly.ui.components.SecondaryButton
 import app.danskly.ui.components.SectionTitle
-import app.danskly.ui.components.Segmented
 import app.danskly.ui.theme.LocalPalette
-import kotlinx.coroutines.launch
 import java.util.Locale
+import kotlinx.coroutines.launch
 
 const val VOICE_HELP =
     "Найприродніше звучать покращені голоси. На Android: Налаштування → Мова → Синтез мовлення → Google → встанови данську мову " +
@@ -68,23 +69,12 @@ fun SettingsScreen(graph: AppGraph) {
         LargeTitle("Налаштування")
 
         SectionTitle("Голос")
-        Segmented(listOf(VoiceGender.BEST to "Найкращий", VoiceGender.FEMALE to "Жіночий", VoiceGender.MALE to "Чоловічий"), s.voiceGender) { g ->
-            repo.updateSettings { it.copy(voiceGender = g, voiceName = null) }
-            speaker.speak(VoiceSelector.SAMPLE)
-        }
         if (voices.isEmpty()) {
             Note("Данських голосів на телефоні не знайдено. $VOICE_HELP")
         } else {
-            GroupedList(voices) { v ->
-                val gender = when (VoiceSelector.genderOf(v)) {
-                    VoiceGender.FEMALE -> "жіночий"
-                    VoiceGender.MALE -> "чоловічий"
-                    else -> "стать не вказана"
-                }
-                ListRow(if (v == chosen) "✓" else "🔈", v.name, gender + if (VoiceSelector.score(v) >= HIGH_QUALITY) " · якісний" else "", trailing = "") {
-                    repo.updateSettings { it.copy(voiceName = v.name, voiceGender = VoiceSelector.genderOf(v) ?: VoiceGender.BEST) }
-                    speaker.speak(VoiceSelector.SAMPLE)
-                }
+            VoicePicker(voices, chosen, automatic = s.voiceName == null) { name ->
+                repo.updateSettings { it.copy(voiceName = name) }
+                speaker.speak(VoiceSelector.SAMPLE)
             }
         }
         Glass(Modifier.padding(top = 12.dp), padding = 16.dp) {
@@ -181,6 +171,41 @@ fun SettingsScreen(graph: AppGraph) {
             dismissButton = { TextButton(onClick = { confirmReset = false }) { Text("Скасувати") } },
         )
     }
+}
+
+/** The current voice; tapping it opens the list of all Danish voices on the phone. */
+@Composable
+private fun VoicePicker(voices: List<Voice>, chosen: Voice?, automatic: Boolean, onPick: (String?) -> Unit) {
+    var open by remember { mutableStateOf(false) }
+    Glass {
+        ListRow("🔊", chosen?.name.orEmpty(), (if (automatic) "Автоматично · " else "") + describe(chosen), trailing = if (open) "▴" else "▾") {
+            open = !open
+        }
+        if (open) {
+            RowDivider()
+            ListRow("✨", "Автоматично", "Найкращий голос на телефоні", trailing = if (automatic) "✓" else "") {
+                open = false
+                onPick(null)
+            }
+            voices.forEach { v ->
+                RowDivider()
+                ListRow("🔈", v.name, describe(v), trailing = if (!automatic && v == chosen) "✓" else "") {
+                    open = false
+                    onPick(v.name)
+                }
+            }
+        }
+    }
+}
+
+private fun describe(v: Voice?): String {
+    if (v == null) return ""
+    val gender = when (VoiceSelector.genderOf(v)) {
+        VoiceGender.FEMALE -> "жіночий"
+        VoiceGender.MALE -> "чоловічий"
+        null -> "голос"
+    }
+    return gender + if (VoiceSelector.score(v) >= HIGH_QUALITY) " · якісний" else ""
 }
 
 @Composable

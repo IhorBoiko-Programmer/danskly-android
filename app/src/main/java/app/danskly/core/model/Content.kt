@@ -27,7 +27,11 @@ data class Word(
     val verbBase: String get() = danish.removePrefix("at ")
 }
 
-data class Topic(val name: String, val icon: String)
+/** A word topic. Topics with the same [group] are shown together; an empty group means "show on top". */
+data class Topic(val name: String, val icon: String, val group: String = "")
+
+/** A heading on the words screen with its topics, e.g. "Дієслова" → Щоденні дії, Мова й думки… */
+data class TopicGroup(val name: String, val topics: List<Topic>)
 
 /** A Danish sentence with its translation. `danish` may mark highlighted parts with *asterisks*. */
 data class Example(val danish: String, val ukrainian: String)

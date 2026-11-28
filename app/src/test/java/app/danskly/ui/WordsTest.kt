@@ -34,6 +34,33 @@ class TopicsScreenTest : UiTest() {
         clickTag("back")
         click("Додати своє слово")
         assertEquals(Route.AddWord(null), graph.navigator.current)
+        clickTag("back")
+        click("Корисні фрази")
+        assertEquals(Route.Topic("Корисні фрази"), graph.navigator.current)
+    }
+
+    @Test
+    fun topicsAreGroupedIntoTilesWithProgress() {
+        val g = testGraph()
+        g.repository.grade(g.repository.findWord("at gå")!!, true)
+        g.repository.grade(g.repository.findWord("at gå")!!, true)
+        g.repository.grade(g.repository.findWord("at gå")!!, true)
+        launch(Route.Topics, g)
+        assertTrue(exists("Дієслова"))
+        assertTrue(exists("Службові слова"))
+        val total = g.repository.wordsIn("Щоденні дії").size
+        assertTrue(exists("1/$total"))
+        clickTag("topic:Сполучники")
+        assertEquals(Route.Topic("Сполучники"), graph.navigator.current)
+    }
+
+    @Test
+    fun ownTopicsAppearAboveTheGroups() {
+        val g = testGraph()
+        g.repository.addCustomWord(Word("kuffertrem", "ремінь для валізи", LearningRepository.MY_WORDS, null))
+        launch(Route.Topics, g)
+        click(LearningRepository.MY_WORDS)
+        assertEquals(Route.Topic(LearningRepository.MY_WORDS), graph.navigator.current)
     }
 }
 

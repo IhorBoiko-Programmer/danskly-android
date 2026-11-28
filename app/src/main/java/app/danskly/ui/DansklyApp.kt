@@ -29,6 +29,7 @@ import app.danskly.feature.home.HomeScreen
 import app.danskly.feature.quiz.QuizScreen
 import app.danskly.feature.reading.ReadingListScreen
 import app.danskly.feature.reading.ReadingScreen
+import app.danskly.feature.reading.TextsScreen
 import app.danskly.feature.settings.SettingsScreen
 import app.danskly.feature.today.ReviewScreen
 import app.danskly.feature.today.RuleScreen
@@ -87,7 +88,8 @@ private fun RouteScreen(route: Route, graph: AppGraph) = when (route) {
     Route.Exercises -> ExercisesScreen(graph)
     is Route.Exercise -> ExerciseScreen(graph, route.type)
     Route.ReadingList -> ReadingListScreen(graph)
-    is Route.Reading -> ReadingScreen(graph, route.index)
+    is Route.Texts -> TextsScreen(graph, route.listening)
+    is Route.Reading -> ReadingScreen(graph, route.index, route.listening)
     Route.Grammar -> GrammarScreen(graph)
     is Route.GrammarSection -> GrammarSectionScreen(graph, route.index)
     is Route.Rule -> RuleScreen(graph, route.section, route.rule)
@@ -114,6 +116,7 @@ fun titleOf(route: Route, graph: AppGraph): String {
         Route.Exercises -> "Завдання"
         is Route.Exercise -> route.type.title
         Route.ReadingList -> "Читання й слухання"
+        is Route.Texts -> if (route.listening) "Слухання" else "Читання"
         is Route.Reading -> content.reading[route.index].kind
         Route.Grammar -> "Граматика"
         is Route.GrammarSection -> content.grammar[route.index].title

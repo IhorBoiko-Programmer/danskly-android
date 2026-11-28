@@ -8,6 +8,7 @@ import app.danskly.core.model.Example
 import app.danskly.core.model.Progress
 import app.danskly.core.model.Settings
 import app.danskly.core.model.Topic
+import app.danskly.core.model.TopicGroup
 import app.danskly.core.model.Word
 import app.danskly.core.model.WordDetails
 import app.danskly.core.progress.ProgressCodec
@@ -49,6 +50,13 @@ class LearningRepository(
                 .map { Topic(it, if (it == MY_WORDS) MY_WORDS_ICON else "•") }
             return extra.sortedByDescending { it.name == MY_WORDS } + content.topics
         }
+
+    /** Topics without a group (useful phrases, the learner's own topics), shown above the groups. */
+    val topTopics: List<Topic> get() = topics.filter { it.group.isEmpty() }
+
+    /** Grouped topics in the order of the content file. */
+    val topicGroups: List<TopicGroup>
+        get() = topics.filter { it.group.isNotEmpty() }.groupBy { it.group }.map { (name, list) -> TopicGroup(name, list) }
 
     fun wordsIn(topic: String?): List<Word> = if (topic == null) allWords else allWords.filter { it.topic == topic }
 
@@ -96,8 +104,11 @@ class LearningRepository(
         update { it.copy(quizTotal = it.quizTotal + 1, quizCorrect = it.quizCorrect + if (correct) 1 else 0) }
     }
 
-    fun saveReadingScore(textIndex: Int, score: Int) {
-        update { it.copy(readingScores = it.readingScores + (textIndex to score)) }
+    fun saveReadingScore(textIndex: Int, score: Int, listening: Boolean = false) {
+        update {
+            if (listening) it.copy(listeningScores = it.listeningScores + (textIndex to score))
+            else it.copy(readingScores = it.readingScores + (textIndex to score))
+        }
         recordAction(DailyTask.READING)
     }
 

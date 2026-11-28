@@ -37,11 +37,9 @@ class VoiceSelectorTest {
     }
 
     @Test
-    fun choosesNamedThenGenderThenBest() {
+    fun choosesNamedThenBest() {
         val voices = VoiceSelector.danishVoices(listOf(sara, magnus, google))
         assertEquals(sara, VoiceSelector.choose(voices, Settings(voiceName = "Sara")))
-        assertEquals(google, VoiceSelector.choose(voices, Settings(voiceGender = VoiceGender.FEMALE)))
-        assertEquals(magnus, VoiceSelector.choose(voices, Settings(voiceGender = VoiceGender.MALE)))
         assertEquals(magnus, VoiceSelector.choose(voices, Settings()))
         assertEquals(magnus, VoiceSelector.choose(voices, Settings(voiceName = "Gone")))
         assertNull(VoiceSelector.choose(emptyList(), Settings()))

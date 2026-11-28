@@ -12,10 +12,11 @@ data class DayLog(val date: String, val actions: Int = 0, val done: Set<DailyTas
 /** The new words chosen for a given day, so the plan stays the same all day. */
 data class DailyPlan(val date: String, val newWords: List<String>)
 
-enum class VoiceGender { BEST, FEMALE, MALE }
+/** Whether a voice sounds female or male, as far as its name or features tell. Shown next to the voice name. */
+enum class VoiceGender { FEMALE, MALE }
 
 data class Settings(
-    val voiceGender: VoiceGender = VoiceGender.BEST,
+    /** The chosen voice; null means "the best voice on the phone". */
     val voiceName: String? = null,
     val speechRate: Float = 0.95f,
     val volume: Float = 1f,
@@ -45,7 +46,9 @@ data class Progress(
     val plan: DailyPlan? = null,
     val quizCorrect: Int = 0,
     val quizTotal: Int = 0,
+    /** Best result per text index, for reading and for listening separately. */
     val readingScores: Map<Int, Int> = emptyMap(),
+    val listeningScores: Map<Int, Int> = emptyMap(),
     val customWords: List<Word> = emptyList(),
     val wordDetails: Map<String, WordDetails> = emptyMap(),
     val exampleSentences: Map<String, Example> = emptyMap(),

@@ -1,112 +1,214 @@
 {
  "topics": [
   {
-   "name": "Корисні вирази",
-   "icon": "💬"
+   "name": "Корисні фрази",
+   "icon": "💬",
+   "group": ""
   },
   {
    "name": "Спілкування",
-   "icon": "🗣️"
-  },
-  {
-   "name": "Часті дієслова",
-   "icon": "🏃"
-  },
-  {
-   "name": "Часті прикметники",
-   "icon": "🎨"
-  },
-  {
-   "name": "Службові слова",
-   "icon": "🔗"
-  },
-  {
-   "name": "Числа й кольори",
-   "icon": "🔢"
-  },
-  {
-   "name": "Подорожі",
-   "icon": "✈️"
-  },
-  {
-   "name": "Транспорт",
-   "icon": "🚌"
-  },
-  {
-   "name": "Їжа й ресторан",
-   "icon": "🍽️"
-  },
-  {
-   "name": "Покупки й гроші",
-   "icon": "🛒"
-  },
-  {
-   "name": "Банк і пошта",
-   "icon": "🏦"
-  },
-  {
-   "name": "Дім і місто",
-   "icon": "🏙️"
-  },
-  {
-   "name": "Дім і побут",
-   "icon": "🛋️"
+   "icon": "🗣️",
+   "group": "Люди й спілкування"
   },
   {
    "name": "Сім’я й люди",
-   "icon": "👪"
-  },
-  {
-   "name": "Робота й навчання",
-   "icon": "💼"
-  },
-  {
-   "name": "Професії",
-   "icon": "🧑‍🔧"
-  },
-  {
-   "name": "Освіта",
-   "icon": "🎓"
-  },
-  {
-   "name": "Здоров’я",
-   "icon": "🩺"
-  },
-  {
-   "name": "Тіло",
-   "icon": "🫀"
+   "icon": "👪",
+   "group": "Люди й спілкування"
   },
   {
    "name": "Почуття й характер",
-   "icon": "🙂"
+   "icon": "🙂",
+   "group": "Люди й спілкування"
   },
   {
-   "name": "Погода й природа",
-   "icon": "🌤️"
+   "name": "Тіло",
+   "icon": "🫀",
+   "group": "Люди й спілкування"
+  },
+  {
+   "name": "Здоров’я",
+   "icon": "🩺",
+   "group": "Люди й спілкування"
+  },
+  {
+   "name": "Продукти",
+   "icon": "🥖",
+   "group": "Щоденне життя"
+  },
+  {
+   "name": "Напої й кухня",
+   "icon": "☕",
+   "group": "Щоденне життя"
+  },
+  {
+   "name": "Ресторан",
+   "icon": "🍽️",
+   "group": "Щоденне життя"
+  },
+  {
+   "name": "Покупки й гроші",
+   "icon": "🛒",
+   "group": "Щоденне життя"
+  },
+  {
+   "name": "Дім і побут",
+   "icon": "🛋️",
+   "group": "Щоденне життя"
   },
   {
    "name": "Одяг",
-   "icon": "👕"
+   "icon": "👕",
+   "group": "Щоденне життя"
   },
   {
-   "name": "Час",
-   "icon": "⏰"
+   "name": "Місто",
+   "icon": "🏙️",
+   "group": "Місто й подорожі"
   },
   {
-   "name": "Дозвілля й спорт",
-   "icon": "⚽"
+   "name": "Транспорт",
+   "icon": "🚌",
+   "group": "Місто й подорожі"
   },
   {
-   "name": "Свята й традиції",
-   "icon": "🎉"
+   "name": "Подорожі",
+   "icon": "✈️",
+   "group": "Місто й подорожі"
   },
   {
-   "name": "Техніка й інтернет",
-   "icon": "💻"
+   "name": "Банк і пошта",
+   "icon": "🏦",
+   "group": "Місто й подорожі"
+  },
+  {
+   "name": "Робота й навчання",
+   "icon": "💼",
+   "group": "Робота й суспільство"
+  },
+  {
+   "name": "Професії",
+   "icon": "🧑‍🔧",
+   "group": "Робота й суспільство"
+  },
+  {
+   "name": "Освіта",
+   "icon": "🎓",
+   "group": "Робота й суспільство"
   },
   {
    "name": "Суспільство й держава",
-   "icon": "🏛️"
+   "icon": "🏛️",
+   "group": "Робота й суспільство"
+  },
+  {
+   "name": "Техніка й інтернет",
+   "icon": "💻",
+   "group": "Робота й суспільство"
+  },
+  {
+   "name": "Дні й дати",
+   "icon": "📅",
+   "group": "Час і числа"
+  },
+  {
+   "name": "Коли й як часто",
+   "icon": "⏰",
+   "group": "Час і числа"
+  },
+  {
+   "name": "Числа",
+   "icon": "🔢",
+   "group": "Час і числа"
+  },
+  {
+   "name": "Кольори",
+   "icon": "🎨",
+   "group": "Час і числа"
+  },
+  {
+   "name": "Погода",
+   "icon": "🌤️",
+   "group": "Природа й вільний час"
+  },
+  {
+   "name": "Природа й тварини",
+   "icon": "🌳",
+   "group": "Природа й вільний час"
+  },
+  {
+   "name": "Дозвілля й спорт",
+   "icon": "⚽",
+   "group": "Природа й вільний час"
+  },
+  {
+   "name": "Свята й традиції",
+   "icon": "🎉",
+   "group": "Природа й вільний час"
+  },
+  {
+   "name": "Щоденні дії",
+   "icon": "🏃",
+   "group": "Дієслова"
+  },
+  {
+   "name": "Мова й думки",
+   "icon": "💭",
+   "group": "Дієслова"
+  },
+  {
+   "name": "Рух і дозвілля",
+   "icon": "💃",
+   "group": "Дієслова"
+  },
+  {
+   "name": "Справи й рішення",
+   "icon": "✅",
+   "group": "Дієслова"
+  },
+  {
+   "name": "Життя й почуття",
+   "icon": "❤️",
+   "group": "Дієслова"
+  },
+  {
+   "name": "Розмір і форма",
+   "icon": "📏",
+   "group": "Прикметники"
+  },
+  {
+   "name": "Оцінка",
+   "icon": "⭐",
+   "group": "Прикметники"
+  },
+  {
+   "name": "Люди й настрій",
+   "icon": "😊",
+   "group": "Прикметники"
+  },
+  {
+   "name": "Відчуття й якість",
+   "icon": "✋",
+   "group": "Прикметники"
+  },
+  {
+   "name": "Питання й займенники",
+   "icon": "❓",
+   "group": "Службові слова"
+  },
+  {
+   "name": "Сполучники",
+   "icon": "🔗",
+   "group": "Службові слова"
+  },
+  {
+   "name": "Прислівники",
+   "icon": "➰",
+   "group": "Службові слова"
+  },
+  {
+   "name": "Місце й прийменники",
+   "icon": "📍",
+   "group": "Службові слова"
   }
  ],
  "words": [
@@ -119,7 +221,7 @@
   {
    "da": "hus",
    "uk": "будинок",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
@@ -137,7 +239,7 @@
   {
    "da": "dag",
    "uk": "день",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
@@ -149,19 +251,19 @@
   {
    "da": "by",
    "uk": "місто",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "værelse",
    "uk": "кімната",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "uge",
    "uk": "тиждень",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
@@ -173,7 +275,7 @@
   {
    "da": "lejlighed",
    "uk": "квартира",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
@@ -197,7 +299,7 @@
   {
    "da": "at bo",
    "uk": "жити, мешкати",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": null
   },
   {
@@ -245,13 +347,13 @@
   {
    "da": "ofte",
    "uk": "часто",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "aldrig",
    "uk": "ніколи",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
@@ -263,7 +365,7 @@
   {
    "da": "stadig",
    "uk": "досі",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
@@ -503,199 +605,199 @@
   {
    "da": "nabo",
    "uk": "сусід",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "husleje",
    "uk": "оренда",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "at flytte",
    "uk": "переїжджати",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": null
   },
   {
    "da": "i morgen",
    "uk": "завтра",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "i går",
    "uk": "вчора",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "for nylig",
    "uk": "нещодавно",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "pludselig",
    "uk": "раптом",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "Undskyld",
    "uk": "Вибачте",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Kan du gentage det?",
    "uk": "Можете повторити?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Jeg forstår ikke",
    "uk": "Я не розумію",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Hvad betyder det?",
    "uk": "Що це означає?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Tal langsomt, tak",
    "uk": "Говоріть повільніше, будь ласка",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Det er rigtigt",
    "uk": "Це правильно",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Jeg er enig",
    "uk": "Я згоден",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Jeg er uenig",
    "uk": "Я не згоден",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Det afhænger af",
    "uk": "Це залежить від",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Efter min mening",
    "uk": "На мою думку",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Det er en god idé",
    "uk": "Це гарна ідея",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Hvordan staver man det?",
    "uk": "Як це пишеться?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "menu",
    "uk": "меню",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "en"
   },
   {
    "da": "bord",
    "uk": "стіл",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "et"
   },
   {
    "da": "servitør",
    "uk": "офіціант",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "en"
   },
   {
    "da": "at spise",
    "uk": "їсти",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "at drikke",
    "uk": "пити",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "morgenmad",
    "uk": "сніданок",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "en"
   },
   {
    "da": "frokost",
    "uk": "обід",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "en"
   },
   {
    "da": "aftensmad",
    "uk": "вечеря",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "en"
   },
   {
    "da": "brød",
    "uk": "хліб",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "ost",
    "uk": "сир",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "æble",
    "uk": "яблуко",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "kød",
    "uk": "м’ясо",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "sulten",
    "uk": "голодний",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "tørstig",
    "uk": "спраглий",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
@@ -857,79 +959,79 @@
   {
    "da": "vejr",
    "uk": "погода",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "et"
   },
   {
    "da": "sol",
    "uk": "сонце",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "regn",
    "uk": "дощ",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "sne",
    "uk": "сніг",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "vind",
    "uk": "вітер",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "kold",
    "uk": "холодний",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": null
   },
   {
    "da": "varm",
    "uk": "теплий",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": null
   },
   {
    "da": "skov",
    "uk": "ліс",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "hav",
    "uk": "море",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "et"
   },
   {
    "da": "strand",
    "uk": "пляж",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "blomst",
    "uk": "квітка",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "træ",
    "uk": "дерево",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "et"
   },
   {
    "da": "at regne",
    "uk": "йти (про дощ)",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": null
   },
   {
@@ -1367,43 +1469,43 @@
   {
    "da": "måned",
    "uk": "місяць",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "år",
    "uk": "рік",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "et"
   },
   {
    "da": "time",
    "uk": "година",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "minut",
    "uk": "хвилина",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "et"
   },
   {
    "da": "i dag",
    "uk": "сьогодні",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "om morgenen",
    "uk": "вранці",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "hver dag",
    "uk": "щодня",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
@@ -1427,1717 +1529,1717 @@
   {
    "da": "at have",
    "uk": "мати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at være",
    "uk": "бути",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at gøre",
    "uk": "робити",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at gå",
    "uk": "йти",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at komme",
    "uk": "приходити",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at se",
    "uk": "бачити",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at tage",
    "uk": "брати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at give",
    "uk": "давати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at sige",
    "uk": "казати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at tale",
    "uk": "говорити",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at høre",
    "uk": "чути",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at læse",
    "uk": "читати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at skrive",
    "uk": "писати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at ringe",
    "uk": "телефонувати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at åbne",
    "uk": "відкривати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at lukke",
    "uk": "закривати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at starte",
    "uk": "починати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at stoppe",
    "uk": "зупиняти",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at slutte",
    "uk": "закінчувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at prøve",
    "uk": "пробувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at hedde",
    "uk": "називатися",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at kende",
    "uk": "знати (людину)",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at vide",
    "uk": "знати (факт)",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at tro",
    "uk": "вірити, думати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at tænke",
    "uk": "думати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at synes",
    "uk": "вважати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at lave",
    "uk": "робити",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at bruge",
    "uk": "використовувати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at ligge",
    "uk": "лежати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at sidde",
    "uk": "сидіти",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at stå",
    "uk": "стояти",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at sove",
    "uk": "спати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at vågne",
    "uk": "прокидатися",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at stå op",
    "uk": "вставати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at vaske",
    "uk": "мити",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at lave mad",
    "uk": "готувати їжу",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at gemme",
    "uk": "зберігати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at finde",
    "uk": "знаходити",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at miste",
    "uk": "губити",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at vinde",
    "uk": "вигравати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at tabe",
    "uk": "програвати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at løbe",
    "uk": "бігти",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at svømme",
    "uk": "плавати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at danse",
    "uk": "танцювати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at synge",
    "uk": "співати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at spille",
    "uk": "грати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at le",
    "uk": "сміятися",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at græde",
    "uk": "плакати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at leje",
    "uk": "орендувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at sende",
    "uk": "надсилати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at modtage",
    "uk": "отримувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at få",
    "uk": "отримувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at bede",
    "uk": "просити",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at kræve",
    "uk": "вимагати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at ændre",
    "uk": "змінювати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at vælge",
    "uk": "обирати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at vise",
    "uk": "показувати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at hente",
    "uk": "забирати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at bringe",
    "uk": "приносити",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at skynde sig",
    "uk": "поспішати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at deltage",
    "uk": "брати участь",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at mødes",
    "uk": "зустрічатися",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at begynde",
    "uk": "починати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at forsøge",
    "uk": "намагатися",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at føle",
    "uk": "відчувати",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at mærke",
    "uk": "помічати, відчувати",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at glæde sig",
    "uk": "радіти, чекати з нетерпінням",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at lytte",
    "uk": "слухати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at kigge",
    "uk": "дивитися",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at følge",
    "uk": "слідувати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at kalde",
    "uk": "кликати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at trække",
    "uk": "тягнути",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at skubbe",
    "uk": "штовхати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at bære",
    "uk": "нести",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at falde",
    "uk": "падати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at stige",
    "uk": "підніматися",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at blive",
    "uk": "ставати, лишатися",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at mangle",
    "uk": "бракувати",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at betyde",
    "uk": "означати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at forbedre",
    "uk": "покращувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at udvikle",
    "uk": "розвивати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at beslutte",
    "uk": "вирішувати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at planlægge",
    "uk": "планувати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at forberede",
    "uk": "готувати(ся)",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at overveje",
    "uk": "обмірковувати",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at tilbyde",
    "uk": "пропонувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at acceptere",
    "uk": "приймати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at nægte",
    "uk": "відмовлятися",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at tillade",
    "uk": "дозволяти",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at forbyde",
    "uk": "забороняти",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at fortsætte",
    "uk": "продовжувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at afslutte",
    "uk": "завершувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at aflyse",
    "uk": "скасовувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at udsætte",
    "uk": "відкладати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at tjekke",
    "uk": "перевіряти",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at reparere",
    "uk": "ремонтувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at bygge",
    "uk": "будувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at sælge",
    "uk": "продавати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at tjene",
    "uk": "заробляти",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at dele",
    "uk": "ділити(ся)",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at samle",
    "uk": "збирати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at smide ud",
    "uk": "викидати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "stor",
    "uk": "великий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "lille",
    "uk": "маленький",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "god",
    "uk": "добрий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "dårlig",
    "uk": "поганий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "ny",
    "uk": "новий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "gammel",
    "uk": "старий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "ung",
    "uk": "молодий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "høj",
    "uk": "високий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "lav",
    "uk": "низький",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "lang",
    "uk": "довгий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "tung",
    "uk": "важкий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "let",
    "uk": "легкий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "hurtig",
    "uk": "швидкий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "langsom",
    "uk": "повільний",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "rig",
    "uk": "багатий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "fattig",
    "uk": "бідний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "sød",
    "uk": "милий, солодкий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "pæn",
    "uk": "гарний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "grim",
    "uk": "потворний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "stærk",
    "uk": "сильний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "svag",
    "uk": "слабкий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "åben",
    "uk": "відкритий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "lukket",
    "uk": "закритий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "fuld",
    "uk": "повний",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "tom",
    "uk": "порожній",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "ren",
    "uk": "чистий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "beskidt",
    "uk": "брудний",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "vigtig",
    "uk": "важливий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "svær",
    "uk": "складний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "nem",
    "uk": "простий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "mærkelig",
    "uk": "дивний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "rolig",
    "uk": "спокійний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "travl",
    "uk": "зайнятий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "fri",
    "uk": "вільний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "ensom",
    "uk": "самотній",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "tilfreds",
    "uk": "задоволений",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "interessant",
    "uk": "цікавий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "kedelig",
    "uk": "нудний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "nødvendig",
    "uk": "необхідний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "mulig",
    "uk": "можливий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "forskellig",
    "uk": "різний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "sikker",
    "uk": "впевнений, безпечний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "gammeldags",
    "uk": "старомодний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "moderne",
    "uk": "сучасний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "populær",
    "uk": "популярний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "berømt",
    "uk": "відомий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "farlig",
    "uk": "небезпечний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "sund",
    "uk": "корисний для здоров’я",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "usund",
    "uk": "шкідливий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "praktisk",
    "uk": "практичний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "dejlig",
    "uk": "чудовий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "frisk",
    "uk": "свіжий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "sur",
    "uk": "кислий; сердитий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "bitter",
    "uk": "гіркий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "stille",
    "uk": "тихий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "våd",
    "uk": "мокрий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "tør",
    "uk": "сухий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "blød",
    "uk": "м’який",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "hård",
    "uk": "твердий",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "glat",
    "uk": "слизький",
-   "topic": "Часті прикметники",
+   "topic": "Відчуття й якість",
    "article": null
   },
   {
    "da": "smal",
    "uk": "вузький",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "bred",
    "uk": "широкий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "tyk",
    "uk": "товстий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "tynd",
    "uk": "тонкий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "klog",
    "uk": "розумний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "dum",
    "uk": "дурний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "rigtig",
    "uk": "правильний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "forkert",
    "uk": "неправильний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "færdig",
    "uk": "готовий, закінчений",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "og",
    "uk": "і",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "men",
    "uk": "але",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "eller",
    "uk": "або",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "fordi",
    "uk": "тому що",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "hvis",
    "uk": "якщо",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "når",
    "uk": "коли",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "selvom",
    "uk": "хоча",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "mens",
    "uk": "поки",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "før",
    "uk": "до, перед тим як",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "efter",
    "uk": "після",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "så",
    "uk": "тому; потім",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "meget",
    "uk": "дуже, багато",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "lidt",
    "uk": "трохи",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "mere",
    "uk": "більше",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "mindre",
    "uk": "менше",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "nok",
    "uk": "мабуть; достатньо",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "kun",
    "uk": "лише",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "bare",
    "uk": "просто",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "næsten",
    "uk": "майже",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "især",
    "uk": "особливо",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "sammen",
    "uk": "разом",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "alene",
    "uk": "сам, наодинці",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "her",
    "uk": "тут",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "der",
    "uk": "там",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "hvor",
    "uk": "де",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hvad",
    "uk": "що",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hvem",
    "uk": "хто",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hvornår",
    "uk": "коли (питання)",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hvorfor",
    "uk": "чому",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hvordan",
    "uk": "як",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hvilken",
    "uk": "який",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "nogen",
    "uk": "хтось",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "ingen",
    "uk": "ніхто",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "alle",
    "uk": "усі",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "noget",
    "uk": "щось",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "ingenting",
    "uk": "нічого",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "alt",
    "uk": "усе",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "hinanden",
    "uk": "один одного",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "selv",
    "uk": "сам",
-   "topic": "Службові слова",
+   "topic": "Питання й займенники",
    "article": null
   },
   {
    "da": "gerne",
    "uk": "охоче",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "desværre",
    "uk": "на жаль",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "heldigvis",
    "uk": "на щастя",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "faktisk",
    "uk": "насправді",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "selvfølgelig",
    "uk": "звичайно",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "ellers",
    "uk": "інакше",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "desuden",
    "uk": "крім того",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "derfor",
    "uk": "тому",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "dog",
    "uk": "однак",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "jo",
    "uk": "адже",
-   "topic": "Службові слова",
+   "topic": "Сполучники",
    "article": null
   },
   {
    "da": "nu",
    "uk": "зараз",
-   "topic": "Службові слова",
+   "topic": "Прислівники",
    "article": null
   },
   {
    "da": "ude",
    "uk": "надворі",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "inde",
    "uk": "всередині",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "hjemme",
    "uk": "вдома",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "hjem",
    "uk": "додому",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "op",
    "uk": "вгору",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "ned",
    "uk": "вниз",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "ud",
    "uk": "назовні",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "ind",
    "uk": "всередину",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "over",
    "uk": "над",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "under",
    "uk": "під",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "foran",
    "uk": "перед",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "bagved",
    "uk": "позаду",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "ved siden af",
    "uk": "поруч з",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "mellem",
    "uk": "між",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "uden",
    "uk": "без",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "med",
    "uk": "з",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "om",
    "uk": "про; через",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "for",
    "uk": "для",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "til",
    "uk": "до",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "fra",
    "uk": "від, з",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "hos",
    "uk": "у (когось)",
-   "topic": "Службові слова",
+   "topic": "Місце й прийменники",
    "article": null
   },
   {
    "da": "en",
    "uk": "один",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "to",
    "uk": "два",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tre",
    "uk": "три",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "fire",
    "uk": "чотири",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "fem",
    "uk": "п’ять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "seks",
    "uk": "шість",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "syv",
    "uk": "сім",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "otte",
    "uk": "вісім",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "ni",
    "uk": "дев’ять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "ti",
    "uk": "десять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "elleve",
    "uk": "одинадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tolv",
    "uk": "дванадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tretten",
    "uk": "тринадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "fjorten",
    "uk": "чотирнадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "femten",
    "uk": "п’ятнадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "seksten",
    "uk": "шістнадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "sytten",
    "uk": "сімнадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "atten",
    "uk": "вісімнадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "nitten",
    "uk": "дев’ятнадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tyve",
    "uk": "двадцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tredive",
    "uk": "тридцять",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "fyrre",
    "uk": "сорок",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "halvtreds",
    "uk": "п’ятдесят",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tres",
    "uk": "шістдесят",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "halvfjerds",
    "uk": "сімдесят",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "firs",
    "uk": "вісімдесят",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "halvfems",
    "uk": "дев’яносто",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "hundrede",
    "uk": "сто",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "tusind",
    "uk": "тисяча",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": null
   },
   {
    "da": "million",
    "uk": "мільйон",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": "en"
   },
   {
    "da": "halvdel",
    "uk": "половина",
-   "topic": "Числа й кольори",
+   "topic": "Числа",
    "article": "en"
   },
   {
    "da": "rød",
    "uk": "червоний",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "blå",
    "uk": "синій",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "grøn",
    "uk": "зелений",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "gul",
    "uk": "жовтий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "sort",
    "uk": "чорний",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "hvid",
    "uk": "білий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "grå",
    "uk": "сірий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "brun",
    "uk": "коричневий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "lyserød",
    "uk": "рожевий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "orange",
    "uk": "помаранчевий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "lilla",
    "uk": "фіолетовий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "mørk",
    "uk": "темний",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
    "da": "lys",
    "uk": "світлий",
-   "topic": "Числа й кольори",
+   "topic": "Кольори",
    "article": null
   },
   {
@@ -4007,73 +4109,73 @@
   {
    "da": "Godmorgen",
    "uk": "Доброго ранку",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Godaften",
    "uk": "Добрий вечір",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Farvel",
    "uk": "До побачення",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Tak for sidst",
    "uk": "Дякую за минулу зустріч",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Velbekomme",
    "uk": "Смачного / на здоров’я",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Held og lykke",
    "uk": "Щасти",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Det var så lidt",
    "uk": "Нема за що",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Hvad hedder du?",
    "uk": "Як тебе звати?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Hvor kommer du fra?",
    "uk": "Звідки ти?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Hvordan har du det?",
    "uk": "Як ти?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Jeg har brug for hjælp",
    "uk": "Мені потрібна допомога",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
    "da": "Må jeg spørge om noget?",
    "uk": "Можна дещо запитати?",
-   "topic": "Корисні вирази",
+   "topic": "Корисні фрази",
    "article": null
   },
   {
@@ -4283,187 +4385,187 @@
   {
    "da": "kage",
    "uk": "торт, тістечко",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "kaffe",
    "uk": "кава",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "te",
    "uk": "чай",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "mælk",
    "uk": "молоко",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "æg",
    "uk": "яйце",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "fisk",
    "uk": "риба",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "kylling",
    "uk": "курка",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "kartoffel",
    "uk": "картопля",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "grøntsag",
    "uk": "овоч",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "frugt",
    "uk": "фрукт",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "suppe",
    "uk": "суп",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "salt",
    "uk": "сіль",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "sukker",
    "uk": "цукор",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "vin",
    "uk": "вино",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "juice",
    "uk": "сік",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "opskrift",
    "uk": "рецепт",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "måltid",
    "uk": "прийом їжі",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": "et"
   },
   {
    "da": "at koge",
    "uk": "варити",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "at stege",
    "uk": "смажити",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "at bage",
    "uk": "пекти",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "lækker",
    "uk": "смачний",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "gade",
    "uk": "вулиця",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "torv",
    "uk": "площа",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "bro",
    "uk": "міст",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "kirke",
    "uk": "церква",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "bibliotek",
    "uk": "бібліотека",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "posthus",
    "uk": "поштове відділення",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "politistation",
    "uk": "поліцейська дільниця",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "rådhus",
    "uk": "ратуша",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "landsby",
    "uk": "село",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "område",
    "uk": "район",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
@@ -4793,109 +4895,109 @@
   {
    "da": "storm",
    "uk": "буря",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "tåge",
    "uk": "туман",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "lyn",
    "uk": "блискавка",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "et"
   },
   {
    "da": "himmel",
    "uk": "небо",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "sky",
    "uk": "хмара",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "temperatur",
    "uk": "температура",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "grad",
    "uk": "градус",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "sommer",
    "uk": "літо",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "vinter",
    "uk": "зима",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "forår",
    "uk": "весна",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "et"
   },
   {
    "da": "efterår",
    "uk": "осінь",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "et"
   },
   {
    "da": "frost",
    "uk": "мороз",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "fugl",
    "uk": "птах",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "hund",
    "uk": "собака",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "kat",
    "uk": "кіт",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "mark",
    "uk": "поле",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "sø",
    "uk": "озеро",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "bjerg",
    "uk": "гора",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "et"
   },
   {
@@ -4961,145 +5063,145 @@
   {
    "da": "morgen",
    "uk": "ранок",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "eftermiddag",
    "uk": "пообідній час",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "aften",
    "uk": "вечір",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "nat",
    "uk": "ніч",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "weekend",
    "uk": "вихідні",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "mandag",
    "uk": "понеділок",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "tirsdag",
    "uk": "вівторок",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "onsdag",
    "uk": "середа",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "torsdag",
    "uk": "четвер",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "fredag",
    "uk": "п’ятниця",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "lørdag",
    "uk": "субота",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "søndag",
    "uk": "неділя",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": null
   },
   {
    "da": "sekund",
    "uk": "секунда",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "et"
   },
   {
    "da": "kalender",
    "uk": "календар",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "snart",
    "uk": "скоро",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "senere",
    "uk": "пізніше",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "tidligere",
    "uk": "раніше",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "altid",
    "uk": "завжди",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "nogle gange",
    "uk": "іноді",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "sjældent",
    "uk": "рідко",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "allerede",
    "uk": "вже",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "endnu",
    "uk": "ще",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "først",
    "uk": "спочатку",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "derefter",
    "uk": "потім",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
@@ -5231,397 +5333,397 @@
   {
    "da": "at sætte",
    "uk": "ставити, класти",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at lægge",
    "uk": "класти",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at holde",
    "uk": "тримати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at hjælpe til",
    "uk": "допомагати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at lukke op",
    "uk": "відчиняти",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at ankomme",
    "uk": "прибувати",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at rejse sig",
    "uk": "підводитися",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at sætte sig",
    "uk": "сідати",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at klæde sig på",
    "uk": "одягатися",
-   "topic": "Часті дієслова",
+   "topic": "Щоденні дії",
    "article": null
   },
   {
    "da": "at gifte sig",
    "uk": "одружуватися",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at føde",
    "uk": "народжувати",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at dø",
    "uk": "помирати",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at leve",
    "uk": "жити",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at vokse",
    "uk": "рости",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at passe på",
    "uk": "берегти, пильнувати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at undgå",
    "uk": "уникати",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at opleve",
    "uk": "переживати, відчувати",
-   "topic": "Часті дієслова",
+   "topic": "Життя й почуття",
    "article": null
   },
   {
    "da": "at lære at kende",
    "uk": "знайомитися",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at regne med",
    "uk": "розраховувати на",
-   "topic": "Часті дієслова",
+   "topic": "Мова й думки",
    "article": null
   },
   {
    "da": "at sørge for",
    "uk": "подбати про",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at være med",
    "uk": "брати участь",
-   "topic": "Часті дієслова",
+   "topic": "Рух і дозвілля",
    "article": null
   },
   {
    "da": "at holde op",
    "uk": "припиняти",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "at prøve på",
    "uk": "намагатися",
-   "topic": "Часті дієслова",
+   "topic": "Справи й рішення",
    "article": null
   },
   {
    "da": "glad for",
    "uk": "задоволений чимось",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "træt af",
    "uk": "втомлений від",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "bekendt",
    "uk": "знайомий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "fremmed",
    "uk": "чужий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "lokal",
    "uk": "місцевий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "offentlig",
    "uk": "державний, публічний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "privat",
    "uk": "приватний",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "personlig",
    "uk": "особистий",
-   "topic": "Часті прикметники",
+   "topic": "Люди й настрій",
    "article": null
   },
   {
    "da": "sidste",
    "uk": "останній",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "næste",
    "uk": "наступний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "hel",
    "uk": "цілий",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "halv",
    "uk": "половинний",
-   "topic": "Часті прикметники",
+   "topic": "Розмір і форма",
    "article": null
   },
   {
    "da": "eneste",
    "uk": "єдиний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "almindelig",
    "uk": "звичайний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "speciel",
    "uk": "особливий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "perfekt",
    "uk": "ідеальний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "sjælden",
    "uk": "рідкісний",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "hyppig",
    "uk": "частий",
-   "topic": "Часті прикметники",
+   "topic": "Оцінка",
    "article": null
   },
   {
    "da": "tallerken",
    "uk": "тарілка",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "glas",
    "uk": "склянка",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "et"
   },
   {
    "da": "kop",
    "uk": "чашка",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "kniv",
    "uk": "ніж",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "gaffel",
    "uk": "виделка",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "ske",
    "uk": "ложка",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "smørrebrød",
    "uk": "бутерброд (данський)",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "pølse",
    "uk": "сосиска",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "ris",
    "uk": "рис",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": null
   },
   {
    "da": "pasta",
    "uk": "макарони",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": null
   },
   {
    "da": "tomat",
    "uk": "помідор",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "agurk",
    "uk": "огірок",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "løg",
    "uk": "цибуля",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "et"
   },
   {
    "da": "gulerod",
    "uk": "морква",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "banan",
    "uk": "банан",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "appelsin",
    "uk": "апельсин",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "smør",
    "uk": "масло",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": null
   },
   {
    "da": "yoghurt",
    "uk": "йогурт",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "is",
    "uk": "морозиво",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "chokolade",
    "uk": "шоколад",
-   "topic": "Їжа й ресторан",
+   "topic": "Продукти",
    "article": "en"
   },
   {
    "da": "vand",
    "uk": "вода",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "sodavand",
    "uk": "газована вода",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": "en"
   },
   {
    "da": "drikkepenge",
    "uk": "чайові",
-   "topic": "Їжа й ресторан",
+   "topic": "Ресторан",
    "article": null
   },
   {
    "da": "krydret",
    "uk": "гострий",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
    "da": "mæt",
    "uk": "ситий",
-   "topic": "Їжа й ресторан",
+   "topic": "Напої й кухня",
    "article": null
   },
   {
@@ -5723,73 +5825,73 @@
   {
    "da": "rundkørsel",
    "uk": "кільце (дорожнє)",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "fortov",
    "uk": "тротуар",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "hjørne",
    "uk": "ріг (вулиці)",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "kryds",
    "uk": "перехрестя",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "centrum",
    "uk": "центр",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "forstad",
    "uk": "передмістя",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "indkøbscenter",
    "uk": "торговий центр",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "havn",
    "uk": "порт",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "plads",
    "uk": "площа; місце",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "bygning",
    "uk": "будівля",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "en"
   },
   {
    "da": "tårn",
    "uk": "вежа",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
    "da": "slot",
    "uk": "замок, палац",
-   "topic": "Дім і місто",
+   "topic": "Місто",
    "article": "et"
   },
   {
@@ -6083,97 +6185,97 @@
   {
    "da": "byge",
    "uk": "злива",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "hagl",
    "uk": "град",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "et"
   },
   {
    "da": "orkan",
    "uk": "ураган",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": "en"
   },
   {
    "da": "solnedgang",
    "uk": "захід сонця",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "solopgang",
    "uk": "схід сонця",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "kyst",
    "uk": "узбережжя",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "ø",
    "uk": "острів",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "flod",
    "uk": "річка",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "blad",
    "uk": "листок",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "et"
   },
   {
    "da": "ko",
    "uk": "корова",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "hest",
    "uk": "кінь",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "gris",
    "uk": "свиня",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "en"
   },
   {
    "da": "får",
    "uk": "вівця",
-   "topic": "Погода й природа",
+   "topic": "Природа й тварини",
    "article": "et"
   },
   {
    "da": "overskyet",
    "uk": "похмуро",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": null
   },
   {
    "da": "solrig",
    "uk": "сонячно",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": null
   },
   {
    "da": "blæsende",
    "uk": "вітряно",
-   "topic": "Погода й природа",
+   "topic": "Погода",
    "article": null
   },
   {
@@ -6239,67 +6341,67 @@
   {
    "da": "kvarter",
    "uk": "чверть години",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "et"
   },
   {
    "da": "døgn",
    "uk": "доба",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "et"
   },
   {
    "da": "årstid",
    "uk": "пора року",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "en"
   },
   {
    "da": "århundrede",
    "uk": "століття",
-   "topic": "Час",
+   "topic": "Дні й дати",
    "article": "et"
   },
   {
    "da": "om aftenen",
    "uk": "увечері",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "om natten",
    "uk": "уночі",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "i weekenden",
    "uk": "на вихідних",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "i sidste uge",
    "uk": "минулого тижня",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "i næste uge",
    "uk": "наступного тижня",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "for to år siden",
    "uk": "два роки тому",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
    "da": "om en uge",
    "uk": "через тиждень",
-   "topic": "Час",
+   "topic": "Коли й як часто",
    "article": null
   },
   {
@@ -6481,6 +6583,231 @@
    "uk": "видаляти",
    "topic": "Техніка й інтернет",
    "article": null
+  },
+  {
+   "da": "Hej",
+   "uk": "Привіт",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hej hej",
+   "uk": "Бувай",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Vi ses",
+   "uk": "Побачимось",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Tak",
+   "uk": "Дякую",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Mange tak",
+   "uk": "Щиро дякую",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Selv tak",
+   "uk": "Будь ласка (у відповідь на дякую)",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Ja tak",
+   "uk": "Так, будь ласка",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Nej tak",
+   "uk": "Ні, дякую",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Det er i orden",
+   "uk": "Усе гаразд",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Det gør ikke noget",
+   "uk": "Нічого страшного",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hvad koster det?",
+   "uk": "Скільки це коштує?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Kan jeg betale med kort?",
+   "uk": "Можна заплатити карткою?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg vil gerne have…",
+   "uk": "Я хотів би…",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hvor ligger…?",
+   "uk": "Де знаходиться…?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hvad er klokken?",
+   "uk": "Котра година?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg taler lidt dansk",
+   "uk": "Я трохи розмовляю данською",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Kan du tale engelsk?",
+   "uk": "Ви говорите англійською?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hvad siger du?",
+   "uk": "Що ви сказали?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Kan du skrive det ned?",
+   "uk": "Можете це записати?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg skal til lægen",
+   "uk": "Мені треба до лікаря",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg har ondt i hovedet",
+   "uk": "У мене болить голова",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg vil gerne bestille en tid",
+   "uk": "Я хотів би записатися на прийом",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg er forsinket",
+   "uk": "Я запізнююсь",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg kommer fra Ukraine",
+   "uk": "Я з України",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg bor i Danmark",
+   "uk": "Я живу в Данії",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg har boet her i to år",
+   "uk": "Я живу тут два роки",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg arbejder som…",
+   "uk": "Я працюю…",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg går på sprogskole",
+   "uk": "Я ходжу на мовні курси",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hvad laver du i din fritid?",
+   "uk": "Що ти робиш у вільний час?",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Det lyder godt",
+   "uk": "Звучить добре",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Det ved jeg ikke",
+   "uk": "Я не знаю",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg er ikke sikker",
+   "uk": "Я не впевнений",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Jeg tror, at…",
+   "uk": "Я думаю, що…",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Til gengæld…",
+   "uk": "Натомість…",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "For eksempel",
+   "uk": "Наприклад",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Med andre ord",
+   "uk": "Іншими словами",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Det kommer an på",
+   "uk": "Це залежить",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "På den ene side… på den anden side…",
+   "uk": "З одного боку… з іншого боку…",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Hav en god dag",
+   "uk": "Гарного дня",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "God weekend",
+   "uk": "Гарних вихідних",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "God bedring",
+   "uk": "Одужуй",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Tillykke med fødselsdagen",
+   "uk": "З днем народження",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Glædelig jul",
+   "uk": "Веселого Різдва",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Godt nytår",
+   "uk": "З Новим роком",
+   "topic": "Корисні фрази"
+  },
+  {
+   "da": "Skål",
+   "uk": "Будьмо!",
+   "topic": "Корисні фрази"
   }
  ]
 }
