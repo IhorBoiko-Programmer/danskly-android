@@ -27,7 +27,7 @@ android {
         minSdk = 26
         targetSdk = 36
         versionCode = (System.getenv("VERSION_CODE") ?: "1").toInt()
-        versionName = "1.0.0"
+        versionName = "1.1.0"
         // Address of the Danskly AI server (see danskly-server). Can also be changed in the app settings.
         buildConfigField("String", "AI_SERVER_URL", "\"${setting("ai.serverUrl", "DANSKLY_AI_URL") ?: ""}\"")
     }
