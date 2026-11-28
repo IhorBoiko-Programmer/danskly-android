@@ -118,7 +118,7 @@ jobs:
   deploy:
     name: Release the APK and deploy the server
     needs: [test, build]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
