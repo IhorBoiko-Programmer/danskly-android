@@ -1,6 +1,9 @@
 package app.danskly.ui
 
+import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
+import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import app.danskly.core.exercise.ExerciseType
 import app.danskly.core.navigation.Route
 import app.danskly.support.UiTest
@@ -16,6 +19,10 @@ import org.robolectric.annotation.GraphicsMode
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class ScreenshotTest : UiTest() {
 
+    private fun scrollTo(text: String) {
+        compose.onNodeWithText(text).performScrollTo()
+    }
+
     private fun shoot(name: String, route: Route?, dark: Boolean = false, prepare: () -> Unit = {}) {
         launch(route, testGraph(), dark)
         prepare()
@@ -30,6 +37,14 @@ class ScreenshotTest : UiTest() {
     @Test fun reviewBack() = shoot("03b_review_back", Route.Review) { clickTag("flip-card") }
     @Test fun topics() = shoot("04_topics", Route.Topics)
     @Test fun topicsDark() = shoot("04_topics", Route.Topics, dark = true)
+    @Test fun topicsVerbs() = shoot("04b_topics_verbs", Route.Topics) { scrollTo("Прикметники") }
+    @Test fun quizResult() = shoot("09c_quiz_result", Route.Quiz("Подорожі")) {
+        clickTag("length:10")
+        repeat(10) { i ->
+            compose.onAllNodes(tagStartsWith("option:"))[0].performClick()
+            click(if (i == 9) "Результат" else "Далі")
+        }
+    }
     @Test fun topic() = shoot("05_topic", Route.Topic("Подорожі"))
     @Test fun cards() = shoot("06_cards", Route.Cards("Подорожі")) { clickTag("flip-card") }
     @Test fun wordVerb() = shoot("07_word_verb", Route.WordDetails("at gå"))
@@ -49,7 +64,7 @@ class ScreenshotTest : UiTest() {
     @Test fun listening() = shoot("16b_listening", Route.Reading(3, listening = true))
     @Test fun grammar() = shoot("17_grammar", Route.Grammar)
     @Test fun grammarSection() = shoot("18_grammar_verbs", Route.GrammarSection(2))
-    @Test fun grammarExam() = shoot("18b_grammar_exam", Route.GrammarSection(10))
+    @Test fun grammarExam() = shoot("18b_grammar_exam", Route.GrammarSection(9))
     @Test fun pronunciation() = shoot("19_pronunciation", Route.Pronunciation)
     @Test fun writingList() = shoot("20_writing_list", Route.WritingList)
     @Test fun writing() = shoot("21_writing", Route.Writing(3)) { click("Приклад відповіді") }
