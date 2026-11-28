@@ -148,6 +148,7 @@ async function handleAI(request, env, url) {
 
   // 5. Фолбек: кожна модель по черзі, для кожної — усі ключі
   const tried = [];
+  let detail = "";
   for (const model of models) {
     for (const key of orderKeys(keys)) {
       const tag = `${model}#${keys.indexOf(key) + 1}`;
@@ -180,15 +181,17 @@ async function handleAI(request, env, url) {
         continue;
       }
       tried.push(`${tag}:${res.status}`);
-      res.body?.cancel?.();
+      // Коротке пояснення від постачальника (без ключів) допомагає зрозуміти, що не так: регіон, модель, ліміт.
+      if (!detail) detail = (await res.text().catch(() => "")).slice(0, 300);
+      else res.body?.cancel?.();
       if (res.status === 401 || res.status === 403) { cool(key, 10 * 60000); continue; } // поганий ключ або немає підписки
       if (res.status === 429) { cool(key, 60000); continue; }                             // ліміт ключа
       if (res.status >= 500) { cool(key, 15000); continue; }                               // збій сервісу
       if (res.status === 404 || res.status === 400 || res.status === 422) break;           // модель недоступна → наступна модель
     }
   }
-  console.log("AI fallback exhausted:", tried.join(" "));
-  return json({ error: "Усі ключі й моделі зараз недоступні. Спробуй за хвилину.", code: "unavailable", tried: tried.length }, 503);
+  console.log("AI fallback exhausted:", tried.join(" "), detail);
+  return json({ error: "Усі ключі й моделі зараз недоступні. Спробуй за хвилину.", code: "unavailable", tried: tried.length, attempts: tried, detail }, 503);
 }
 
 // ---------- допоміжне ----------
