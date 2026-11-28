@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.exercise.QuizGeneratorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:47.221Z" hostname="runnervm3lb7s" time="0.129">
+  <properties/>
+  <testcase name="roundCountsAnswersAndMistakes" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.01"/>
+  <testcase name="needsTwoWords" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.0"/>
+  <testcase name="roundHasTheChosenLengthWithoutRepeats" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.055"/>
+  <testcase name="everyModeGivesSolvableQuestions" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.061"/>
+  <testcase name="articleModeNeedsNouns" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.0"/>
+  <testcase name="needsAtLeastOneQuestion" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.001"/>
+  <testcase name="reverseShowsUkrainianAndAsksDanish" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.001"/>
+  <testcase name="articleRoundsAskOnlyNouns" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.0"/>
+  <testcase name="smallTopicsRepeatOnlyAfterEveryWordWasAsked" classname="app.danskly.core.exercise.QuizGeneratorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

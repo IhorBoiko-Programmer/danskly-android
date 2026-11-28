@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.ai.AiTextTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:44.691Z" hostname="runnervm3lb7s" time="0.003">
+  <properties/>
+  <testcase name="badJsonIsABadResponse" classname="app.danskly.core.ai.AiTextTest" time="0.001"/>
+  <testcase name="parsesJsonInsideFencesProseAndThinking" classname="app.danskly.core.ai.AiTextTest" time="0.001"/>
+  <testcase name="stripsThinking" classname="app.danskly.core.ai.AiTextTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

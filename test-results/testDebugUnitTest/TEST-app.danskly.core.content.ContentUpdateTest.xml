@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.content.ContentUpdateTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:44.774Z" hostname="runnervm3lb7s" time="0.173">
+  <properties/>
+  <testcase name="newAppIsOfferedOnlyWhenNewerAndAllowed" classname="app.danskly.core.content.ContentUpdateTest" time="0.122"/>
+  <testcase name="brokenDownloadsNeverReplaceContent" classname="app.danskly.core.content.ContentUpdateTest" time="0.01"/>
+  <testcase name="newerFormatWaitsForANewerApp" classname="app.danskly.core.content.ContentUpdateTest" time="0.004"/>
+  <testcase name="manifestWithoutVersionIsRejected" classname="app.danskly.core.content.ContentUpdateTest" time="0.003"/>
+  <testcase name="startsWithCachedContentOnlyWhenItIsValid" classname="app.danskly.core.content.ContentUpdateTest" time="0.014"/>
+  <testcase name="sameVersionIsNotDownloadedAgain" classname="app.danskly.core.content.ContentUpdateTest" time="0.004"/>
+  <testcase name="manifestParsing" classname="app.danskly.core.content.ContentUpdateTest" time="0.002"/>
+  <testcase name="offlineCheckerFindsNothing" classname="app.danskly.core.content.ContentUpdateTest" time="0.003"/>
+  <testcase name="downloadsValidatesAndCachesNewContent" classname="app.danskly.core.content.ContentUpdateTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

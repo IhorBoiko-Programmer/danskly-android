@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ReviewScreenTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:59.468Z" hostname="runnervm3lb7s" time="0.358">
+  <properties/>
+  <testcase name="goesThroughNewWordsUntilDone" classname="app.danskly.ui.ReviewScreenTest" time="0.185"/>
+  <testcase name="nothingToReview" classname="app.danskly.ui.ReviewScreenTest" time="0.044"/>
+  <testcase name="autoSpeaksAndShowsDueWords" classname="app.danskly.ui.ReviewScreenTest" time="0.049"/>
+  <testcase name="opensWordDetailsFromTheBackOfTheCard" classname="app.danskly.ui.ReviewScreenTest" time="0.076"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

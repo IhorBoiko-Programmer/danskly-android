@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ExerciseSessionScreenTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:52.280Z" hostname="runnervm3lb7s" time="2.369">
+  <properties/>
+  <testcase name="tilesExercise" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.243"/>
+  <testcase name="typingCorrectAnswerGradesTheWord" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.127"/>
+  <testcase name="typingWithDanishLetterAndEnter" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.192"/>
+  <testcase name="mixSessionRuns" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.104"/>
+  <testcase name="gapSessionToResultsAndAgain" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.358"/>
+  <testcase name="dictationSpeaksAndHidesTheWord" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.13"/>
+  <testcase name="goodButNotGreatResult" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.442"/>
+  <testcase name="forgivenMistakeShowsANote" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.128"/>
+  <testcase name="perfectSessionListsNoMistakes" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.288"/>
+  <testcase name="poorResultAndBackToList" classname="app.danskly.ui.ExerciseSessionScreenTest" time="0.35"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

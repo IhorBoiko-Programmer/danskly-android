@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.UpdatesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:10:19.937Z" hostname="runnervm3lb7s" time="0.359">
+  <properties/>
+  <testcase name="playBuildsLeaveUpdatesToPlay" classname="app.danskly.ui.UpdatesTest" time="0.06"/>
+  <testcase name="noBannerWhenUpToDateOrInstalledFromPlay" classname="app.danskly.ui.UpdatesTest" time="0.057"/>
+  <testcase name="contentIsDownloadedOnStart" classname="app.danskly.ui.UpdatesTest" time="0.056"/>
+  <testcase name="settingsShowVersions" classname="app.danskly.ui.UpdatesTest" time="0.061"/>
+  <testcase name="newerAppIsOfferedOnHome" classname="app.danskly.ui.UpdatesTest" time="0.066"/>
+  <testcase name="settingsShowBundledContent" classname="app.danskly.ui.UpdatesTest" time="0.055"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

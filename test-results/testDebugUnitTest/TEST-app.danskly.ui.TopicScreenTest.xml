@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.TopicScreenTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:10:18.406Z" hostname="runnervm3lb7s" time="0.596">
+  <properties/>
+  <testcase name="showsWordsAndActions" classname="app.danskly.ui.TopicScreenTest" time="0.271"/>
+  <testcase name="speaksWordsAndMarksKnownOnes" classname="app.danskly.ui.TopicScreenTest" time="0.063"/>
+  <testcase name="allWordsHasNoAiButtonAndNoServerHidesIt" classname="app.danskly.ui.TopicScreenTest" time="0.059"/>
+  <testcase name="noAiButtonWithoutServer" classname="app.danskly.ui.TopicScreenTest" time="0.058"/>
+  <testcase name="addsWordsWithAi" classname="app.danskly.ui.TopicScreenTest" time="0.076"/>
+  <testcase name="aiErrorsAreShown" classname="app.danskly.ui.TopicScreenTest" time="0.065"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.exercise.AnswerCheckerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:44.954Z" hostname="runnervm3lb7s" time="0.007">
+  <properties/>
+  <testcase name="oneTypoIsForgivenInLongerAnswers" classname="app.danskly.core.exercise.AnswerCheckerTest" time="0.003"/>
+  <testcase name="missingArticleOrAtIsForgivenWithANote" classname="app.danskly.core.exercise.AnswerCheckerTest" time="0.001"/>
+  <testcase name="wrongAndEmptyAnswersFail" classname="app.danskly.core.exercise.AnswerCheckerTest" time="0.0"/>
+  <testcase name="exactAnswersIgnoreCaseAndPunctuation" classname="app.danskly.core.exercise.AnswerCheckerTest" time="0.0"/>
+  <testcase name="choiceAndTiles" classname="app.danskly.core.exercise.AnswerCheckerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

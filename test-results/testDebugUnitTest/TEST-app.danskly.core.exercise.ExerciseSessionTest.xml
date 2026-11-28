@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.exercise.ExerciseSessionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:47.201Z" hostname="runnervm3lb7s" time="0.017">
+  <properties/>
+  <testcase name="cannotAnswerTwice" classname="app.danskly.core.exercise.ExerciseSessionTest" time="0.002"/>
+  <testcase name="avoidsRepeatingTheSamePromptWhenPossible" classname="app.danskly.core.exercise.ExerciseSessionTest" time="0.002"/>
+  <testcase name="cannotSkipUnanswered" classname="app.danskly.core.exercise.ExerciseSessionTest" time="0.001"/>
+  <testcase name="tilesAndTypingAnswers" classname="app.danskly.core.exercise.ExerciseSessionTest" time="0.008"/>
+  <testcase name="scoresAndCollectsMistakesUntilFinished" classname="app.danskly.core.exercise.ExerciseSessionTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

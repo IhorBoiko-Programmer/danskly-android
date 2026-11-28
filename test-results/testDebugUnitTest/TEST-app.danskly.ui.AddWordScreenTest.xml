@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.AddWordScreenTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:48.565Z" hostname="runnervm3lb7s" time="3.269">
+  <properties/>
+  <testcase name="returnsToTheTopicItCameFrom" classname="app.danskly.ui.AddWordScreenTest" time="1.515"/>
+  <testcase name="validatesAndDetectsDuplicates" classname="app.danskly.ui.AddWordScreenTest" time="0.493"/>
+  <testcase name="replacingTextKeepsKindWhenNotDetectable" classname="app.danskly.ui.AddWordScreenTest" time="0.398"/>
+  <testcase name="addsANounWithDetectedArticleAndDanishLetters" classname="app.danskly.ui.AddWordScreenTest" time="0.268"/>
+  <testcase name="verbWithDanishLettersInTopicFromPicker" classname="app.danskly.ui.AddWordScreenTest" time="0.589"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

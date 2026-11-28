@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.WritingScreensTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:10:20.793Z" hostname="runnervm3lb7s" time="0.33">
+  <properties/>
+  <testcase name="sampleTranslationPhrasesAndAiCheck" classname="app.danskly.ui.WritingScreensTest" time="0.086"/>
+  <testcase name="listOpensTasks" classname="app.danskly.ui.WritingScreensTest" time="0.056"/>
+  <testcase name="withoutServerTheCheckIsExplained" classname="app.danskly.ui.WritingScreensTest" time="0.048"/>
+  <testcase name="unknownTaskIconsFallBack" classname="app.danskly.ui.WritingScreensTest" time="0.041"/>
+  <testcase name="aiErrorsAreShown" classname="app.danskly.ui.WritingScreensTest" time="0.095"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

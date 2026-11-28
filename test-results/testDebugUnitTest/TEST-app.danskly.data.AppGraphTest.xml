@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.data.AppGraphTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:47.709Z" hostname="runnervm3lb7s" time="0.089">
+  <properties/>
+  <testcase name="createsTheRealGraph" classname="app.danskly.data.AppGraphTest" time="0.041"/>
+  <testcase name="serverAddressFromSettingsWinsOverBuiltIn" classname="app.danskly.data.AppGraphTest" time="0.017"/>
+  <testcase name="exercisesHideDictationWithoutSpeech" classname="app.danskly.data.AppGraphTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

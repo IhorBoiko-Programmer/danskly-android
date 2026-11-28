@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.PronunciationScreenTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:56.492Z" hostname="runnervm3lb7s" time="0.526">
+  <properties/>
+  <testcase name="explainsWhenSpeechIsUnavailable" classname="app.danskly.ui.PronunciationScreenTest" time="0.148"/>
+  <testcase name="explainsMissingVoiceOrSpeech" classname="app.danskly.ui.PronunciationScreenTest" time="0.191"/>
+  <testcase name="lettersAndSoundsSpeak" classname="app.danskly.ui.PronunciationScreenTest" time="0.183"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

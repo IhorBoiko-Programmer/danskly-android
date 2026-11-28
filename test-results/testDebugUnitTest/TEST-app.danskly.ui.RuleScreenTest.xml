@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.RuleScreenTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:59.829Z" hostname="runnervm3lb7s" time="0.235">
+  <properties/>
+  <testcase name="showsRuleWithExamplesAndLinks" classname="app.danskly.ui.RuleScreenTest" time="0.231"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

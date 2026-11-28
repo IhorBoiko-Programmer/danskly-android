@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.exercise.ExerciseGeneratorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:44.969Z" hostname="runnervm3lb7s" time="2.227">
+  <properties/>
+  <testcase name="dictationProducesWordsAndSentencesAndIsHiddenWithoutSpeech" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.625"/>
+  <testcase name="nounQuestionsCoverGenderAndPlural" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.023"/>
+  <testcase name="nounFallsBackToGenderWhenNoPluralTablesMatch" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.003"/>
+  <testcase name="everyGeneratedQuestionIsSolvable" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="1.433"/>
+  <testcase name="writePrefersStudiedWordsAndGivesHints" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.027"/>
+  <testcase name="poolsAreBigEnough" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.001"/>
+  <testcase name="gapQuestionsHaveABlankAndTranslation" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.002"/>
+  <testcase name="verbQuestionsAskAllThreeForms" classname="app.danskly.core.exercise.ExerciseGeneratorTest" time="0.112"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

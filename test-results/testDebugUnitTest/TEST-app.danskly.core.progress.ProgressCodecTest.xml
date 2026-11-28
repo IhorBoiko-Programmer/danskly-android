@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.core.progress.ProgressCodecTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:47.452Z" hostname="runnervm3lb7s" time="0.005">
+  <properties/>
+  <testcase name="roundTripsEverything" classname="app.danskly.core.progress.ProgressCodecTest" time="0.001"/>
+  <testcase name="detailsSkipIncompleteEntries" classname="app.danskly.core.progress.ProgressCodecTest" time="0.0"/>
+  <testcase name="toleratesOddValues" classname="app.danskly.core.progress.ProgressCodecTest" time="0.0"/>
+  <testcase name="damagedOrMissingDataGivesFreshProgress" classname="app.danskly.core.progress.ProgressCodecTest" time="0.002"/>
+  <testcase name="inMemoryStoreKeepsText" classname="app.danskly.core.progress.ProgressCodecTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

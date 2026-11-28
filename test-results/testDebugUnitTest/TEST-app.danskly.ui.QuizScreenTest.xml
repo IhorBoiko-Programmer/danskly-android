@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.QuizScreenTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:09:57.023Z" hostname="runnervm3lb7s" time="1.156">
+  <properties/>
+  <testcase name="halfScore" classname="app.danskly.ui.QuizScreenTest" time="0.209"/>
+  <testcase name="listeningHidesTheWordUntilAnswered" classname="app.danskly.ui.QuizScreenTest" time="0.081"/>
+  <testcase name="articleModeAsksEnOrEt" classname="app.danskly.ui.QuizScreenTest" time="0.068"/>
+  <testcase name="aTestHasAFixedNumberOfQuestions" classname="app.danskly.ui.QuizScreenTest" time="0.105"/>
+  <testcase name="zeroScore" classname="app.danskly.ui.QuizScreenTest" time="0.167"/>
+  <testcase name="tinyTopicExplainsWhyThereIsNoQuiz" classname="app.danskly.ui.QuizScreenTest" time="0.044"/>
+  <testcase name="resultListsMistakesAndCanRestart" classname="app.danskly.ui.QuizScreenTest" time="0.196"/>
+  <testcase name="perfectScoreHasNoMistakeList" classname="app.danskly.ui.QuizScreenTest" time="0.184"/>
+  <testcase name="articleModeHiddenForVerbTopics" classname="app.danskly.ui.QuizScreenTest" time="0.046"/>
+  <testcase name="setupOffersModesAndThreeLengths" classname="app.danskly.ui.QuizScreenTest" time="0.047"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

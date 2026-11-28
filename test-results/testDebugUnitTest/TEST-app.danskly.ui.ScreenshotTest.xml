@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.danskly.ui.ScreenshotTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2026-11-28T10:10:00.076Z" hostname="runnervm3lb7s" time="17.209">
+  <properties/>
+  <testcase name="reviewBack" classname="app.danskly.ui.ScreenshotTest" time="5.554"/>
+  <testcase name="settingsVoices" classname="app.danskly.ui.ScreenshotTest" time="0.952"/>
+  <testcase name="grammarSection" classname="app.danskly.ui.ScreenshotTest" time="0.86"/>
+  <testcase name="listening" classname="app.danskly.ui.ScreenshotTest" time="0.374"/>
+  <testcase name="addWord" classname="app.danskly.ui.ScreenshotTest" time="0.304"/>
+  <testcase name="dictation" classname="app.danskly.ui.ScreenshotTest" time="0.262"/>
+  <testcase name="review" classname="app.danskly.ui.ScreenshotTest" time="0.275"/>
+  <testcase name="topics" classname="app.danskly.ui.ScreenshotTest" time="0.4"/>
+  <testcase name="topicsDark" classname="app.danskly.ui.ScreenshotTest" time="0.437"/>
+  <testcase name="exercises" classname="app.danskly.ui.ScreenshotTest" time="0.265"/>
+  <testcase name="pronunciation" classname="app.danskly.ui.ScreenshotTest" time="0.487"/>
+  <testcase name="homeDark" classname="app.danskly.ui.ScreenshotTest" time="0.34"/>
+  <testcase name="readingList" classname="app.danskly.ui.ScreenshotTest" time="0.23"/>
+  <testcase name="quizResult" classname="app.danskly.ui.ScreenshotTest" time="0.55"/>
+  <testcase name="gap" classname="app.danskly.ui.ScreenshotTest" time="0.217"/>
+  <testcase name="home" classname="app.danskly.ui.ScreenshotTest" time="0.335"/>
+  <testcase name="quiz" classname="app.danskly.ui.ScreenshotTest" time="0.343"/>
+  <testcase name="wordDark" classname="app.danskly.ui.ScreenshotTest" time="0.31"/>
+  <testcase name="wordNoun" classname="app.danskly.ui.ScreenshotTest" time="0.242"/>
+  <testcase name="wordVerb" classname="app.danskly.ui.ScreenshotTest" time="0.277"/>
+  <testcase name="build" classname="app.danskly.ui.ScreenshotTest" time="0.249"/>
+  <testcase name="cards" classname="app.danskly.ui.ScreenshotTest" time="0.397"/>
+  <testcase name="today" classname="app.danskly.ui.ScreenshotTest" time="0.231"/>
+  <testcase name="topic" classname="app.danskly.ui.ScreenshotTest" time="0.378"/>
+  <testcase name="tutor" classname="app.danskly.ui.ScreenshotTest" time="0.301"/>
+  <testcase name="write" classname="app.danskly.ui.ScreenshotTest" time="0.228"/>
+  <testcase name="quizQuestion" classname="app.danskly.ui.ScreenshotTest" time="0.225"/>
+  <testcase name="grammar" classname="app.danskly.ui.ScreenshotTest" time="0.238"/>
+  <testcase name="topicsVerbs" classname="app.danskly.ui.ScreenshotTest" time="0.362"/>
+  <testcase name="settingsDark" classname="app.danskly.ui.ScreenshotTest" time="0.28"/>
+  <testcase name="reading" classname="app.danskly.ui.ScreenshotTest" time="0.239"/>
+  <testcase name="grammarExam" classname="app.danskly.ui.ScreenshotTest" time="0.251"/>
+  <testcase name="writingList" classname="app.danskly.ui.ScreenshotTest" time="0.244"/>
+  <testcase name="settings" classname="app.danskly.ui.ScreenshotTest" time="0.225"/>
+  <testcase name="writing" classname="app.danskly.ui.ScreenshotTest" time="0.232"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
