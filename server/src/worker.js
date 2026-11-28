@@ -130,7 +130,11 @@ async function handleAI(request, env, url) {
   }
   if (chars > MAX_CHARS) return json({ error: "Запит задовгий", code: "too_long" }, 413);
   const stream = body.stream === true;
-  const session = typeof body.session === "string" ? body.session.slice(0, 64) : "";
+  // OpenCode Go вимагає x-opencode-session. Застосунок надсилає свій випадковий ідентифікатор;
+  // якщо його немає, беремо стабільний знеособлений ідентифікатор від IP-адреси (хеш, не сама адреса).
+  const session = typeof body.session === "string" && body.session
+    ? body.session.slice(0, 64)
+    : "danskly-" + (await sha256(ip)).slice(0, 24);
 
   const keys = list(cfg(env, "OPENCODE_KEYS"));
   if (!keys.length) return json({ error: "Сервер не налаштований: немає ключів", code: "no_keys" }, 503);
@@ -160,7 +164,7 @@ async function handleAI(request, env, url) {
             authorization: `Bearer ${key}`,
             "content-type": "application/json",
             "user-agent": USER_AGENT,
-            ...(session ? { "x-opencode-session": session } : {}),
+            "x-opencode-session": session,
           },
           body: payload(model),
         }, timeout);
@@ -195,6 +199,10 @@ async function handleAI(request, env, url) {
 }
 
 // ---------- допоміжне ----------
+async function sha256(text) {
+  const bytes = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return [...new Uint8Array(bytes)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
 function orderKeys(keys) {
   const now = Date.now();
   const start = rr++ % keys.length;
