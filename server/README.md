@@ -61,7 +61,7 @@ dash.cloudflare.com → Workers & Pages → **danskly** → Settings → **Varia
 
 | Назва | Що означає | За замовчуванням |
 |---|---|---|
-| `AI_MODELS` | Моделі в порядку спроб, через кому | `deepseek-v4.1-flash,deepseek-v4-pro,glm-5.1` |
+| `AI_MODELS` | Моделі в порядку спроб, через кому | `deepseek-v4.1-flash,deepseek-v4-pro,glm-5.3-flash` |
 | `AI_BASE_URL` | Адреса API OpenCode Go | `https://opencode.ai/inference/go/v1` |
 | `AI_TIMEOUT_MS` | Скільки чекати одну спробу, мс | `20000` |
 | `RATE_LIMIT` | Запитів до ШІ з однієї IP за 10 хвилин | `60` |

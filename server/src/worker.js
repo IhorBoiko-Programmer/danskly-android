@@ -10,7 +10,7 @@
 //   RATE_LIMIT     — скільки запитів до ШІ дозволено з однієї IP-адреси за 10 хвилин
 
 const DEFAULTS = {
-  AI_MODELS: "deepseek-v4.1-flash,deepseek-v4-pro,glm-5.1",
+  AI_MODELS: "deepseek-v4.1-flash,deepseek-v4-pro,glm-5.3-flash",
   AI_BASE_URL: "https://opencode.ai/inference/go/v1",
   AI_TIMEOUT_MS: "20000",
   RATE_LIMIT: "60",
