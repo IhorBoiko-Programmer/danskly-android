@@ -59,9 +59,8 @@ class ScreenshotTest : UiTest() {
     @Test fun write() = shoot("13_ex_write", Route.Exercise(ExerciseType.WRITE))
     @Test fun dictation() = shoot("14_ex_dictation", Route.Exercise(ExerciseType.DICTATION))
     @Test fun readingList() = shoot("15_reading_list", Route.ReadingList)
-    @Test fun texts() = shoot("15b_texts_listening", Route.Texts(listening = true))
     @Test fun reading() = shoot("16_reading", Route.Reading(3))
-    @Test fun listening() = shoot("16b_listening", Route.Reading(3, listening = true))
+    @Test fun listening() = shoot("16b_listening", Route.Reading(3)) { click("🎧 Слухати") }
     @Test fun grammar() = shoot("17_grammar", Route.Grammar)
     @Test fun grammarSection() = shoot("18_grammar_verbs", Route.GrammarSection(2))
     @Test fun grammarExam() = shoot("18b_grammar_exam", Route.GrammarSection(9))

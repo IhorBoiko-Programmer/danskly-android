@@ -6,9 +6,13 @@ import android.speech.tts.TextToSpeech
 import android.speech.tts.Voice
 import androidx.test.core.app.ApplicationProvider
 import app.danskly.AppGraph
+import app.danskly.BuildConfig
+import app.danskly.core.content.ContentUpdate
 import app.danskly.core.model.Settings
 import app.danskly.support.FakeSpeaker
 import app.danskly.support.testGraph
+import java.util.Locale
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
@@ -17,7 +21,6 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
-import java.util.Locale
 
 /** A text-to-speech engine that records calls instead of speaking. */
 class RecordingEngine(context: Context, listener: OnInitListener, private val installed: Set<Voice>) : TextToSpeech(context, listener) {
@@ -186,5 +189,9 @@ class AppGraphTest {
         assertTrue(g.speaker is AndroidSpeaker)
         assertTrue(g.ai is HttpAiClient)
         assertEquals(g.builtInServerUrl, g.serverUrl)
+        assertNull(g.updates.contentVersion)
+        assertEquals(BuildConfig.VERSION_NAME, g.updates.appVersion)
+        // Tests have no server address built in, so the check fails quietly.
+        assertTrue(runBlocking { g.updates.check() } is ContentUpdate.Failed)
     }
 }

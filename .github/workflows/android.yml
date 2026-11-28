@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # only used to publish build outputs to the ci-tests and ci-apk branches
+  contents: write # publishes build outputs (ci-tests / ci-apk branches) and GitHub releases
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -60,6 +60,8 @@ jobs:
     env:
       VERSION_CODE: ${{ github.run_number }}
       DANSKLY_AI_URL: ${{ vars.DANSKLY_AI_URL }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -86,8 +88,19 @@ jobs:
           else
             echo "No upload key in secrets: the release build is signed with the debug key (fine for testing, not for Google Play)."
           fi
-      - name: Build
-        run: ./gradlew --stacktrace assembleDebug assembleRelease bundleRelease
+      - name: AI server address (from the Cloudflare account when not set as a variable)
+        run: |
+          if [ -z "$DANSKLY_AI_URL" ] && [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            sub=$(curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+              "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" | jq -r '.result.subdomain // empty') || true
+            if [ -n "$sub" ]; then echo "DANSKLY_AI_URL=https://danskly.$sub.workers.dev" >> "$GITHUB_ENV"; fi
+          fi
+          echo "AI server: ${DANSKLY_AI_URL:-(from Cloudflare, see next steps)}"
+      - name: Build (the APK for direct download announces new versions; the Play bundle does not)
+        run: |
+          echo "Built-in AI server: ${DANSKLY_AI_URL:-none}"
+          DANSKLY_SELF_UPDATE=true ./gradlew --stacktrace assembleDebug assembleRelease
+          ./gradlew --stacktrace bundleRelease
       - name: Upload APKs
         uses: actions/upload-artifact@v4
         with:
@@ -101,3 +114,54 @@ jobs:
       - name: Publish the APK and App Bundle to the ci-apk branch
         if: github.event_name != 'pull_request'
         run: scripts/publish-ci-output.sh apk app/build/outputs/apk/debug app/build/outputs/apk/release app/build/outputs/bundle/release
+
+  deploy:
+    name: Release the APK and deploy the server
+    needs: [test, build]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      OPENCODE_KEYS: ${{ secrets.OPENCODE_KEYS }}
+      ACCESS_CODE: ${{ secrets.ACCESS_CODE }}
+      SIGNED: ${{ secrets.RELEASE_KEYSTORE_BASE64 != '' }}
+      APP_URL: https://github.com/${{ github.repository }}/releases/latest/download/Danskly.apk
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: danskly-apk
+          path: apk
+      - name: Publish the APK as the latest GitHub release
+        run: |
+          if [ "$SIGNED" != "true" ]; then
+            echo "::notice::No upload key in secrets, so no public release (a debug-signed APK could not be updated later)."
+            exit 0
+          fi
+          name=$(sed -n 's/.*versionName = "\(.*\)".*/\1/p' app/build.gradle.kts)
+          cp apk/release/app-release.apk Danskly.apk
+          gh release create "v$name-${{ github.run_number }}" Danskly.apk \
+            --title "Danskly $name (${{ github.run_number }})" \
+            --notes "Автоматична збірка з коміту ${{ github.sha }}. Завантаж Danskly.apk і встанови поверх старої версії." \
+            --latest
+          echo "APP_VERSION_CODE=${{ github.run_number }}" >> "$GITHUB_ENV"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build the server (web app, content, version info)
+        run: node server/build.mjs
+      - name: Deploy to Cloudflare
+        working-directory: server
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::notice::CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID are not set yet, so the server was not deployed."
+            exit 0
+          fi
+          npx --yes wrangler@4 deploy
+          # Keys live only in Cloudflare's encrypted secrets; GitHub passes them through without printing them.
+          if [ -n "$OPENCODE_KEYS" ]; then printf '%s' "$OPENCODE_KEYS" | npx --yes wrangler@4 secret put OPENCODE_KEYS; fi
+          if [ -n "$ACCESS_CODE" ]; then printf '%s' "$ACCESS_CODE" | npx --yes wrangler@4 secret put ACCESS_CODE; fi
+

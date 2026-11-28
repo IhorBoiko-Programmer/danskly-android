@@ -155,6 +155,17 @@ fun SettingsScreen(graph: AppGraph) {
                 else -> ListRow("⚠️", "Скинути прогрес", "Рівні слів, серія днів, результати тестів", color = p.bad, trailing = "") { confirmReset = true }
             }
         }
+
+        SectionTitle("Про застосунок")
+        Glass(padding = 16.dp) {
+            LabeledValue("Версія", graph.updates.appVersion)
+            LabeledValue("Матеріали", graph.updates.contentVersion?.let { "оновлено · $it" } ?: "вбудовані", Modifier.padding(top = 8.dp))
+            Text(
+                "Нові слова, правила й тексти завантажуються автоматично й з’являються після перезапуску.",
+                color = p.muted,
+                modifier = Modifier.padding(top = 8.dp),
+            )
+        }
     }
 
     if (confirmReset) {

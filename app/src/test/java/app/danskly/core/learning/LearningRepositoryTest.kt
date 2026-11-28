@@ -139,9 +139,7 @@ class LearningRepositoryTest {
         repo.recordQuizAnswer(true)
         repo.recordQuizAnswer(false)
         repo.saveReadingScore(2, 3)
-        repo.saveReadingScore(1, 2, listening = true)
         val p = repo.progress.value
-        assertEquals(mapOf(1 to 2), p.listeningScores)
         assertEquals(1, p.quizCorrect)
         assertEquals(2, p.quizTotal)
         assertEquals(mapOf(2 to 3), p.readingScores)

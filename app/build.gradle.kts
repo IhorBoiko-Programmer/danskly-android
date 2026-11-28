@@ -30,6 +30,8 @@ android {
         versionName = "1.1.0"
         // Address of the Danskly AI server (see danskly-server). Can also be changed in the app settings.
         buildConfigField("String", "AI_SERVER_URL", "\"${setting("ai.serverUrl", "DANSKLY_AI_URL") ?: ""}\"")
+        // APKs shared outside Google Play tell the learner about a newer build; Play builds leave updates to Play.
+        buildConfigField("boolean", "SELF_UPDATE", (setting("app.selfUpdate", "DANSKLY_SELF_UPDATE") == "true").toString())
     }
 
     signingConfigs {

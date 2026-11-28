@@ -1,5 +1,8 @@
 package app.danskly.support
 
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.platform.UriHandler
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.getOrNull
 import androidx.compose.ui.test.SemanticsNodeInteraction
@@ -25,6 +28,14 @@ abstract class UiTest {
     val compose = createComposeRule()
 
     lateinit var graph: AppGraph
+
+    /** Links the app opens (for example "download the new version") instead of a real browser. */
+    val openedLinks = mutableListOf<String>()
+    private val uriHandler = object : UriHandler {
+        override fun openUri(uri: String) {
+            openedLinks += uri
+        }
+    }
     val speaker: FakeSpeaker get() = graph.speaker as FakeSpeaker
     val ai: FakeAiClient get() = graph.ai as FakeAiClient
 
@@ -32,7 +43,7 @@ abstract class UiTest {
     fun launch(route: Route? = null, g: AppGraph = testGraph(), dark: Boolean? = false) {
         graph = g
         route?.let { graph.navigator.open(it) }
-        compose.setContent { DansklyApp(graph, dark) }
+        compose.setContent { CompositionLocalProvider(LocalUriHandler provides uriHandler) { DansklyApp(graph, dark) } }
         compose.waitForIdle()
     }
 

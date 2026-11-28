@@ -32,20 +32,10 @@ class ReadingScreensTest : UiTest() {
     }
 
     @Test
-    fun hubOpensReadingAndListeningSeparately() {
+    fun listOpensTexts() {
         launch(Route.ReadingList)
-        assertTrue(exists("Пройдено 0/6"))
-        clickTag("mode:Читання")
-        assertEquals(Route.Texts(listening = false), graph.navigator.current)
         click("Лист від орендодавця")
         assertEquals(Route.Reading(1), graph.navigator.current)
-        clickTag("back")
-        clickTag("back")
-        clickTag("mode:Слухання")
-        assertEquals(Route.Texts(listening = true), graph.navigator.current)
-        assertTrue(exists("Текст відкриється після перевірки", substring = true))
-        click("Лист від орендодавця")
-        assertEquals(Route.Reading(1, listening = true), graph.navigator.current)
     }
 
     @Test
@@ -67,10 +57,8 @@ class ReadingScreensTest : UiTest() {
 
     @Test
     fun listeningHidesTextAndReadsWithoutSpeakerNames() {
-        launch(Route.Reading(3, listening = true))
-        assertTrue(exists("Діалог · слухання"))
-        compose.onAllNodes(hasContentDescription("Прослухати: ", substring = true))[0].performScrollTo().performClick()
-        compose.waitForIdle()
+        launch(Route.Reading(3))
+        click("🎧 Слухати")
         assertTrue(speaker.last!!.startsWith("Lægehuset, det er Mette."))
         assertFalse(speaker.last!!.contains("Sekretær:"))
         assertTrue(compose.onAllNodes(hasTestTag("reading-text")).fetchSemanticsNodes().isEmpty())
@@ -79,10 +67,9 @@ class ReadingScreensTest : UiTest() {
         assertTrue(exists("Результат: 0 з 3"))
         assertTrue(exists("Текст відкрито нижче."))
         tag("reading-text").assertExists()
-        assertEquals(0, graph.repository.progress.value.listeningScores[3])
-        assertTrue(graph.repository.progress.value.readingScores.isEmpty())
+        click("📖 Читати")
         click("Наступний текст")
-        assertEquals(Route.Reading(4, listening = true), graph.navigator.current)
+        assertEquals(Route.Reading(4), graph.navigator.current)
     }
 
     @Test
@@ -95,20 +82,11 @@ class ReadingScreensTest : UiTest() {
     }
 
     @Test
-    fun scoresAppearInTheirOwnList() {
+    fun scoresAppearInTheList() {
         val g = testGraph()
         g.repository.saveReadingScore(0, 2)
-        launch(Route.Texts(listening = false), g)
+        launch(Route.ReadingList, g)
         assertTrue(exists("Оголошення · ✓ 2/3"))
-    }
-
-    @Test
-    fun listeningScoresAreSeparate() {
-        val g = testGraph()
-        g.repository.saveReadingScore(0, 1, listening = true)
-        launch(Route.Texts(listening = true), g)
-        assertTrue(exists("Оголошення · ✓ 1/3"))
-        assertFalse(exists("Оголошення · ✓ 2/3"))
     }
 }
 
@@ -255,7 +233,6 @@ class TitlesTest : UiTest() {
             Route.Cards(null) to "Усі слова", Route.WordDetails("bog") to "en bog", Route.WordDetails("xyz") to "xyz",
             Route.AddWord(null) to "Нове слово", Route.Quiz(null) to "Тест", Route.Exercises to "Завдання",
             Route.Exercise(ExerciseType.GAP) to "Встав слово", Route.ReadingList to "Читання й слухання", Route.Reading(0) to "Оголошення",
-            Route.Texts(false) to "Читання", Route.Texts(true) to "Слухання",
             Route.Grammar to "Граматика", Route.GrammarSection(0) to "Іменники", Route.Rule(0, 0) to "Правило",
             Route.Pronunciation to "Вимова", Route.WritingList to "Письмо", Route.Writing(3) to "Скарга",
             Route.Tutor to "ШІ-тренер", Route.Settings to "Налаштування",

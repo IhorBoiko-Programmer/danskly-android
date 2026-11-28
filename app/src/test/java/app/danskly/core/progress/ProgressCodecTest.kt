@@ -28,7 +28,6 @@ class ProgressCodecTest {
         quizCorrect = 3,
         quizTotal = 5,
         readingScores = mapOf(1 to 3, 4 to 0),
-        listeningScores = mapOf(2 to 1),
         customWords = listOf(Word("skraldespand", "смітник", "Мої слова", Article.EN, true), Word("at støvsuge", "пилососити", "Мої слова", null, true)),
         wordDetails = mapOf("bog" to WordDetails("іменник", "часто", listOf("Множина" to "bøger"), listOf(LabeledExample("Дім", "Jeg læser.", "Я читаю.")), listOf(Example("en god bog", "добра книга")))),
         exampleSentences = mapOf("hus" to Example("Huset er stort.", "Будинок великий.")),

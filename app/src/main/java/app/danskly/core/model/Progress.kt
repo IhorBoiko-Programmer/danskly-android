@@ -46,9 +46,7 @@ data class Progress(
     val plan: DailyPlan? = null,
     val quizCorrect: Int = 0,
     val quizTotal: Int = 0,
-    /** Best result per text index, for reading and for listening separately. */
     val readingScores: Map<Int, Int> = emptyMap(),
-    val listeningScores: Map<Int, Int> = emptyMap(),
     val customWords: List<Word> = emptyList(),
     val wordDetails: Map<String, WordDetails> = emptyMap(),
     val exampleSentences: Map<String, Example> = emptyMap(),

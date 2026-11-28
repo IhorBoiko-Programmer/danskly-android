@@ -104,11 +104,8 @@ class LearningRepository(
         update { it.copy(quizTotal = it.quizTotal + 1, quizCorrect = it.quizCorrect + if (correct) 1 else 0) }
     }
 
-    fun saveReadingScore(textIndex: Int, score: Int, listening: Boolean = false) {
-        update {
-            if (listening) it.copy(listeningScores = it.listeningScores + (textIndex to score))
-            else it.copy(readingScores = it.readingScores + (textIndex to score))
-        }
+    fun saveReadingScore(textIndex: Int, score: Int) {
+        update { it.copy(readingScores = it.readingScores + (textIndex to score)) }
         recordAction(DailyTask.READING)
     }
 

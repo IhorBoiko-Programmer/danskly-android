@@ -1,3 +1,6 @@
 node_modules
 .wrangler
 .dev.vars
+# Built by build.mjs before every deploy
+public/index.html
+public/content/

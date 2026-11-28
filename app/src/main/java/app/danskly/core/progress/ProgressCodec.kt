@@ -42,7 +42,6 @@ object ProgressCodec {
             "quizCorrect" to p.quizCorrect,
             "quizTotal" to p.quizTotal,
             "reading" to p.readingScores.mapKeys { it.key.toString() },
-            "listening" to p.listeningScores.mapKeys { it.key.toString() },
             "custom" to p.customWords.map { json("da" to it.danish, "uk" to it.ukrainian, "topic" to it.topic, "article" to it.article?.text) },
             "details" to p.wordDetails.mapValues { (_, d) -> encodeDetails(d) },
             "examples" to p.exampleSentences.mapValues { (_, e) -> json("da" to e.danish, "uk" to e.ukrainian) },
@@ -81,7 +80,6 @@ object ProgressCodec {
             quizCorrect = o.int("quizCorrect"),
             quizTotal = o.int("quizTotal"),
             readingScores = scores(o.child("reading")),
-            listeningScores = scores(o.child("listening")),
             customWords = o.list("custom").map { it.obj() }.map {
                 Word(it.str("da"), it.str("uk"), it.str("topic"), Article.fromText(it.strOrNull("article")), isCustom = true)
             },

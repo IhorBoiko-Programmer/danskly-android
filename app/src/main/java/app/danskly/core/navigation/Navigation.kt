@@ -19,8 +19,7 @@ sealed interface Route {
     data object Exercises : Route
     data class Exercise(val type: ExerciseType) : Route
     data object ReadingList : Route
-    data class Texts(val listening: Boolean) : Route
-    data class Reading(val index: Int, val listening: Boolean = false) : Route
+    data class Reading(val index: Int) : Route
     data object Grammar : Route
     data class GrammarSection(val index: Int) : Route
     data class Rule(val section: Int, val rule: Int) : Route

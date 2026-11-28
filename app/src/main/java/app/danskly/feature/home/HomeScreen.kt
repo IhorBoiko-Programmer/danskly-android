@@ -30,6 +30,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
@@ -41,10 +42,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.danskly.AppGraph
 import app.danskly.R
+import app.danskly.core.content.AppRelease
 import app.danskly.core.learning.LearningRepository
 import app.danskly.core.navigation.Route
 import app.danskly.ui.ScreenColumn
+import app.danskly.ui.components.Glass
+import app.danskly.ui.components.PrimaryButton
 import app.danskly.ui.components.ProgressLine
+import app.danskly.ui.components.SecondaryButton
 import app.danskly.ui.theme.LocalPalette
 import app.danskly.ui.theme.TileColors
 import java.time.LocalTime
@@ -90,6 +95,8 @@ fun HomeScreen(graph: AppGraph, hour: Int = LocalTime.now().hour) {
                 fontWeight = FontWeight.Bold,
             )
         }
+        val newApp by graph.updates.newApp.collectAsState()
+        newApp?.let { release -> NewVersionCard(release, onLater = graph.updates::dismissNewApp) }
         Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             val todaySubtitle = if (due + fresh > 0) "$due на повторення · $fresh нових" else "Повторення на сьогодні виконано"
             WideTile("☀️", "Сьогодні", todaySubtitle, TileColors.today, onClick = { open(Route.Today) }) {
@@ -188,5 +195,20 @@ private fun TileIcon(icon: String, colors: Pair<Color, Color>, pressed: Boolean,
         contentAlignment = Alignment.Center,
     ) {
         Text(icon, fontSize = (size * 0.48).sp)
+    }
+}
+
+/** Shown on the home screen when a newer build of the app is published (builds outside Google Play). */
+@Composable
+private fun NewVersionCard(release: AppRelease, onLater: () -> Unit) {
+    val p = LocalPalette.current
+    val uri = LocalUriHandler.current
+    Glass(Modifier.padding(bottom = 12.dp).testTag("new-version"), padding = 16.dp) {
+        Text("🎉 Доступна нова версія ${release.versionName}", fontWeight = FontWeight.Bold, color = p.ink)
+        Text("Завантаж і встанови її поверх цієї. Прогрес збережеться.", color = p.muted, fontSize = 14.sp, modifier = Modifier.padding(top = 4.dp))
+        Row(Modifier.padding(top = 12.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            SecondaryButton("Пізніше", Modifier.weight(1f), onClick = onLater)
+            PrimaryButton("Оновити", Modifier.weight(1f)) { uri.openUri(release.url) }
+        }
     }
 }
