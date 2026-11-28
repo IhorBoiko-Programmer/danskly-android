@@ -1,0 +1,42 @@
+name: Word dictionary
+
+# Writes ready-made dictionary entries for the bundled words (content/details.json)
+# with the OpenCode Go key, then commits them. Start it by hand: Actions → Word dictionary → Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many missing words to write (0 = all)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: details
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Write missing entries
+        env:
+          OPENCODE_KEYS: ${{ secrets.OPENCODE_KEYS }}
+          LIMIT: ${{ inputs.limit }}
+        run: node tools/generate-details.mjs
+      - name: Commit the dictionary
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add app/src/main/assets/content/details.json
+          git diff --cached --quiet && { echo "Nothing new"; exit 0; }
+          git commit -m "Word dictionary: ready-made entries for bundled words"
+          git pull --rebase --quiet
+          git push
